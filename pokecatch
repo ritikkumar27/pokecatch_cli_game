@@ -1,0 +1,285 @@
+#!/usr/bin/env python3
+import os
+import json
+import random
+import subprocess
+import argparse
+import shlex # Used to safely quote file paths
+import time #for the delay
+import sys
+
+
+# --- CONFIGURATION ---
+# Get the directory where the script is located
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+DATA_FILE = os.path.join(SCRIPT_DIR, 'data', 'pokemon_data.json')
+PLAYER_DEX = os.path.join(SCRIPT_DIR, 'data', 'pokedex.json')
+SPRITES_DIR = os.path.join(SCRIPT_DIR, 'sprites')
+WILD_POKEMON_STATE = os.path.join(SCRIPT_DIR, 'data', 'wild_pokemon.json') # Stores the current wild Pokemon
+
+# Rarity affects catch chance. Lower number = harder to catch.
+RARITY_MODIFIERS = {
+    "common": 1.0,
+    "uncommon": 0.8,
+    "rare": 0.6,
+    "ultrarare": 0.4,
+    "epic": 0.25,
+    "legendary": 0.1
+}
+
+# Ball multipliers
+BALL_MODIFIERS = {
+    "poke_ball": 1.0,
+    "great_ball": 1.5,
+    "ultra_ball": 2.0,
+    "master_ball": 100.0 # Effectively a guaranteed catch
+}
+
+# Rarity affects spawn chance. Higher number = more likely to appear.
+RARITY_SPAWN_WEIGHTS = {
+    "common": 100,
+    "uncommon": 50,
+    "rare": 25,
+    "ultrarare": 10,
+    "epic": 5,
+    "legendary": 1
+
+    #--------mytest-----------#
+    # "common": 1,
+    # "uncommon": 1,
+    # "rare": 1,
+    # "ultrarare": 1,
+    # "epic": 1,
+    # "legendary": 100
+}
+
+
+# --- HELPER FUNCTIONS ---
+
+#helper function to display wild pokemon
+def display_sprite(pokemon_name):
+    """Displays the pokemon sprite in the Kitty terminal."""
+    sprite_path = os.path.join(SPRITES_DIR, f"{pokemon_name}.png")
+    if not os.path.exists(sprite_path):
+        print(f"Sprite for {pokemon_name} not found!")
+        return
+    
+    #using shlex.quote() to handle filenames with spaces or special characters
+    safe_sprite_path = shlex.quote(sprite_path)
+    #the full command as a single string
+    command = (f"magick {safe_sprite_path} -filter Box -define filter:blur=0.8 -resize 230% -trim png:- | kitty +kitten  icat --stdin=yes --align left")
+    try:
+        #use shell = True to interepret the pipe
+        subprocess.run(command, shell=True, check=True)
+        #***old line*** subprocess.run(["kitty", "+icat", "--align", "left","--scale-up", sprite_path], check=True)
+        
+    except FileNotFoundError:
+        print("This game requires the Kitty terminal to display images.")
+    except Exception as e:
+        print(f"Error displaying image: {e}")
+
+#helper function to display pokedex pokemon
+def display_sprite_pokedex(pokemon_name):
+    """Displays the pokemon sprite in the Kitty terminal."""
+    sprite_path = os.path.join(SPRITES_DIR, f"{pokemon_name}.png")
+    if not os.path.exists(sprite_path):
+        print(f"Sprite for {pokemon_name} not found!")
+        return
+    
+    #using shlex.quote() to handle filenames with spaces or special characters
+    safe_sprite_path = shlex.quote(sprite_path)
+    #the full command as a single string
+    command = (f"magick {safe_sprite_path} -filter Box -define filter:blur=0.8 -resize 125% -trim png:- | kitty +kitten  icat --stdin=yes --align left")
+    try:
+        #use shell = True to interepret the pipe
+        subprocess.run(command, shell=True, check=True)
+        #***old line*** subprocess.run(["kitty", "+icat", "--align", "left","--scale-up", sprite_path], check=True)
+        
+    except FileNotFoundError:
+        print("This game requires the Kitty terminal to display images.")
+    except Exception as e:
+        print(f"Error displaying image: {e}")
+
+#helper function to display random pokemon in terminal
+def display_sprite_terminal():
+
+
+    all_pokemon = load_data(DATA_FILE)
+    if not all_pokemon:
+        print("Error: pokemon_data.json is empty or not found!")
+        return
+    # Weighted random choice based on rarity
+    pokemon_pool = [p for p in all_pokemon]
+    weights = [RARITY_SPAWN_WEIGHTS[p['rarity']] for p in pokemon_pool]
+    random_pokemon = random.choices(pokemon_pool, weights=weights, k=1)[0]
+
+
+
+    """Displays the pokemon sprite in the Kitty terminal."""
+    sprite_path = os.path.join(SPRITES_DIR, f"{random_pokemon['id']}.png")
+    if not os.path.exists(sprite_path):
+        print(f"Sprite for {random_pokemon['name']} not found!")
+        return
+    
+    #using shlex.quote() to handle filenames with spaces or special characters
+    safe_sprite_path = shlex.quote(sprite_path)
+    #the full command as a single string
+    print(f"A wild {random_pokemon['name'].capitalize()} appeared!")
+    print(f"Rarity: {random_pokemon['rarity'].capitalize()}")
+
+    # print(f"A wild {random_pokemon['name'].capitalize()} appeared!")
+    # print(f"Rarity: {random_pokemon['rarity'].capitalize()}")
+    command = (f"magick {safe_sprite_path} -filter Box -define filter:blur=0.8 -resize 230% -trim png:- | kitty +kitten  icat --stdin=yes --align left")
+    try:
+        #use shell = True to interepret the pipe
+        subprocess.run(command, shell=True, check=True)
+        #***old line*** subprocess.run(["kitty", "+icat", "--align", "left","--scale-up", sprite_path], check=True)
+        
+    except FileNotFoundError:
+        print("This game requires the Kitty terminal to display images.")
+    except Exception as e:
+        print(f"Error displaying image: {e}")
+    save_data(WILD_POKEMON_STATE, random_pokemon)
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+def load_data(filepath):
+    """Loads JSON data from a file."""
+    if not os.path.exists(filepath):
+        return []
+    with open(filepath, 'r') as f:
+        return json.load(f)
+
+def save_data(filepath, data):
+    """Saves data to a JSON file."""
+    with open(filepath, 'w') as f:
+        json.dump(data, f, indent=2)
+
+# --- GAME COMMANDS ---
+
+def hunt():
+    """Find a wild Pokémon."""
+    all_pokemon = load_data(DATA_FILE)
+    if not all_pokemon:
+        print("Error: pokemon_data.json is empty or not found!")
+        return
+
+    # Weighted random choice based on rarity
+    pokemon_pool = [p for p in all_pokemon]
+    weights = [RARITY_SPAWN_WEIGHTS[p['rarity']] for p in pokemon_pool]
+    
+    wild_pokemon = random.choices(pokemon_pool, weights=weights, k=1)[0]
+    
+    print(f"A wild {wild_pokemon['name'].capitalize()} appeared!")
+    print(f"Rarity: {wild_pokemon['rarity'].capitalize()}")
+    display_sprite(wild_pokemon['id'])
+
+    # Save the state of the wild Pokémon so the 'catch' command knows about it
+    save_data(WILD_POKEMON_STATE, wild_pokemon)
+
+def catch(ball_type):
+    """Attempt to catch the wild Pokémon."""
+    if not os.path.exists(WILD_POKEMON_STATE):
+        print("You haven't found a Pokémon to catch! Use 'pokecatch hunt' first.")
+        return
+
+    wild_pokemon = load_data(WILD_POKEMON_STATE)
+    pokemon_name = wild_pokemon['name']
+    rarity = wild_pokemon['rarity']
+
+    print(f"You threw a {ball_type.replace('_', ' ')} at {pokemon_name.capitalize()}...")
+    
+    #time pause for anticipation
+    def endless_dots(duration=5, interval=0.5):
+        start = time.time()
+        dots = ""
+        while time.time() - start < duration:
+            dots += "."
+            sys.stdout.write(f"\rFighting{dots}")
+            sys.stdout.flush()
+            time.sleep(interval)
+        print()  # move to next line after finishing
+
+    # Example: run for 5 seconds, adding a dot every 0.5s
+    endless_dots(5, 0.5)
+
+
+
+    base_catch_chance = 0.5 # 50% base chance
+    rarity_mod = RARITY_MODIFIERS.get(rarity, 0.1)
+    ball_mod = BALL_MODIFIERS.get(ball_type, 1.0)
+
+    catch_chance = base_catch_chance * rarity_mod * ball_mod
+    
+    if random.random() < catch_chance:
+        print(f"Gotcha! {pokemon_name.capitalize()} was caught!")
+        player_dex = load_data(PLAYER_DEX)
+        player_dex.append(wild_pokemon)
+        save_data(PLAYER_DEX, player_dex)
+    else:
+        print(f"Oh no! {pokemon_name.capitalize()} broke free!")
+
+    # The encounter is over, win or lose. Remove the state file.
+    os.remove(WILD_POKEMON_STATE)
+
+
+def my_pokemon():
+    """Display the list of Pokémon you have caught."""
+    player_dex = load_data(PLAYER_DEX)
+    if not player_dex:
+        print("You haven't caught any Pokémon yet. Go 'hunt' for some!")
+        return
+
+    print("--- Your Pokémons ---")
+    print()
+    # Sort by ID for a Pokedex-like order
+    sorted_dex = sorted(player_dex, key=lambda p: p['id'])
+    for p in sorted_dex:
+
+
+        #display pokedex pokemon in small size
+        display_sprite_pokedex(p['id'])
+
+        print(f"- #{p['id']:03d} {p['name'].capitalize()} (Rarity: {p['rarity']})")
+        print()
+    print("--------------------")
+
+# --- MAIN EXECUTION & ARGUMENT PARSING ---
+
+def main():
+    parser = argparse.ArgumentParser(description="A Pokémon catching game for the Kitty terminal.")
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+    
+    # Hunt command
+    hunt_parser = subparsers.add_parser("hunt", help="Search for a wild Pokémon.")
+    
+    # Catch command
+    catch_parser = subparsers.add_parser("catch", help="Throw a Poké Ball to catch a Pokémon.")
+    catch_parser.add_argument("ball", choices=BALL_MODIFIERS.keys(), help="The type of ball to use.")
+
+    # My Pokemon command (pokedex)
+    my_pokemon_parser = subparsers.add_parser("my_pokemon", help="See all the Pokémon you have caught.")
+    my_pokemon_parser = subparsers.add_parser("pokedex", help="See all the Pokémon you have caught.")
+
+    #show a random pokemon in terminal
+    terminal_pokemon_parser = subparsers.add_parser("terminal_pokemon", help="Displays a random pokemon in terminal.")
+
+
+    args = parser.parse_args()
+
+    if args.command == "hunt":
+        hunt()
+    elif args.command == "catch":
+        catch(args.ball)
+    elif args.command == "my_pokemon":
+        my_pokemon()
+    elif args.command == "pokedex":
+        my_pokemon()
+    elif args.command == "terminal_pokemon":
+        display_sprite_terminal()
+    else:
+        # If no command is given, print help
+        parser.print_help()
+
+if __name__ == "__main__":
+    main()
