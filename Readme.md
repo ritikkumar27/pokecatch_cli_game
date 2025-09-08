@@ -13,7 +13,7 @@ Pokecatch is a command-line Pokémon catching game designed for the Kitty termin
 
 - Python 3
 - [Kitty terminal](https://sw.kovidgoyal.net/kitty/)
-- ImageMagick (`convert` command)
+- ImageMagick (`magick` command)
 
 ## Installation
 
