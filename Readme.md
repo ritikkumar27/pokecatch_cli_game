@@ -50,8 +50,4 @@ Run the game from your project directory:
 ## Notes
 
 - Sprites are displayed using Kitty's image protocol.
-- Rarity and ball modifiers affect catch chances (see [`notes3.md`](notes3.md) for details).
 
-## License
-
-MIT License (add your own if needed)
