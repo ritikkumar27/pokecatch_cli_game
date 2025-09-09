@@ -81,7 +81,7 @@ CATCH_RATES = {
     "legendary": {"poke_ball": 0.05, "great_ball": 0.15, "ultra_ball": 0.25,   "master_ball": 0.61}
 }
 
-HUNT_COOLDOWN_SECONDS = 00
+HUNT_COOLDOWN_SECONDS = 30
 # --- HELPER FUNCTIONS ---
 
 #display wild pokemon
