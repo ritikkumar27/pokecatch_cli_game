@@ -17,6 +17,29 @@ PLAYER_DEX = os.path.join(SCRIPT_DIR, 'data', 'pokedex.json')
 SPRITES_DIR = os.path.join(SCRIPT_DIR, 'sprites')
 WILD_POKEMON_STATE = os.path.join(SCRIPT_DIR, 'data', 'wild_pokemon.json') # Stores the current wild Pokemon
 
+#----------------------------------------------------------------------------------------------------------------------------------
+PLAYER_DATA_FILE = os.path.join(SCRIPT_DIR, 'data', 'player.json') # For inventory & currency
+
+# Store prices
+RARITY_SELL_PRICES = {
+    "common": 50,
+    "uncommon": 100,
+    "rare": 500,
+    "ultrarare": 800,
+    "epic": 1500,
+    "legendary": 5000
+}
+
+BALL_PRICES = {
+    "poke_ball" : 20,
+    "great_ball": 200,
+    "ultra_ball": 800,
+    "master_ball": 100000 # Should be very expensive
+}
+
+#----------------------------------------------------------------------------------------------------------------------------------
+
+
 # Rarity affects catch chance. Lower number = harder to catch.
 RARITY_MODIFIERS = {
     "common": 1.0,
@@ -34,6 +57,7 @@ BALL_MODIFIERS = {
     "ultra_ball": 2.0,
     "master_ball": 100.0 # Effectively a guaranteed catch
 }
+
 
 # Rarity affects spawn chance. Higher number = more likely to appear.
 RARITY_SPAWN_WEIGHTS = {
@@ -53,6 +77,15 @@ RARITY_SPAWN_WEIGHTS = {
     # "legendary": 100
 }
 
+
+CATCH_RATES = {
+    "common":    {"poke_ball": 0.50, "great_ball": 0.90, "ultra_ball": 1.0,    "master_ball": 1.0},
+    "uncommon":  {"poke_ball": 0.40, "great_ball": 0.75, "ultra_ball": 1.0,    "master_ball": 1.0},
+    "rare":      {"poke_ball": 0.30, "great_ball": 0.60, "ultra_ball": 0.80,    "master_ball": 1.0},
+    "ultrarare": {"poke_ball": 0.20, "great_ball": 0.30, "ultra_ball": 0.75,    "master_ball": 1.0},
+    "epic":      {"poke_ball": 0.15,"great_ball": 0.20,"ultra_ball": 0.51,   "master_ball": 1.0},
+    "legendary": {"poke_ball": 0.05, "great_ball": 0.20, "ultra_ball": 0.25,   "master_ball": 0.61}
+}
 
 # --- HELPER FUNCTIONS ---
 
@@ -177,39 +210,85 @@ def hunt():
     # Save the state of the wild Pokémon so the 'catch' command knows about it
     save_data(WILD_POKEMON_STATE, wild_pokemon)
 
+# def catch(ball_type):
+#     """Attempt to catch the wild Pokémon."""
+#     if not os.path.exists(WILD_POKEMON_STATE):
+#         print("You haven't found a Pokémon to catch! Use 'pokecatch hunt' first.")
+#         return
+
+#     wild_pokemon = load_data(WILD_POKEMON_STATE)
+#     pokemon_name = wild_pokemon['name']
+#     rarity = wild_pokemon['rarity']
+
+#     print(f"You threw a {ball_type.replace('_', ' ')} at {pokemon_name.capitalize()}...")
+    
+#     #time pause for anticipation
+#     def endless_dots(duration=5, interval=0.5):
+#         start = time.time()
+#         dots = ""
+#         while time.time() - start < duration:
+#             dots += "."
+#             sys.stdout.write(f"\rFighting{dots}")
+#             sys.stdout.flush()
+#             time.sleep(interval)
+#         print()  # move to next line after finishing
+
+#     # Example: run for 5 seconds, adding a dot every 0.5s
+#     endless_dots(5, 0.5)
+
+
+
+#     base_catch_chance = 0.5 # 50% base chance
+#     rarity_mod = RARITY_MODIFIERS.get(rarity, 0.1)
+#     ball_mod = BALL_MODIFIERS.get(ball_type, 1.0)
+
+#     catch_chance = base_catch_chance * rarity_mod * ball_mod
+    
+#     if random.random() < catch_chance:
+#         print(f"Gotcha! {pokemon_name.capitalize()} was caught!")
+#         player_dex = load_data(PLAYER_DEX)
+#         player_dex.append(wild_pokemon)
+#         save_data(PLAYER_DEX, player_dex)
+#     else:
+#         print(f"Oh no! {pokemon_name.capitalize()} broke free!")
+
+#     # The encounter is over, win or lose. Remove the state file.
+#     os.remove(WILD_POKEMON_STATE)
+
+
 def catch(ball_type):
     """Attempt to catch the wild Pokémon."""
     if not os.path.exists(WILD_POKEMON_STATE):
         print("You haven't found a Pokémon to catch! Use 'pokecatch hunt' first.")
         return
 
+    # --- START of new code ---
+    player_data = load_player_data()
+    
+    # Check if the player has any of the required ball
+    if player_data["balls"].get(ball_type, 0) <= 0:
+        print(f"You don't have any {ball_type.replace('_', ' ')}s!")
+        return
+    
+    # Use one ball
+    player_data["balls"][ball_type] -= 1
+    save_player_data(player_data)
+    # --- END of new code ---
+
     wild_pokemon = load_data(WILD_POKEMON_STATE)
     pokemon_name = wild_pokemon['name']
     rarity = wild_pokemon['rarity']
 
     print(f"You threw a {ball_type.replace('_', ' ')} at {pokemon_name.capitalize()}...")
+    print(f"You have {player_data['balls'][ball_type]} left.") # Optional: Show remaining balls
     
-    #time pause for anticipation
-    def endless_dots(duration=5, interval=0.5):
-        start = time.time()
-        dots = ""
-        while time.time() - start < duration:
-            dots += "."
-            sys.stdout.write(f"\rFighting{dots}")
-            sys.stdout.flush()
-            time.sleep(interval)
-        print()  # move to next line after finishing
+    # base_catch_chance = 0.5
+    # rarity_mod = RARITY_MODIFIERS.get(rarity, 0.1)
+    # ball_mod = BALL_MODIFIERS.get(ball_type, 1.0)
 
-    # Example: run for 5 seconds, adding a dot every 0.5s
-    endless_dots(5, 0.5)
-
-
-
-    base_catch_chance = 0.5 # 50% base chance
-    rarity_mod = RARITY_MODIFIERS.get(rarity, 0.1)
-    ball_mod = BALL_MODIFIERS.get(ball_type, 1.0)
-
-    catch_chance = base_catch_chance * rarity_mod * ball_mod
+    # catch_chance = base_catch_chance * rarity_mod * ball_mod
+    # --- NEW CODE ---
+    catch_chance = CATCH_RATES.get(rarity, {}).get(ball_type, 0.0)
     
     if random.random() < catch_chance:
         print(f"Gotcha! {pokemon_name.capitalize()} was caught!")
@@ -219,8 +298,127 @@ def catch(ball_type):
     else:
         print(f"Oh no! {pokemon_name.capitalize()} broke free!")
 
-    # The encounter is over, win or lose. Remove the state file.
     os.remove(WILD_POKEMON_STATE)
+#---------------------------------------------------------------------------------------------------------------------
+
+def inventory():
+    """Displays the player's current currency and ball inventory."""
+    player_data = load_player_data()
+    currency = player_data.get("currency", 0)
+    balls = player_data.get("balls", {})
+
+    print("--- 🎒 Your Inventory ---")
+    print(f"Poké Dollars: ${currency}")
+    print("\n--- Poké Balls ---")
+    for ball, count in balls.items():
+        print(f"- {ball.replace('_', ' ').capitalize():<12}: {count}")
+    print("------------------------")
+
+def sell_pokemon(pokemon_name):
+    """Sells a Pokémon from the player's Pokedex."""
+    player_dex = load_data(PLAYER_DEX)
+    player_data = load_player_data()
+
+    pokemon_to_sell = None
+    for p in player_dex:
+        if p['name'].lower() == pokemon_name.lower():
+            pokemon_to_sell = p
+            break
+    
+    if pokemon_to_sell:
+        rarity = pokemon_to_sell['rarity']
+        price = RARITY_SELL_PRICES.get(rarity, 50)
+        
+        player_dex.remove(pokemon_to_sell)
+        player_data['currency'] += price
+        
+        save_data(PLAYER_DEX, player_dex)
+        save_player_data(player_data)
+        
+        print(f"You sold {pokemon_name.capitalize()} for ${price}.")
+        print(f"Your new balance is ${player_data['currency']}.")
+    else:
+        print(f"You don't have a Pokémon named {pokemon_name.capitalize()} to sell.")
+
+def buy_item(item_name, amount):
+    """Buys an item from the store."""
+    if item_name not in BALL_PRICES:
+        print(f"Sorry, '{item_name}' is not for sale.")
+        return
+
+    player_data = load_player_data()
+    price = BALL_PRICES[item_name]
+    total_cost = price * amount
+
+    if player_data['currency'] < total_cost:
+        print(f"You don't have enough money! You need ${total_cost}, but you only have ${player_data['currency']}.")
+        return
+        
+    player_data['currency'] -= total_cost
+    player_data['balls'][item_name] += amount
+    save_player_data(player_data)
+
+    print(f"You bought {amount} {item_name.replace('_', ' ')}(s) for ${total_cost}.")
+    print(f"Your new balance is ${player_data['currency']}.")
+
+def display_store():
+    """Displays items for sale, sell prices, and the player's current balance."""
+    player_data = load_player_data()
+    print("--- 🏪 Poké Mart ---")
+    print(f"Welcome! You have ${player_data['currency']}.")
+    
+    print("\n--- Items for Sale (Purchase) ---")
+    for item, price in BALL_PRICES.items():
+        print(f"- {item.replace('_', ' ').capitalize():<12}: ${price}")
+    
+    # --- This is the new section ---
+    print("\n--- Pokémon Sell Prices ---")
+    for rarity, price in RARITY_SELL_PRICES.items():
+        print(f"- {rarity.capitalize():<12}: ${price}")
+    # --------------------------
+
+    print("\nUse 'pokecatch store buy <item> <amount>' to buy.")
+    print("Use 'pokecatch store sell <pokemon_name>' to sell.")
+    print("----------------------")
+
+def sell_all_by_rarity(rarity_to_sell):
+    """Sells all Pokémon of a specific rarity from the player's Pokedex."""
+    player_dex = load_data(PLAYER_DEX)
+    player_data = load_data(PLAYER_DATA_FILE)
+
+    if not player_dex:
+        print("Your Pokedex is empty! There is nothing to sell.")
+        return
+
+    pokemon_to_sell = []
+    remaining_pokemon = []
+    total_earnings = 0
+    price_per_pokemon = RARITY_SELL_PRICES.get(rarity_to_sell, 0)
+
+    # Separate the Pokémon to be sold from the ones to keep
+    for p in player_dex:
+        if p['rarity'].lower() == rarity_to_sell.lower():
+            pokemon_to_sell.append(p)
+            total_earnings += price_per_pokemon
+        else:
+            remaining_pokemon.append(p)
+            
+    if not pokemon_to_sell:
+        print(f"You have no {rarity_to_sell.capitalize()} Pokémon to sell.")
+        return
+        
+    # Update player data
+    player_data['currency'] += total_earnings
+    
+    # Save the updated files
+    save_data(PLAYER_DEX, remaining_pokemon) # Overwrite the Pokedex with only the remaining Pokémon
+    save_player_data(player_data)
+    
+    print(f"✅ Sold {len(pokemon_to_sell)} {rarity_to_sell.capitalize()} Pokémon for ${total_earnings}.")
+    print(f"Your new balance is ${player_data['currency']}.")
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
 
 
 def my_pokemon():
@@ -244,6 +442,29 @@ def my_pokemon():
         print()
     print("--------------------")
 
+#----------------------------------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------------------------
+def load_player_data():
+    """Loads player data (inventory, currency). Creates a new file if it doesn't exist."""
+    if not os.path.exists(PLAYER_DATA_FILE):
+        # Default starting data for a new player
+        player_data = {
+            "currency": 0,
+            "balls": {
+                "poke_ball": 50,
+                "great_ball": 0,
+                "ultra_ball": 0,
+                "master_ball": 0
+            }
+        }
+        save_data(PLAYER_DATA_FILE, player_data)
+        return player_data
+    return load_data(PLAYER_DATA_FILE)
+
+def save_player_data(player_data):
+    """Saves player data."""
+    save_data(PLAYER_DATA_FILE, player_data)
+
 # --- MAIN EXECUTION & ARGUMENT PARSING ---
 
 def main():
@@ -265,6 +486,27 @@ def main():
     terminal_pokemon_parser = subparsers.add_parser("terminal_pokemon", help="Displays a random pokemon in terminal.")
 
 
+
+
+    inventory_parser = subparsers.add_parser("inventory", help="Check your items and currency.")
+    # --- Store Command ---
+    store_parser = subparsers.add_parser("store", help="Visit the Poké Mart to buy and sell.")
+    store_subparsers = store_parser.add_subparsers(dest="action", help="Store actions")
+
+    # Store Buy Command
+    buy_parser = store_subparsers.add_parser("buy", help="Buy items from the store.")
+    buy_parser.add_argument("item", choices=BALL_PRICES.keys(), help="The item to buy.")
+    buy_parser.add_argument("amount", type=int, nargs='?', default=1, help="How many to buy (default: 1).")
+
+    # Store Sell Command
+    sell_parser = store_subparsers.add_parser("sell", help="Sell a caught Pokémon.")
+    sell_parser.add_argument("pokemon_name", help="The name of the Pokémon to sell.")
+
+    sellall_parser = store_subparsers.add_parser("sellall", help="Sell all Pokémon of a specific rarity.")
+    sellall_parser.add_argument("rarity", choices=RARITY_SELL_PRICES.keys(), help="The rarity of Pokémon to sell.")
+
+
+
     args = parser.parse_args()
 
     if args.command == "hunt":
@@ -277,9 +519,24 @@ def main():
         my_pokemon()
     elif args.command == "terminal_pokemon":
         display_sprite_terminal()
+    elif args.command == "inventory":
+        inventory()
+    elif args.command == "store":
+        if args.action == "buy":
+            buy_item(args.item, args.amount)
+        elif args.action == "sell":
+            sell_pokemon(args.pokemon_name)
+        elif args.action == "sellall":
+            sell_all_by_rarity(args.rarity)
+        else:
+            # If the command is just 'pokecatch store'
+            display_store()
+    
+
     else:
         # If no command is given, print help
         parser.print_help()
+    
 
 if __name__ == "__main__":
     main()

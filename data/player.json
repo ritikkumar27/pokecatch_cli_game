@@ -1,0 +1,9 @@
+{
+  "currency": 2450,
+  "balls": {
+    "poke_ball": 0,
+    "great_ball": 0,
+    "ultra_ball": 0,
+    "master_ball": 0
+  }
+}

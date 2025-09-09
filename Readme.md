@@ -1,5 +1,92 @@
 # Pokecatch Game
 
+Pokecatch is a command-line Pokémon catching game designed for the Kitty terminal. Hunt for wild Pokémon, catch them using different Poké Balls, and build your own Pokédex! Manage your inventory, buy and sell items, and enjoy Pokémon sprites directly in your terminal.
+
+## Features
+
+- **Hunt** for wild Pokémon with rarity-based spawn chances.
+- **Catch** Pokémon using various Poké Balls, each with different catch rates.
+- **View** your caught Pokémon in a Pokédex-style list, with sprites.
+- **Inventory** management: track your Poké Balls and currency.
+- **Store**: Buy Poké Balls and sell caught Pokémon for currency.
+- **Display** Pokémon sprites directly in the Kitty terminal.
+- **Show** a random Pokémon sprite with `terminal_pokemon`.
+
+## Requirements
+
+- Python 3
+- [Kitty terminal](https://sw.kovidgoyal.net/kitty/)
+- ImageMagick (`magick` command)
+
+## Installation
+
+1. Clone this repository.
+2. Ensure you have Kitty terminal and ImageMagick installed.
+3. Make the `pokecatch` script executable:
+   ```sh
+   chmod +x pokecatch
+   ```
+
+## Usage
+
+Run the game from your project directory:
+
+```sh
+./pokecatch hunt
+./pokecatch catch poke_ball
+./pokecatch my_pokemon
+./pokecatch inventory
+./pokecatch store
+./pokecatch store buy ultra_ball 2
+./pokecatch store sell pikachu
+./pokecatch terminal_pokemon
+```
+
+### Commands
+
+- `hunt` : Search for a wild Pokémon.
+- `catch <ball_type>` : Attempt to catch the current wild Pokémon. Ball types: `poke_ball`, `great_ball`, `ultra_ball`, `master_ball`.
+- `my_pokemon` or `pokedex` : View your caught Pokémon.
+- `inventory` : View your Poké Balls and currency.
+- `store` : View items for sale and your balance.
+- `store buy <item> <amount>` : Buy Poké Balls.
+- `store sell <pokemon_name>` : Sell a caught Pokémon.
+- `terminal_pokemon` : Display a random Pokémon sprite in the terminal.
+
+## Data Files
+
+- Pokémon data: [`data/pokemon_data.json`](data/pokemon_data.json)
+- Your Pokédex: [`data/pokedex.json`](data/pokedex.json)
+- Player inventory: [`data/player.json`](data/player.json)
+- Sprites: [`sprites/`](sprites/)
+
+## Notes
+
+- Sprites are displayed using Kitty's image protocol and ImageMagick.
+- Rarity and ball modifiers affect catch chances and spawn rates.
+- See [`notes3.md`](notes3.md) for details on rarity, modifiers, and spawn weights.
+
+## License
+
+MIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Pokecatch Game
+
 Pokecatch is a command-line Pokémon catching game designed for the Kitty terminal. Hunt for wild Pokémon, catch them using different Poké Balls, and build your own Pokédex!
 
 ## Features
@@ -50,4 +137,4 @@ Run the game from your project directory:
 ## Notes
 
 - Sprites are displayed using Kitty's image protocol.
-
+ -->
