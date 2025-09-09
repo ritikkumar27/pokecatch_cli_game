@@ -20,12 +20,26 @@ Pokecatch is a command-line Pokémon catching game designed for the Kitty termin
 
 ## Installation
 
-1. Clone this repository.
-2. Ensure you have Kitty terminal and ImageMagick installed.
-3. Make the `pokecatch` script executable:
-   ```sh
-   chmod +x pokecatch
-   ```
+1.  **Clone the repository:**
+    ```
+    git clone [https://github.com/your-username/pokecatch_game.git](https://github.com/your-username/pokecatch_game.git)
+    ```
+
+2.  **Navigate into the directory:**
+    ```
+    cd pokecatch_game
+    ```
+
+3.  **Run the installation script:**
+    This will make the `pokecatch` command available system-wide.
+    ```
+    ./install.sh
+    ```
+
+4.  **Start playing!**
+    ```
+    pokecatch hunt
+    ```
 
 ## Usage
 
@@ -39,7 +53,6 @@ Run the game from your project directory:
 ./pokecatch store
 ./pokecatch store buy ultra_ball 2
 ./pokecatch store sell pikachu
-./pokecatch terminal_pokemon
 ```
 
 ### Commands
@@ -51,24 +64,6 @@ Run the game from your project directory:
 - `store` : View items for sale and your balance.
 - `store buy <item> <amount>` : Buy Poké Balls.
 - `store sell <pokemon_name>` : Sell a caught Pokémon.
-- `terminal_pokemon` : Display a random Pokémon sprite in the terminal.
-
-## Data Files
-
-- Pokémon data: [`data/pokemon_data.json`](data/pokemon_data.json)
-- Your Pokédex: [`data/pokedex.json`](data/pokedex.json)
-- Player inventory: [`data/player.json`](data/player.json)
-- Sprites: [`sprites/`](sprites/)
-
-## Notes
-
-- Sprites are displayed using Kitty's image protocol and ImageMagick.
-- Rarity and ball modifiers affect catch chances and spawn rates.
-- See [`notes3.md`](notes3.md) for details on rarity, modifiers, and spawn weights.
-
-## License
-
-MIT
 
 
 
