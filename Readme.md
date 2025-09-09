@@ -23,12 +23,12 @@ A command-line Pok√©mon catching game for the Kitty terminal. Hunt for wild Pok√
 
 1.  **Clone the repository:**
     ```
-    git clone https://github.com/your-username/pokecatch_game.git
+    git clone https://github.com/ritikkumar27/pokecatch_cli_game.git
     ```
 
 2.  **Navigate into the directory:**
     ```
-    cd pokecatch_game
+    cd pokecatch_cli_game
     ```
 
 3.  **Run the installation script:**
