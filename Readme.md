@@ -69,11 +69,22 @@ The `<ball_type>` argument for the `catch` command. It can be the full name or a
 The `<rarity>` argument for the `sellall` command can be:
 `common`, `uncommon`, `rare`, `ultrarare`, `epic`, `legendary`.
 
-## Game Data & Resetting Progress
+### Catch Rates
 
-Your game progress is stored in the `data/` directory:
+| Rarity    | Poké Ball | Great Ball | Ultra Ball | Master Ball |
+| :-------- | :-------- | :--------- | :--------- | :---------- |
+| **Common** | 50%       | 90%        | 100%       | 100%        |
+| **Uncommon** | 40%       | 75%        | 100%       | 100%        |
+| **Rare** | 30%       | 60%        | 80%        | 100%        |
+| **Ultrarare** | 20%       | 30%        | 75%        | 100%        |
+| **Epic** | 15%       | 20%        | 51%        | 100%        |
+| **Legendary** | 5%        | 20%        | 25%        | 61%         |
+
+<!-- ## Game Data & Resetting Progress -->
+
+<!-- Your game progress is stored in the `data/` directory:
 - `pokedex.json`: Contains all the Pokémon you have caught.
 - `player.json`: Stores your inventory and currency.
 
-To reset your game and start over, simply delete these two files.
+To reset your game and start over, simply delete these two files. -->
 
