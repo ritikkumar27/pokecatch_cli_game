@@ -82,6 +82,8 @@ The `<rarity>` argument for the `sellall` command can be:
 
 <!-- ## Game Data & Resetting Progress -->
 
+Missed my today's commit, lmao
+
 <!-- Your game progress is stored in the `data/` directory:
 - `pokedex.json`: Contains all the Pokémon you have caught.
 - `player.json`: Stores your inventory and currency.
