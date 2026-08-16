@@ -83,7 +83,7 @@ CATCH_RATES = {
     "legendary": {"poke_ball": 0.05, "great_ball": 0.15, "ultra_ball": 0.25,   "master_ball": 0.61}
 }
 
-HUNT_COOLDOWN_SECONDS = 30
+HUNT_COOLDOWN_SECONDS = 0
 # --- HELPER FUNCTIONS ---
 
 #display wild pokemon
@@ -95,16 +95,23 @@ def display_sprite(pokemon_name):
         return
     
     try:
-        # 1. Open the image natively in Python
-        img = Image.open(sprite_path)
+        img = Image.open(sprite_path).convert("RGBA")
         
-        # 2. Resize to 300% (Keeping the retro pixel art sharp!)
-        new_size = (img.width * 3, img.height * 3)
-        img = img.resize(new_size, Image.NEAREST)
+        bbox = img.getchannel('A').getbbox()
+        if bbox:
+            img = img.crop(bbox)
         
-        # 3. term-image automatically detects Kitty/Sixel support for high-res!
-        term_img = AutoImage(img)
-        term_img.draw()
+        # -- SET YOUR PERCENTAGE HERE --
+        # 3.0 means 300%, 1.5 means 150%, 0.5 means 50%, etc.
+        scale_factor = 3.0
+        
+        # Convert the pixel width to terminal columns (divide by ~3 for aspect ratio)
+        calculated_width = int((img.width * scale_factor) / 3)
+        
+        # Use our calculated percentage width
+        term_img = AutoImage(img, width=calculated_width)
+        term_img.draw(h_align="<", pad_height=1)
+        
     except Exception as e:
         print(f"Error displaying image: {e}")
 
@@ -115,17 +122,24 @@ def display_sprite_pokedex(pokemon_name):
         return
     
     try:
-        img = Image.open(sprite_path)
+        img = Image.open(sprite_path).convert("RGBA")
         
-        # Resize to 125% for the Pokedex
-        new_size = (int(img.width * 1.25), int(img.height * 1.25))
-        img = img.resize(new_size, Image.NEAREST)
+        bbox = img.getchannel('A').getbbox()
+        if bbox:
+            img = img.crop(bbox)
         
-        term_img = AutoImage(img)
-        term_img.draw()
+        # 1.25 means 125%, matching your original Pokédex size
+        scale_factor = 1.25 
+        calculated_width = int((img.width * scale_factor) / 3)
+        
+        # We ensure width is at least 1, otherwise term-image might throw an error on tiny sprites
+        calculated_width = max(1, calculated_width)
+        
+        term_img = AutoImage(img, width=calculated_width)
+        term_img.draw(h_align="<", pad_height=1)
+        
     except Exception as e:
         print(f"Error displaying image: {e}")
-
 def load_data(filepath):
     if not os.path.exists(filepath):
         return []
