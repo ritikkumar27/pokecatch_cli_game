@@ -108,13 +108,10 @@ def display_sprite_pokedex(pokemon_name):
         print(f"Sprite for {pokemon_name} not found!")
         return
     
-    safe_sprite_path = shlex.quote(sprite_path)
-    command = (f"magick {safe_sprite_path} -filter Box -define filter:blur=0.8 -resize 125% -trim png:- | kitty +kitten  icat --stdin=yes --align left")
     try:
-        subprocess.run(command, shell=True, check=True)
-        
-    except FileNotFoundError:
-        print("This game requires the Kitty terminal to display images.")
+        # Smaller width for the Pokédex view
+        output = climage.convert(sprite_path, is_unicode=True, width=20)
+        print(output)
     except Exception as e:
         print(f"Error displaying image: {e}")
 
