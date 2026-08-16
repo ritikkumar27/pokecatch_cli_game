@@ -1,0 +1,10 @@
+{
+  "currency": 0,
+  "balls": {
+    "poke_ball": 50,
+    "great_ball": 0,
+    "ultra_ball": 0,
+    "master_ball": 0
+  },
+  "last_hunt_time": 1786908043.701859
+}

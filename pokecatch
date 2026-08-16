@@ -8,8 +8,8 @@ import shlex
 import time 
 import sys
 
-import climage
-
+from term_image.image import AutoImage
+from PIL import Image
 
 #directory where the script is located
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -95,10 +95,16 @@ def display_sprite(pokemon_name):
         return
     
     try:
-        # Convert the image to colored terminal blocks. 
-        # width=40 keeps it appropriately sized for most terminals.
-        output = climage.convert(sprite_path, is_unicode=True, width=40)
-        print(output)
+        # 1. Open the image natively in Python
+        img = Image.open(sprite_path)
+        
+        # 2. Resize to 300% (Keeping the retro pixel art sharp!)
+        new_size = (img.width * 3, img.height * 3)
+        img = img.resize(new_size, Image.NEAREST)
+        
+        # 3. term-image automatically detects Kitty/Sixel support for high-res!
+        term_img = AutoImage(img)
+        term_img.draw()
     except Exception as e:
         print(f"Error displaying image: {e}")
 
@@ -109,9 +115,14 @@ def display_sprite_pokedex(pokemon_name):
         return
     
     try:
-        # Smaller width for the Pokédex view
-        output = climage.convert(sprite_path, is_unicode=True, width=20)
-        print(output)
+        img = Image.open(sprite_path)
+        
+        # Resize to 125% for the Pokedex
+        new_size = (int(img.width * 1.25), int(img.height * 1.25))
+        img = img.resize(new_size, Image.NEAREST)
+        
+        term_img = AutoImage(img)
+        term_img.draw()
     except Exception as e:
         print(f"Error displaying image: {e}")
 
