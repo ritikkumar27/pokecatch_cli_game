@@ -8,6 +8,8 @@ import shlex
 import time 
 import sys
 
+import climage
+
 
 #directory where the script is located
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -92,14 +94,11 @@ def display_sprite(pokemon_name):
         print(f"Sprite for {pokemon_name} not found!")
         return
     
-    safe_sprite_path = shlex.quote(sprite_path)
-    command = (f"magick {safe_sprite_path} -filter Box -define filter:blur=0.8 -resize 300% -trim png:- | kitty +kitten  icat --stdin=yes --align left")
     try:
-        #shell = True to interepret the pipe
-        subprocess.run(command, shell=True, check=True)
-        
-    except FileNotFoundError:
-        print("This game requires the Kitty terminal to display images.")
+        # Convert the image to colored terminal blocks. 
+        # width=40 keeps it appropriately sized for most terminals.
+        output = climage.convert(sprite_path, is_unicode=True, width=40)
+        print(output)
     except Exception as e:
         print(f"Error displaying image: {e}")
 
