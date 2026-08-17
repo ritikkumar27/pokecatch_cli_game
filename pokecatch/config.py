@@ -17,69 +17,62 @@ USER_SAVE_DIR.mkdir(exist_ok=True)  # Automatically creates ~/.pokecatch if it d
 PLAYER_DEX = USER_SAVE_DIR / 'pokedex.json'
 PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
 
-
-
-# --- File Paths ---
-# ROOT_DIR points to the directory containing the 'data' and 'sprites' folders.
-# Since config.py is inside the 'pokecatch' folder, the root is one level up (.parent)
-# ROOT_DIR = Path(__file__).parent.parent
-# DATA_DIR = ROOT_DIR / "data"
-# SPRITES_DIR = ROOT_DIR / "sprites"
-# DATA_FILE = DATA_DIR / 'pokemon_data.json'
-# PLAYER_DEX = DATA_DIR / 'pokedex.json'
-# WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
-# PLAYER_DATA_FILE = DATA_DIR / 'player.json'
-
-
 # --- Game Constants ---
 HUNT_COOLDOWN_SECONDS = 0
 RARITY_SELL_PRICES = {
-    "common": 50,
-    "uncommon": 100,
-    "rare": 500,
-    "ultrarare": 800,
-    "epic": 1500,
-    "legendary": 5000
+    "Common": 50,
+    "Uncommon": 100,
+    "Rare": 500,
+    "UltraRare": 800,
+    "Epic": 1500,
+    "Legendary": 5000,
+    "Mythical": 10000
 }
-RARITY_MODIFIERS = {
-    "common": 1.0,
-    "uncommon": 0.8,
-    "rare": 0.6,
-    "ultrarare": 0.4,
-    "epic": 0.25,
-    "legendary": 0.1
-}
+
 RARITY_SPAWN_WEIGHTS = {
-    "common": 60,
-    "uncommon": 25,
-    "rare": 13,
-    "ultrarare": 7,
-    "epic": 3,
-    "legendary": 0.7
+    "Common": 40,
+    "Uncommon": 30,
+    "Rare": 15,
+    "UltraRare": 10,
+    "Epic": 3,
+    "Legendary": 1.5,
+    "Mythical": 0.5
 }
+
 BALL_PRICES = {
-    "poke_ball" : 20,
-    "great_ball": 200,
-    "ultra_ball": 800,
+    "poke_ball" : 200,
+    "great_ball": 600,
+    "ultra_ball": 1200,
+    "net_ball": 1000,
+    "dive_ball": 1000,
+    "fast_ball": 1000,
+    "dusk_ball": 1000,
+    "nest_ball": 1000,
+    "repeat_ball": 1000,
+    "quick_ball": 1500,
     "master_ball": 100000
 }
-BALL_MODIFIERS = {
-    "poke_ball": 1.0,
-    "great_ball": 1.5,
-    "ultra_ball": 2.0,
-    "master_ball": 100.0
-}
+
 BALL_ALIASES = {
     "pb": "poke_ball",
     "gb": "great_ball",
     "ub": "ultra_ball",
+    "net": "net_ball",
+    "dive": "dive_ball",
+    "fast": "fast_ball",
+    "dusk": "dusk_ball",
+    "nest": "nest_ball",
+    "repeat": "repeat_ball",
+    "quick": "quick_ball",
     "mb": "master_ball"
 }
-CATCH_RATES = {
-    "common":    {"poke_ball": 0.50, "great_ball": 0.90, "ultra_ball": 1.00, "master_ball": 1.0},
-    "uncommon":  {"poke_ball": 0.40, "great_ball": 0.75, "ultra_ball": 1.00, "master_ball": 1.0},
-    "rare":      {"poke_ball": 0.30, "great_ball": 0.60, "ultra_ball": 0.80, "master_ball": 1.0},
-    "ultrarare": {"poke_ball": 0.20, "great_ball": 0.30, "ultra_ball": 0.75, "master_ball": 1.0},
-    "epic":      {"poke_ball": 0.15, "great_ball": 0.20, "ultra_ball": 0.51, "master_ball": 1.0},
-    "legendary": {"poke_ball": 0.05, "great_ball": 0.15, "ultra_ball": 0.25, "master_ball": 0.61}
+
+BASE_CATCH_RATES = {
+    "Common": 0.50,
+    "Uncommon": 0.40,
+    "Rare": 0.30,
+    "UltraRare": 0.20,
+    "Epic": 0.10,
+    "Legendary": 0.05,
+    "Mythical": 0.02
 }
