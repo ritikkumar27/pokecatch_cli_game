@@ -33,7 +33,7 @@ def main():
     
    
     # inventory
-    inventory_parser = subparsers.add_parser("inventory", help="Check your items and currency.")
+    inventory_parser = subparsers.add_parser("inventory", aliases=["inv"], help="Check your items and currency.")
     
     # stats
     stats_parser = subparsers.add_parser("stats", aliases=["s"], help="View your detailed player stats.")

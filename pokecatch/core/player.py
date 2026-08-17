@@ -223,91 +223,132 @@ def pokedex(args):
 
 
 def stats():
+    # --- ANSI COLOR CODES ---
+    class C:
+        HEADING = '\033[1;37m'  # Bold White
+        YELLOW  = '\033[93m'    # Bright Yellow
+        GREEN   = '\033[92m'    # Bright Green
+        RED     = '\033[91m'    # Bright Red
+        CYAN    = '\033[96m'    # Bright Cyan
+        PURPLE  = '\033[95m'    # Bright Purple
+        GRAY    = '\033[90m'    # Dark Gray
+        RESET   = '\033[0m'     # Reset all formatting
     player_data = load_player_data()
     player_dex = load_data(PLAYER_DEX)
     s = player_data.get("stats", {})
+    import getpass
+    username = getpass.getuser().upper()
     # TRAINER
     xp = player_data.get("xp", 0)
     level = get_player_level(xp)
     next_level_xp = int(100 * (level ** 1.5))
+    prev_level_xp = int(100 * ((level-1) ** 1.5)) if level > 1 else 0
+    
+    xp_in_level = xp - prev_level_xp
+    xp_needed_for_level = next_level_xp - prev_level_xp
     currency = player_data.get("currency", 0)
+    xp_pct = (xp_in_level / xp_needed_for_level * 100) if xp_needed_for_level > 0 else 0
     # COLLECTION & GENERATIONS & RARITY
     species_data = {}
     total_pokemon = len(player_dex)
-    rarity_counts = {"common": {"species": 0, "owned": 0}, "uncommon": {"species": 0, "owned": 0}, 
-                     "rare": {"species": 0, "owned": 0}, "ultrarare": {"species": 0, "owned": 0}, 
-                     "epic": {"species": 0, "owned": 0}, "legendary": {"species": 0, "owned": 0}, 
-                     "mythical": {"species": 0, "owned": 0}}
+    rarity_counts = {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0}
     gen_counts = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0}
     for p in player_dex:
         pid = p['id']
         rarity = p.get('rarity', 'common').lower()
-        if rarity not in rarity_counts:
-            rarity_counts[rarity] = {"species": 0, "owned": 0}
-            
-        rarity_counts[rarity]["owned"] += 1
+        if rarity in rarity_counts:
+            rarity_counts[rarity] += 1
         
         if pid not in species_data:
             species_data[pid] = p
             gen = get_generation(pid)
             if gen in gen_counts:
                 gen_counts[gen] += 1
-            rarity_counts[rarity]["species"] += 1
     unique_pokemon = len(species_data)
-    print(f"╭{'─'*62}╮")
-    print(f"│{'PLAYER STATS':^62}│")
-    print(f"╰{'─'*62}╯\n")
-    print("TRAINER")
-    print("─"*63)
-    print(f"Level                  {level}")
-    print(f"XP                     {xp:,} / {next_level_xp:,}")
-    print(f"Total XP               {xp:,}")
-    print(f"Poké Dollars           ₽ {currency:,}\n")
-    print("COLLECTION")
-    print("─"*63)
-    print(f"Unique Pokémon         {unique_pokemon}")
-    print(f"Total Pokémon          {total_pokemon}")
-    print(f"Collection Progress    {unique_pokemon} / 1025\n")
-    print("GENERATIONS")
-    print("─"*63)
-    for i in range(1, 10):
-        if gen_counts[i] > 0:
-            print(f"Generation {i:<11} {gen_counts[i]}")
-    print()
-    print("RARITY")
-    print("─"*63)
-    print(f"                 {'Species':<10} {'Owned'}")
-    rarity_display = [("Common", "common"), ("Uncommon", "uncommon"), ("Rare", "rare"), 
-                      ("Ultra Rare", "ultrarare"), ("Epic", "epic"), ("Legendary", "legendary"), ("Mythical", "mythical")]
-    for label, key in rarity_display:
-        if rarity_counts.get(key, {}).get("owned", 0) > 0:
-            sp = rarity_counts[key]["species"]
-            ow = rarity_counts[key]["owned"]
-            print(f"{label:<16} {sp:<10} {ow}")
-    print()
-    print("ACTIVITY")
-    print("─"*63)
+    total_species_in_game = 1025
+    col_prog_pct = (unique_pokemon / total_species_in_game) * 100
+    # HUNTING
     total_hunts = s.get("total_hunts", 0)
     success = s.get("successful_catches", 0)
     failed = s.get("failed_catches", 0)
     catch_rate = (success / total_hunts * 100) if total_hunts > 0 else 0.0
-    print(f"Total Hunts             {total_hunts}")
-    print(f"Successful Catches      {success}")
-    print(f"Failed Catches          {failed}")
-    print(f"Catch Rate              {catch_rate:.1f}%\n")
-    print(f"First-Time Catches      {s.get('first_time_catches', 0)}")
-    print(f"Duplicate Catches       {success - s.get('first_time_catches', 0)}\n")
-    print("PROGRESSION")
-    print("─"*63)
-    print(f"XP from Hunting         {s.get('xp_from_hunting', 0):,}")
-    print(f"XP from Catching        {s.get('xp_from_catching', 0):,}\n")
-    print("POKÉ BALLS")
-    print("─"*63)
+    # BALLS
     balls = player_data.get("balls", {})
-    total_balls = 0
-    for ball, count in balls.items():
-        if count > 0:
-            total_balls += count
-            print(f"{ball.replace('_', ' ').title():<22} {count}")
-    print("─"*63)
-    print(f"Total Balls            {total_balls}")
+    ball_icons = {"poke_ball": "●", "great_ball": "◐", "ultra_ball": "◉", "master_ball": "✦"}
+    rarity_icons = {"common": "●", "uncommon": "◆", "rare": "★", "epic": "◆", "legendary": "✦"}
+    
+    # Helper to colorize rarity strings based on tier
+    def color_rarity(tier):
+        if tier in ["legendary", "mythical", "epic"]: return C.PURPLE
+        if tier in ["rare", "ultrarare"]: return C.CYAN
+        if tier == "uncommon": return C.GREEN
+        return C.GRAY
+    
+    # ------------------ PRINTING DASHBOARD ------------------
+    print(f"\n{C.HEADING}╭{'─'*56}╮{C.RESET}")
+    print(f"{C.HEADING}│{'◈ TRAINER PROFILE ◈':^56}│{C.RESET}")
+    print(f"{C.HEADING}╰{'─'*56}╯{C.RESET}\n")
+    print(f"  {C.HEADING}{username}{C.RESET}  ·  {C.YELLOW}₽ {currency:,}{C.RESET}")
+    print(f"  Level {C.HEADING}{level}{C.RESET}  ·  {C.YELLOW}{xp_pct:.0f}%{C.RESET}  ({C.GRAY}{xp:,} / {next_level_xp:,} XP{C.RESET})\n")
+    print(f"  {C.HEADING}◈ COLLECTION{C.RESET}")
+    print(f"    Total Caught: {C.CYAN}{total_pokemon:<12}{C.RESET} Unique Species: {C.CYAN}{unique_pokemon}{C.RESET}")
+    print(f"    Pokédex:      {C.CYAN}{col_prog_pct:.1f}%{C.RESET} {C.GRAY}({unique_pokemon} / 1025){C.RESET}\n")
+    print(f"  {C.HEADING}◈ HUNTING & ACTIVITY{C.RESET}")
+    print(f"    Total Hunts:  {C.HEADING}{total_hunts:<12}{C.RESET} Catch Rate:     {C.HEADING}{catch_rate:.1f}%{C.RESET}")
+    print(f"    Successful:   {C.GREEN}{success:<12}{C.RESET} Failed:         {C.RED}{failed}{C.RESET}")
+    print(f"    First Catch:  {C.CYAN}{s.get('first_time_catches', 0):<12}{C.RESET} Duplicates:     {C.GRAY}{success - s.get('first_time_catches', 0)}{C.RESET}\n")
+    print(f"  {C.HEADING}◈ BALL BAG{C.RESET}")
+    if not any(balls.values()):
+        print(f"    {C.GRAY}(Empty){C.RESET}\n")
+    else:
+        for b in ["poke_ball", "great_ball", "ultra_ball", "master_ball"]:
+            if balls.get(b, 0) > 0:
+                name = b.replace('_', ' ').title()
+                icon = ball_icons.get(b, "●")
+                print(f"    {icon} {name:<14} × {C.HEADING}{balls[b]}{C.RESET}")
+        print()
+    print(f"  {C.HEADING}◈ RARITY BREAKDOWN{C.RESET}")
+    r_keys = ["common", "uncommon", "rare", "epic", "legendary"]
+    half = (len(r_keys) + 1) // 2
+    for i in range(half):
+        k1 = r_keys[i]
+        c1 = color_rarity(k1)
+        str1 = f"{c1}{rarity_icons.get(k1, '●')} {k1.capitalize()}: {rarity_counts.get(k1, 0)}{C.RESET}"
+        
+        if i + half < len(r_keys):
+            k2 = r_keys[i + half]
+            c2 = color_rarity(k2)
+            str2 = f"{c2}{rarity_icons.get(k2, '●')} {k2.capitalize()}: {rarity_counts.get(k2, 0)}{C.RESET}"
+        else:
+            str2 = ""
+            
+        # We have to account for hidden ANSI characters when formatting columns, 
+        # so we just add a manual spacer instead of using standard ljust
+        spacer = " " * (25 - len(f"● {k1.capitalize()}: {rarity_counts.get(k1, 0)}"))
+        print(f"    {str1}{spacer}{str2}")
+    print()
+    print(f"  {C.HEADING}◈ GENERATION DISCOVERY{C.RESET}")
+    roman_gens = {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX'}
+    gen_keys = [k for k, v in gen_counts.items() if v > 0]
+    if not gen_keys:
+        print(f"    {C.GRAY}No Pokémon caught yet.{C.RESET}\n")
+    else:
+        for g in gen_keys:
+            print(f"    Gen {roman_gens[g]:<4} {C.CYAN}{gen_counts[g]}{C.RESET}")
+        print()
+    print(f"  {C.HEADING}◈ RECENT ACHIEVEMENTS{C.RESET}")
+    achievements = []
+    if unique_pokemon >= 10: achievements.append(f"{C.YELLOW}✦ 10 Pokémon Collected{C.RESET}")
+    elif unique_pokemon > 0: achievements.append(f"{C.YELLOW}✦ Caught your first Pokémon{C.RESET}")
+    
+    if rarity_counts.get("rare", 0) > 0: achievements.append(f"{C.PURPLE}✦ Caught your first Rare Pokémon{C.RESET}")
+    if rarity_counts.get("legendary", 0) > 0: achievements.append(f"{C.PURPLE}✦ Caught a Legendary Pokémon!{C.RESET}")
+    if gen_counts.get(9, 0) > 0: achievements.append(f"{C.CYAN}✦ Discovered Generation IX{C.RESET}")
+    if level > 1: achievements.append(f"{C.GREEN}✦ Reached Trainer Level {level}{C.RESET}")
+    
+    if not achievements:
+        print(f"    {C.GRAY}(Start catching Pokémon to earn achievements!){C.RESET}")
+    else:
+        for a in achievements[:3]:
+            print(f"    {a}")
+    print()
