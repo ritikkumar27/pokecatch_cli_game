@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokecatch_cli_game"
+version = "1.0.0"
+description = "A terminal-based Pokemon catching game"
+readme = "Readme.md"
+requires-python = ">=3.8"
+dependencies = [
+    "term-image",
+    "Pillow"
+]
+
+[project.scripts]
+# This tells Python to magically create the 'pokecatch' command on the user's system!
+pokecatch = "pokecatch.__main__:main"
