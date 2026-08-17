@@ -1,6 +1,19 @@
 from pokecatch.config import PLAYER_DATA_FILE, PLAYER_DEX
 from pokecatch.utils import load_data, save_data, display_sprite_pokedex
 
+
+def get_generation(pokemon_id):
+    if pokemon_id <= 151: return 1
+    elif pokemon_id <= 251: return 2
+    elif pokemon_id <= 386: return 3
+    elif pokemon_id <= 493: return 4
+    elif pokemon_id <= 649: return 5
+    elif pokemon_id <= 721: return 6
+    elif pokemon_id <= 809: return 7
+    elif pokemon_id <= 905: return 8
+    else: return 9
+
+
 def load_player_data():
     if not PLAYER_DATA_FILE.exists():
         player_data = {
@@ -208,3 +221,93 @@ def pokedex(args):
     if page < total_pages:
         print(f"\nUse 'pokecatch pokedex --page {page + 1}' to see more.")
 
+
+def stats():
+    player_data = load_player_data()
+    player_dex = load_data(PLAYER_DEX)
+    s = player_data.get("stats", {})
+    # TRAINER
+    xp = player_data.get("xp", 0)
+    level = get_player_level(xp)
+    next_level_xp = int(100 * (level ** 1.5))
+    currency = player_data.get("currency", 0)
+    # COLLECTION & GENERATIONS & RARITY
+    species_data = {}
+    total_pokemon = len(player_dex)
+    rarity_counts = {"common": {"species": 0, "owned": 0}, "uncommon": {"species": 0, "owned": 0}, 
+                     "rare": {"species": 0, "owned": 0}, "ultrarare": {"species": 0, "owned": 0}, 
+                     "epic": {"species": 0, "owned": 0}, "legendary": {"species": 0, "owned": 0}, 
+                     "mythical": {"species": 0, "owned": 0}}
+    gen_counts = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0}
+    for p in player_dex:
+        pid = p['id']
+        rarity = p.get('rarity', 'common').lower()
+        if rarity not in rarity_counts:
+            rarity_counts[rarity] = {"species": 0, "owned": 0}
+            
+        rarity_counts[rarity]["owned"] += 1
+        
+        if pid not in species_data:
+            species_data[pid] = p
+            gen = get_generation(pid)
+            if gen in gen_counts:
+                gen_counts[gen] += 1
+            rarity_counts[rarity]["species"] += 1
+    unique_pokemon = len(species_data)
+    print(f"╭{'─'*62}╮")
+    print(f"│{'PLAYER STATS':^62}│")
+    print(f"╰{'─'*62}╯\n")
+    print("TRAINER")
+    print("─"*63)
+    print(f"Level                  {level}")
+    print(f"XP                     {xp:,} / {next_level_xp:,}")
+    print(f"Total XP               {xp:,}")
+    print(f"Poké Dollars           ₽ {currency:,}\n")
+    print("COLLECTION")
+    print("─"*63)
+    print(f"Unique Pokémon         {unique_pokemon}")
+    print(f"Total Pokémon          {total_pokemon}")
+    print(f"Collection Progress    {unique_pokemon} / 1025\n")
+    print("GENERATIONS")
+    print("─"*63)
+    for i in range(1, 10):
+        if gen_counts[i] > 0:
+            print(f"Generation {i:<11} {gen_counts[i]}")
+    print()
+    print("RARITY")
+    print("─"*63)
+    print(f"                 {'Species':<10} {'Owned'}")
+    rarity_display = [("Common", "common"), ("Uncommon", "uncommon"), ("Rare", "rare"), 
+                      ("Ultra Rare", "ultrarare"), ("Epic", "epic"), ("Legendary", "legendary"), ("Mythical", "mythical")]
+    for label, key in rarity_display:
+        if rarity_counts.get(key, {}).get("owned", 0) > 0:
+            sp = rarity_counts[key]["species"]
+            ow = rarity_counts[key]["owned"]
+            print(f"{label:<16} {sp:<10} {ow}")
+    print()
+    print("ACTIVITY")
+    print("─"*63)
+    total_hunts = s.get("total_hunts", 0)
+    success = s.get("successful_catches", 0)
+    failed = s.get("failed_catches", 0)
+    catch_rate = (success / total_hunts * 100) if total_hunts > 0 else 0.0
+    print(f"Total Hunts             {total_hunts}")
+    print(f"Successful Catches      {success}")
+    print(f"Failed Catches          {failed}")
+    print(f"Catch Rate              {catch_rate:.1f}%\n")
+    print(f"First-Time Catches      {s.get('first_time_catches', 0)}")
+    print(f"Duplicate Catches       {success - s.get('first_time_catches', 0)}\n")
+    print("PROGRESSION")
+    print("─"*63)
+    print(f"XP from Hunting         {s.get('xp_from_hunting', 0):,}")
+    print(f"XP from Catching        {s.get('xp_from_catching', 0):,}\n")
+    print("POKÉ BALLS")
+    print("─"*63)
+    balls = player_data.get("balls", {})
+    total_balls = 0
+    for ball, count in balls.items():
+        if count > 0:
+            total_balls += count
+            print(f"{ball.replace('_', ' ').title():<22} {count}")
+    print("─"*63)
+    print(f"Total Balls            {total_balls}")

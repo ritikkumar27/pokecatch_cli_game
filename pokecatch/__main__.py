@@ -6,7 +6,7 @@ from pokecatch.config import BALL_ALIASES, STORE_ITEMS, RARITY_SELL_PRICES
 
 # Importing game logic from the core modules!
 from pokecatch.core.hunting import hunt, catch
-from pokecatch.core.player import inventory, pokedex
+from pokecatch.core.player import inventory, pokedex, stats
 from pokecatch.core.store import buy_item, sell_pokemon, sell_all_by_rarity, display_store
 
 def main():
@@ -35,6 +35,9 @@ def main():
     # inventory
     inventory_parser = subparsers.add_parser("inventory", help="Check your items and currency.")
     
+    # stats
+    stats_parser = subparsers.add_parser("stats", aliases=["s"], help="View your detailed player stats.")
+
     # store command
     store_parser = subparsers.add_parser("store", help="Visit the Poké Mart to buy and sell.")
     store_subparsers = store_parser.add_subparsers(dest="action", help="Store actions")
@@ -56,8 +59,10 @@ def main():
         catch(ball_to_use)
     elif args.command in ("my_pokemon", "dex"):
         pokedex(args)
-    elif args.command == "inventory":
+    elif args.command in ("inventory", "inv"):
         inventory()
+    elif args.command in ("stats", "s"):
+        stats()
     elif args.command == "store":
         if args.action == "buy":
             buy_item(args.item, args.amount)

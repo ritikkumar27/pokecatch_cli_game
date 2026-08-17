@@ -11,6 +11,19 @@ from pokecatch.config import (
 from pokecatch.utils import load_data, save_data, display_sprite
 from pokecatch.core.player import load_player_data, save_player_data, get_player_level, add_xp
 
+
+def get_generation(pokemon_id):
+    if pokemon_id <= 151: return 1
+    elif pokemon_id <= 251: return 2
+    elif pokemon_id <= 386: return 3
+    elif pokemon_id <= 493: return 4
+    elif pokemon_id <= 649: return 5
+    elif pokemon_id <= 721: return 6
+    elif pokemon_id <= 809: return 7
+    elif pokemon_id <= 905: return 8
+    else: return 9
+
+    
 def hunt():
     player_data = load_player_data()
     current_time = time.time()
