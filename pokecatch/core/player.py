@@ -12,16 +12,33 @@ def load_player_data():
                 "ultra_ball": 0,
                 "master_ball": 0
             },
-            "last_hunt_time": 0 
+            "last_hunt_time": 0,
+            "stats": {
+                "total_hunts": 0,
+                "successful_catches": 0,
+                "failed_catches": 0,
+                "first_time_catches": 0,
+                "xp_from_hunting": 0,
+                "xp_from_catching": 0
+            }
         }
         save_data(PLAYER_DATA_FILE, player_data)
         return player_data
         
     data = load_data(PLAYER_DATA_FILE)
-    # Ensure existing players get an xp field without losing their save
     if "xp" not in data:
         data["xp"] = 0
-        save_data(PLAYER_DATA_FILE, data)
+    # Ensure existing players get a stats field without losing their save
+    if "stats" not in data:
+        data["stats"] = {
+            "total_hunts": 0,
+            "successful_catches": 0,
+            "failed_catches": 0,
+            "first_time_catches": 0,
+            "xp_from_hunting": 0,
+            "xp_from_catching": 0
+        }
+    save_data(PLAYER_DATA_FILE, data)
     return data
 
 def save_player_data(player_data):
