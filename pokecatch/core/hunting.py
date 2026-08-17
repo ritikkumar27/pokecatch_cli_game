@@ -47,6 +47,16 @@ def hunt():
     print(f"A wild {wild_pokemon['name'].capitalize()} appeared!")
     print(f"Rarity: {wild_pokemon['rarity'].capitalize()}")
     display_sprite(wild_pokemon['id'])
+
+    # Extract and format stats for the UI
+    types_str = "/".join([t.capitalize() for t in wild_pokemon.get('types', [])])
+    abilities_str = ", ".join([a.replace('-', ' ').title() for a in wild_pokemon.get('abilities', [])])
+    hp = wild_pokemon.get('stats', {}).get('HP', '?')
+    total_stats = wild_pokemon.get('stats', {}).get('Total', '?')
+
+    print(f"⚔️  Type: {types_str}  |  🧬 Ability: {abilities_str}")
+    print(f"❤️  HP: {hp}  |  📊 Total Stats: {total_stats}")    
+
     
     player_data["last_hunt_time"] = time.time()
     save_player_data(player_data)
