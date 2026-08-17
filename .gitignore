@@ -24,3 +24,7 @@ data/wild_pokemon.json
 .idea/
 *.swp
 .DS_Store
+
+
+player.json
+wild_pokemon.json
