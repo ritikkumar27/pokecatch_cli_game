@@ -14,12 +14,8 @@ dependencies = [
 ]
 
 [project.scripts]
-# This tells Python to magically create the 'pokecatch' command on the user's system!
+
 pokecatch = "pokecatch.__main__:main"
 
-# only pokecatch folder contains the python code
-
-[
-tool.setuptools.packages.find
-]
+[tool.setuptools.packages.find]
 include = ["pokecatch*"]
