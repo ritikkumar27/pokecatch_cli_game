@@ -2,15 +2,33 @@ import os
 from pathlib import Path
 
 # --- File Paths ---
+PKG_DIR = Path(__file__).parent
+
+# Static assets (these are now bundled inside the game package)
+DATA_DIR = PKG_DIR / "data"
+SPRITES_DIR = PKG_DIR / "sprites"
+DATA_FILE = DATA_DIR / 'pokemon_data.json'
+WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
+
+
+# User save data (Save to the user's home directory so progress isn't lost on updates!)
+USER_SAVE_DIR = Path.home() / ".pokecatch"
+USER_SAVE_DIR.mkdir(exist_ok=True)  # Automatically creates ~/.pokecatch if it doesn't exist
+PLAYER_DEX = USER_SAVE_DIR / 'pokedex.json'
+PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
+
+
+
+# --- File Paths ---
 # ROOT_DIR points to the directory containing the 'data' and 'sprites' folders.
 # Since config.py is inside the 'pokecatch' folder, the root is one level up (.parent)
-ROOT_DIR = Path(__file__).parent.parent
-DATA_DIR = ROOT_DIR / "data"
-SPRITES_DIR = ROOT_DIR / "sprites"
-DATA_FILE = DATA_DIR / 'pokemon_data.json'
-PLAYER_DEX = DATA_DIR / 'pokedex.json'
-WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
-PLAYER_DATA_FILE = DATA_DIR / 'player.json'
+# ROOT_DIR = Path(__file__).parent.parent
+# DATA_DIR = ROOT_DIR / "data"
+# SPRITES_DIR = ROOT_DIR / "sprites"
+# DATA_FILE = DATA_DIR / 'pokemon_data.json'
+# PLAYER_DEX = DATA_DIR / 'pokedex.json'
+# WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
+# PLAYER_DATA_FILE = DATA_DIR / 'player.json'
 
 
 # --- Game Constants ---
