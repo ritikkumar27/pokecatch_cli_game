@@ -19,23 +19,26 @@ PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
 
 # --- Game Constants ---
 HUNT_COOLDOWN_SECONDS = 0
+
+
+
 RARITY_SELL_PRICES = {
-    "Common": 50,
-    "Uncommon": 100,
-    "Rare": 500,
-    "UltraRare": 800,
-    "Epic": 1500,
-    "Legendary": 5000,
-    "Mythical": 10000
+    "Common": 30,
+    "Uncommon": 75,
+    "Rare": 300,
+    "UltraRare": 500,
+    "Epic": 1000,
+    "Legendary": 3500,
+    "Mythical": 7500
 }
 
 RARITY_SPAWN_WEIGHTS = {
-    "Common": 40,
-    "Uncommon": 30,
-    "Rare": 15,
-    "UltraRare": 10,
-    "Epic": 3,
-    "Legendary": 1.5,
+    "Common": 50.0,
+    "Uncommon": 28.0,
+    "Rare": 12.0,
+    "UltraRare": 6.0,
+    "Epic": 2.5,
+    "Legendary": 1.0,
     "Mythical": 0.5
 }
 
@@ -54,17 +57,10 @@ BALL_PRICES = {
 }
 
 BALL_ALIASES = {
-    "pb": "poke_ball",
-    "gb": "great_ball",
-    "ub": "ultra_ball",
-    "net": "net_ball",
-    "dive": "dive_ball",
-    "fast": "fast_ball",
-    "dusk": "dusk_ball",
-    "nest": "nest_ball",
-    "repeat": "repeat_ball",
-    "quick": "quick_ball",
-    "mb": "master_ball"
+    "pb": "poke_ball", "gb": "great_ball", "ub": "ultra_ball", 
+    "net": "net_ball", "dive": "dive_ball", "fast": "fast_ball", 
+    "dusk": "dusk_ball", "nest": "nest_ball", "repeat": "repeat_ball", 
+    "quick": "quick_ball", "mb": "master_ball"
 }
 
 BASE_CATCH_RATES = {
@@ -75,4 +71,32 @@ BASE_CATCH_RATES = {
     "Epic": 0.10,
     "Legendary": 0.05,
     "Mythical": 0.02
+}
+
+# XP granted for activities
+XP_REWARDS = {
+    "hunt": 5,
+    "catch_Common": 10,
+    "catch_Uncommon": 20,
+    "catch_Rare": 50,
+    "catch_UltraRare": 100,
+    "catch_Epic": 200,
+    "catch_Legendary": 500,
+    "catch_Mythical": 1000,
+}
+
+
+# The new Dynamic Store System!
+STORE_ITEMS = {
+    "poke_ball":   {"price": 200,   "category": "balls", "unlock_level": 1,  "daily_stock": 50},
+    "great_ball":  {"price": 600,   "category": "balls", "unlock_level": 3,  "daily_stock": 30},
+    "ultra_ball":  {"price": 1200,  "category": "balls", "unlock_level": 8,  "daily_stock": 20},
+    "net_ball":    {"price": 1000,  "category": "balls", "unlock_level": 5,  "daily_stock": 15},
+    "dive_ball":   {"price": 1000,  "category": "balls", "unlock_level": 5,  "daily_stock": 15},
+    "fast_ball":   {"price": 1000,  "category": "balls", "unlock_level": 5,  "daily_stock": 15},
+    "dusk_ball":   {"price": 1000,  "category": "balls", "unlock_level": 5,  "daily_stock": 15},
+    "nest_ball":   {"price": 1000,  "category": "balls", "unlock_level": 10, "daily_stock": 15},
+    "repeat_ball": {"price": 1000,  "category": "balls", "unlock_level": 10, "daily_stock": 15},
+    "quick_ball":  {"price": 1500,  "category": "balls", "unlock_level": 15, "daily_stock": 10},
+    "master_ball": {"price": 100000,"category": "special", "unlock_level": 25, "daily_stock": 1}
 }

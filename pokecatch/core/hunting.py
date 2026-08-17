@@ -5,7 +5,7 @@ import random
 
 from pokecatch.config import (
     HUNT_COOLDOWN_SECONDS, DATA_FILE, WILD_POKEMON_STATE, PLAYER_DEX,
-    RARITY_SPAWN_WEIGHTS, CATCH_RATES
+    RARITY_SPAWN_WEIGHTS, BASE_CATCH_RATES
 )
 
 from pokecatch.utils import load_data, save_data, display_sprite
@@ -67,7 +67,50 @@ def catch(ball_type):
         print()
     endless_dots(5, 0.5)
     
-    catch_chance = CATCH_RATES.get(rarity, {}).get(ball_type, 0.0)
+    # catch_chance = BASE_CATCH_RATES.get(rarity, {}).get(ball_type, 0.0)
+
+    # --- DYNAMIC CATCH LOGIC ---
+    base_chance = BASE_CATCH_RATES.get(rarity, 0.1)
+    multiplier = 1.0
+    
+    # Extract Pokémon stats/types to evaluate conditional balls
+    types = [t.lower() for t in wild_pokemon.get('types', [])]
+    speed = wild_pokemon.get('stats', {}).get('Spe', 50)
+    # Ball Modifiers
+    if ball_type == "master_ball":
+        multiplier = 255.0  # Guaranteed catch
+    elif ball_type == "ultra_ball":
+        multiplier = 2.0
+    elif ball_type == "great_ball":
+        multiplier = 1.5
+    elif ball_type == "net_ball":
+        if "water" in types or "bug" in types:
+            multiplier = 3.0
+    elif ball_type == "dive_ball":
+        if "water" in types:
+            multiplier = 3.5
+    elif ball_type == "fast_ball":
+        if speed > 100:
+            multiplier = 3.0
+    elif ball_type == "dusk_ball":
+        current_hour = time.localtime().tm_hour
+        # Night time between 18:00 (6 PM) and 06:00 (6 AM)
+        if current_hour >= 18 or current_hour < 6:
+            multiplier = 3.5
+    elif ball_type == "nest_ball":
+        if rarity in ["Common", "Uncommon"]:
+            multiplier = 3.0
+    elif ball_type == "repeat_ball":
+        # Check if already caught
+        player_dex = load_data(PLAYER_DEX)
+        if any(p['name'] == pokemon_name for p in player_dex):
+            multiplier = 3.0
+    elif ball_type == "quick_ball":
+        # Since CLI combat is one-turn, Quick Ball is effectively always a 4.0x!
+        multiplier = 4.0
+    
+    catch_chance = base_chance * multiplier
+    # ---------------------------
     
     if random.random() < catch_chance:
         print(f"Gotcha! {pokemon_name.capitalize()} was caught!")
