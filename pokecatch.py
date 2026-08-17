@@ -14,68 +14,6 @@ from PIL import Image
 # --- HELPER FUNCTIONS ---
 
 #display wild pokemon
-def display_sprite(pokemon_name):
-    
-    sprite_path = os.path.join(SPRITES_DIR, f"{pokemon_name}.png")
-    if not os.path.exists(sprite_path):
-        print(f"Sprite for {pokemon_name} not found!")
-        return
-    
-    try:
-        img = Image.open(sprite_path).convert("RGBA")
-        
-        bbox = img.getchannel('A').getbbox()
-        if bbox:
-            img = img.crop(bbox)
-        
-        # -- SET YOUR PERCENTAGE HERE --
-        # 3.0 means 300%, 1.5 means 150%, 0.5 means 50%, etc.
-        scale_factor = 3.0
-        
-        # Convert the pixel width to terminal columns (divide by ~3 for aspect ratio)
-        calculated_width = int((img.width * scale_factor) / 3)
-        
-        # Use our calculated percentage width
-        term_img = AutoImage(img, width=calculated_width)
-        term_img.draw(h_align="<", pad_height=1)
-        
-    except Exception as e:
-        print(f"Error displaying image: {e}")
-
-def display_sprite_pokedex(pokemon_name):
-    sprite_path = os.path.join(SPRITES_DIR, f"{pokemon_name}.png")
-    if not os.path.exists(sprite_path):
-        print(f"Sprite for {pokemon_name} not found!")
-        return
-    
-    try:
-        img = Image.open(sprite_path).convert("RGBA")
-        
-        bbox = img.getchannel('A').getbbox()
-        if bbox:
-            img = img.crop(bbox)
-        
-        # 1.25 means 125%, matching your original Pokédex size
-        scale_factor = 1.25 
-        calculated_width = int((img.width * scale_factor) / 3)
-        
-        # We ensure width is at least 1, otherwise term-image might throw an error on tiny sprites
-        calculated_width = max(1, calculated_width)
-        
-        term_img = AutoImage(img, width=calculated_width)
-        term_img.draw(h_align="<", pad_height=1)
-        
-    except Exception as e:
-        print(f"Error displaying image: {e}")
-def load_data(filepath):
-    if not os.path.exists(filepath):
-        return []
-    with open(filepath, 'r') as f:
-        return json.load(f)
-
-def save_data(filepath, data):
-    with open(filepath, 'w') as f:
-        json.dump(data, f, indent=2)
 
 # --- GAME COMMANDS ---
 
