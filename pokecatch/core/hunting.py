@@ -59,6 +59,8 @@ def hunt():
 
     
     player_data["last_hunt_time"] = time.time()
+    player_data["stats"]["total_hunts"] += 1
+    player_data["stats"]["xp_from_hunting"] += XP_REWARDS["hunt"]
     save_player_data(player_data)
     save_data(WILD_POKEMON_STATE, wild_pokemon)
     
@@ -143,16 +145,25 @@ def catch(ball_type):
         player_dex.append(wild_pokemon)
         save_data(PLAYER_DEX, player_dex)
         
+        # Track Catch Stats
+        player_data["stats"]["successful_catches"] += 1
+        if is_new:
+            player_data["stats"]["first_time_catches"] += 1
+        
         # Grant XP
         xp_gained = XP_REWARDS.get(f"catch_{rarity}", 10)
         if is_new:
             print("New Pokédex entry! XP Doubled!")
             xp_gained *= 2
             
+        player_data["stats"]["xp_from_catching"] += xp_gained
+        save_player_data(player_data)
+            
         print(f"You earned {xp_gained} XP!")
         add_xp(xp_gained)
     else:
         print(f"Oh no! {pokemon_name.capitalize()} broke free!")
-        # 0 XP granted for failure!
+        player_data["stats"]["failed_catches"] += 1
+        save_player_data(player_data)
         
     os.remove(WILD_POKEMON_STATE)
