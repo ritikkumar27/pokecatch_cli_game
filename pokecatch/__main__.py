@@ -7,7 +7,7 @@ from pokecatch.config import BALL_ALIASES, STORE_ITEMS, RARITY_SELL_PRICES
 # Importing game logic from the core modules!
 from pokecatch.core.hunting import hunt, catch
 from pokecatch.core.player import inventory, pokedex, stats
-from pokecatch.core.store import buy_item, sell_pokemon, sell_all_by_rarity, display_store
+from pokecatch.core.store import buy_item, sell_pokemon, sell_all_by_rarity, display_store, sell_dupes
 
 def main():
     parser = argparse.ArgumentParser(description="A Pokémon catching game for the terminal.")
@@ -43,13 +43,15 @@ def main():
     store_subparsers = store_parser.add_subparsers(dest="action", help="Store actions")
     # store buy
     buy_parser = store_subparsers.add_parser("buy", help="Buy items from the store.")
-    buy_parser.add_argument("item", choices=STORE_ITEMS.keys(), help="The item to buy.")
+    valid_store_items = list(STORE_ITEMS.keys()) + list(BALL_ALIASES.keys())
+    buy_parser.add_argument("item", choices=valid_store_items, help="The item to buy.")
     buy_parser.add_argument("amount", type=int, nargs='?', default=1, help="How many to buy (default: 1).")
     # store sell
     sell_parser = store_subparsers.add_parser("sell", help="Sell a caught Pokémon.")
     sell_parser.add_argument("pokemon_name", help="The name of the Pokémon to sell.")
     sellall_parser = store_subparsers.add_parser("sellall", help="Sell all Pokémon of a specific rarity.")
     sellall_parser.add_argument("rarity", choices=RARITY_SELL_PRICES.keys(), help="The rarity of Pokémon to sell.")
+    selldupes_parser = store_subparsers.add_parser("sell-dupes", help="Sell all duplicate Pokémon.")
     args = parser.parse_args()
     # Route the commands to the proper functions
     if args.command == "hunt":
@@ -70,6 +72,8 @@ def main():
             sell_pokemon(args.pokemon_name)
         elif args.action == "sellall":
             sell_all_by_rarity(args.rarity)
+        elif args.action == "sell-dupes":
+            sell_dupes()
         else:
             display_store()
     else:
