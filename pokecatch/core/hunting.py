@@ -20,24 +20,40 @@ def hunt():
         time_left = int(HUNT_COOLDOWN_SECONDS - time_since_last_hunt)
         print(f"You are tired from your last hunt. Please wait {time_left} more seconds.")
         return 
+        
     all_pokemon = load_data(DATA_FILE)
     if not all_pokemon:
         print("Error: pokemon_data.json is empty or not found!")
         return
     
+    # 1. Roll for Rarity
     rarity_tiers = list(RARITY_SPAWN_WEIGHTS.keys())
     rarity_weights = list(RARITY_SPAWN_WEIGHTS.values())
     chosen_rarity = random.choices(rarity_tiers, weights=rarity_weights, k=1)[0]
-    pokemon_pool_of_rarity = [p for p in all_pokemon if p['rarity'] == chosen_rarity]
+    
+    # 2. Extract Pokémon of that rarity from new Dictionary format
+    pokemon_pool_of_rarity = []
+    for pid, p in all_pokemon.items():
+        if p.get('rarity') == chosen_rarity:
+            p['id'] = int(pid) # Ensure it has the ID so the sprite can be drawn
+            pokemon_pool_of_rarity.append(p)
+            
+    if not pokemon_pool_of_rarity:
+        print(f"Error: No Pokémon found for rarity {chosen_rarity}!")
+        return
+        
     wild_pokemon = random.choice(pokemon_pool_of_rarity)
     
     print(f"A wild {wild_pokemon['name'].capitalize()} appeared!")
-    add_xp(XP_REWARDS["hunt"])
     print(f"Rarity: {wild_pokemon['rarity'].capitalize()}")
     display_sprite(wild_pokemon['id'])
+    
     player_data["last_hunt_time"] = time.time()
     save_player_data(player_data)
     save_data(WILD_POKEMON_STATE, wild_pokemon)
+    
+    # Grant XP for exploring!
+    add_xp(XP_REWARDS["hunt"])
 
 
 def catch(ball_type):
