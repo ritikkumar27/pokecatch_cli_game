@@ -1,7 +1,7 @@
 import argparse
 
 # Importing constants
-from pokecatch.config import BALL_MODIFIERS, BALL_ALIASES, BALL_PRICES, RARITY_SELL_PRICES
+from pokecatch.config import BALL_ALIASES, STORE_ITEMS, RARITY_SELL_PRICES
 
 
 # Importing game logic from the core modules!
@@ -18,7 +18,7 @@ def main():
     
     # catch command
     catch_parser = subparsers.add_parser("catch", help="Throw a Poké Ball to catch a Pokémon.")
-    valid_ball_choices = list(BALL_MODIFIERS.keys()) + list(BALL_ALIASES.keys())
+    valid_ball_choices = list(STORE_ITEMS.keys()) + list(BALL_ALIASES.keys())
     catch_parser.add_argument("ball", choices=valid_ball_choices, help="The type of ball to use (e.g., poke_ball,pb,great_ball,gb).")
     # pokedex
     my_pokemon_parser = subparsers.add_parser("my_pokemon", help="See all the Pokémon you have caught.")
@@ -31,7 +31,7 @@ def main():
     store_subparsers = store_parser.add_subparsers(dest="action", help="Store actions")
     # store buy
     buy_parser = store_subparsers.add_parser("buy", help="Buy items from the store.")
-    buy_parser.add_argument("item", choices=BALL_PRICES.keys(), help="The item to buy.")
+    buy_parser.add_argument("item", choices=STORE_ITEMS.keys(), help="The item to buy.")
     buy_parser.add_argument("amount", type=int, nargs='?', default=1, help="How many to buy (default: 1).")
     # store sell
     sell_parser = store_subparsers.add_parser("sell", help="Sell a caught Pokémon.")
