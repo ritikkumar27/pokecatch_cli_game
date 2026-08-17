@@ -6,7 +6,7 @@ from pokecatch.config import BALL_ALIASES, STORE_ITEMS, RARITY_SELL_PRICES
 
 # Importing game logic from the core modules!
 from pokecatch.core.hunting import hunt, catch
-from pokecatch.core.player import inventory, my_pokemon
+from pokecatch.core.player import inventory, pokedex
 from pokecatch.core.store import buy_item, sell_pokemon, sell_all_by_rarity, display_store
 
 def main():
@@ -20,9 +20,18 @@ def main():
     catch_parser = subparsers.add_parser("catch", help="Throw a Poké Ball to catch a Pokémon.")
     valid_ball_choices = list(STORE_ITEMS.keys()) + list(BALL_ALIASES.keys())
     catch_parser.add_argument("ball", choices=valid_ball_choices, help="The type of ball to use (e.g., poke_ball,pb,great_ball,gb).")
+    
+
     # pokedex
-    my_pokemon_parser = subparsers.add_parser("my_pokemon", help="See all the Pokémon you have caught.")
-    pokedex_parser = subparsers.add_parser("pokedex", help="See all the Pokémon you have caught.")
+    pokedex_parser = subparsers.add_parser("pokedex", aliases=["dex"], help="See your caught Pokémon.")
+    pokedex_parser.add_argument("pokemon_name", nargs="?", type=str, help="Name of a specific Pokémon to view details.")
+    pokedex_parser.add_argument("--page", "-p", type=int, default=1, help="Page number for the Pokédex list.")
+    pokedex_parser.add_argument("--sort", "-s", choices=["id", "rarity", "owned", "bst"], default="id", help="Sort the Pokédex.")
+    pokedex_parser.add_argument("--gen", type=int, help="Filter by Generation.")
+    pokedex_parser.add_argument("--type", type=str, help="Filter by Type.")
+    pokedex_parser.add_argument("--rarity", type=str, help="Filter by Rarity.")
+    
+   
     # inventory
     inventory_parser = subparsers.add_parser("inventory", help="Check your items and currency.")
     
@@ -45,8 +54,8 @@ def main():
     elif args.command == "catch":
         ball_to_use = BALL_ALIASES.get(args.ball, args.ball)
         catch(ball_to_use)
-    elif args.command in ("my_pokemon", "pokedex"):
-        my_pokemon()
+    elif args.command in ("my_pokemon", "dex"):
+        pokedex(args)
     elif args.command == "inventory":
         inventory()
     elif args.command == "store":

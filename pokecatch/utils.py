@@ -30,7 +30,7 @@ def display_sprite(pokemon_name):
         if bbox:
             img = img.crop(bbox)
 
-        scale_factor = 3.0 #review
+        scale_factor = 1.0 #review #pokemon size #pokemonsize
         calculated_width = int((img.width * scale_factor) / 3)
         calculated_width = max(1, calculated_width)
         
