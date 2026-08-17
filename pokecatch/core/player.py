@@ -64,7 +64,7 @@ def inventory():
     print("------------------------")
 
 
-    
+
 
 #-------POKEDEX------------------------------
 def pokedex(args):
@@ -167,26 +167,27 @@ def pokedex(args):
     
     page_items = filtered_species[start_idx:end_idx]
     # 6. Print Header
-    print(f"╭{'─'*72}╮")
+    print(f"╭{'─'*85}╮")
     title = "YOUR POKÉDEX"
     stats_str = f"{unique_species} / 1025 species  ·  {total_caught} caught"
-    print(f"│ {title:^70} │")
-    print(f"│ {stats_str:^70} │")
-    print(f"╰{'─'*72}╯\n")
+    print(f"│ {title:^83} │")
+    print(f"│ {stats_str:^83} │")
+    print(f"╰{'─'*85}╯\n")
     if not page_items:
         print("No Pokémon match your current filters.")
         return
     print(f"Showing {start_idx + 1}–{end_idx} of {total_filtered} species (Page {page}/{total_pages})\n")
-    print(f" {'#':<4}   {'Pokémon':<15} {'Owned':<8} {'Type':<20} {'BST'}")
-    print(f" {'─'*71}")
+    print(f" {'#':<4}   {'Pokémon':<15} {'Owned':<7} {'Type':<18} {'Rarity':<12} {'BST'}")
+    print(f" {'─'*84}")
     
     for s in page_items:
         p = s['pokemon']
         count_str = f"×{s['count']}"
         types_str = " / ".join([t.capitalize() for t in p.get('types', [])])
+        rarity = p.get('rarity', 'Unknown')
         bst = p.get('stats', {}).get('Total', '?')
         
-        print(f" {p['id']:03d}    {p['name'].capitalize():<15} {count_str:<8} {types_str:<20} {bst}")
+        print(f" {p['id']:03d}    {p['name'].capitalize():<15} {count_str:<7} {types_str:<18} {rarity:<12} {bst}")
     if page < total_pages:
         print(f"\nUse 'pokecatch pokedex --page {page + 1}' to see more.")
 
