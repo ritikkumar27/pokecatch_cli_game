@@ -160,6 +160,21 @@ def catch(ball_type):
         
         # Track Catch Stats
         player_data["stats"]["successful_catches"] += 1
+        
+        # --- NEW: PERMANENT LIFETIME TRACKING ---
+        player_data["stats"]["total_lifetime_caught"] += 1
+        
+        if rarity.lower() in player_data["stats"]["lifetime_rarity"]:
+            player_data["stats"]["lifetime_rarity"][rarity.lower()] += 1
+            
+        gen = str(get_generation(wild_pokemon['id']))
+        if gen in player_data["stats"]["lifetime_gens"]:
+            player_data["stats"]["lifetime_gens"][gen] += 1
+            
+        if wild_pokemon['id'] not in player_data["stats"]["lifetime_unique_pids"]:
+            player_data["stats"]["lifetime_unique_pids"].append(wild_pokemon['id'])
+        # ----------------------------------------
+        
         if is_new:
             player_data["stats"]["first_time_catches"] += 1
         

@@ -25,6 +25,7 @@ def load_player_data():
                 "ultra_ball": 0,
                 "master_ball": 0
             },
+
             "last_hunt_time": 0,
             "stats": {
                 "total_hunts": 0,
@@ -32,25 +33,53 @@ def load_player_data():
                 "failed_catches": 0,
                 "first_time_catches": 0,
                 "xp_from_hunting": 0,
-                "xp_from_catching": 0
+                "xp_from_catching":0
             }
         }
+
         save_data(PLAYER_DATA_FILE, player_data)
         return player_data
-        
+
     data = load_data(PLAYER_DATA_FILE)
     if "xp" not in data:
         data["xp"] = 0
-    # Ensure existing players get a stats field without losing their save
+
     if "stats" not in data:
         data["stats"] = {
+
             "total_hunts": 0,
             "successful_catches": 0,
             "failed_catches": 0,
             "first_time_catches": 0,
             "xp_from_hunting": 0,
-            "xp_from_catching": 0
+            "xp_from_catching":0
+
         }
+
+    #----backfill script for lifetime stats
+
+    if "lifetime_rarity" not in data["stats"]:
+        data["stats"]["lifetime_rarity"] = {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0}
+        data["stats"]["lifetime_gens"] = {str(i): 0 for i in range(1, 10)}
+        data["stats"]["lifetime_unique_pids"] = []
+        data["stats"]["total_lifetime_caught"] = 0
+
+        # scanning current pokedex to establish baseline
+
+        player_dex = load_data(PLAYER_DEX)
+        for p in player_dex:
+            pid = p['id']
+            rarity = p.get('rarity', 'common').lower()
+            if rarity in data["stats"]["lifetime_rarity"]:
+                data["stats"]["lifetime_rarity"][rarity] += 1
+            
+            gen = get_generation(pid)
+            data["stats"]["lifetime_gens"][str(gen)] += 1
+            data["stats"]["total_lifetime_caught"] += 1
+            
+            if pid not in data["stats"]["lifetime_unique_pids"]:
+                data["stats"]["lifetime_unique_pids"].append(pid)
+
     save_data(PLAYER_DATA_FILE, data)
     return data
 
@@ -250,23 +279,10 @@ def stats():
     currency = player_data.get("currency", 0)
     store_discount = min(level * 0.005, 0.15) * 100
 
-    species_data = {}
-    rarity_counts = {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0}
-    gen_counts = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0}
-
-    for p in player_dex:
-        pid = p['id']
-        rarity = p.get('rarity', 'common').lower()
-        if rarity in rarity_counts:
-            rarity_counts[rarity] += 1
-        
-        if pid not in species_data:
-            species_data[pid] = p
-            gen = get_generation(pid)
-            if gen in gen_counts: gen_counts[gen] += 1
-
-    unique_pokemon = len(species_data)
-    total_pokemon = len(player_dex)
+    unique_pokemon = len(s.get("lifetime_unique_pids", []))
+    total_pokemon = s.get("total_lifetime_caught", 0)
+    rarity_counts = s.get("lifetime_rarity", {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0})
+    gen_counts = s.get("lifetime_gens", {str(i): 0 for i in range(1, 10)})
 
     total_hunts = s.get("total_hunts", 0)
     success = s.get("successful_catches", 0)
@@ -348,6 +364,7 @@ def stats():
     console.print()
 
     # GENERATIONS
+    # GENERATIONS
     console.print(Rule("[bold blue]◈ GENERATION DISCOVERY", style="blue", align="left"))
     roman = {1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:'VIII', 9:'IX'}
     caught_gens = [g for g in gen_counts if gen_counts[g] > 0]
@@ -355,7 +372,7 @@ def stats():
         console.print("  [grey74]No Pokémon caught yet.")
     else:
         for g in caught_gens:
-            console.print(f"  Gen {roman[g]:<4} [cyan]{gen_counts[g]}[/cyan]")
+            console.print(f"  Gen {roman[int(g)]:<4} [cyan]{gen_counts[g]}[/cyan]")
     console.print()
 
     # ACHIEVEMENTS
