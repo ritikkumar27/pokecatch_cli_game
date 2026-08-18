@@ -21,4 +21,4 @@ pokecatch = "pokecatch.__main__:main"
 include = ["pokecatch*"]
 
 [tool.setuptools.package-data]
-pokecatch = ["sprites/*.png", "data/*.json"]
+pokecatch = ["sprites/pokemons/*.png", "data/*.json"]

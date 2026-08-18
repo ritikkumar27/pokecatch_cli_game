@@ -6,7 +6,7 @@ PKG_DIR = Path(__file__).parent
 
 # Static assets (these are now bundled inside the game package)
 DATA_DIR = PKG_DIR / "data"
-SPRITES_DIR = PKG_DIR / "sprites"
+SPRITES_DIR = PKG_DIR / "sprites/pokemons"
 DATA_FILE = DATA_DIR / 'pokemon_data.json'
 WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
 
