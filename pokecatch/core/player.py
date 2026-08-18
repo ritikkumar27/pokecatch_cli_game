@@ -104,7 +104,6 @@ def add_xp(amount):
     new_level = get_player_level(player_data["xp"])
     if new_level > old_level:
         print(f"\n🎉 LEVEL UP! You are now Level {new_level}! 🎉")
-        print("Check the store for new unlocked items and better discounts.\n")
 
 def inventory():
     player_data = load_player_data()
@@ -277,8 +276,6 @@ def stats():
     xp_in_level = xp - prev_level_xp
     xp_needed_for_level = next_level_xp - prev_level_xp
     currency = player_data.get("currency", 0)
-    store_discount = min(level * 0.005, 0.15) * 100
-
     unique_pokemon = len(s.get("lifetime_unique_pids", []))
     total_pokemon = s.get("total_lifetime_caught", 0)
     rarity_counts = s.get("lifetime_rarity", {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0})
@@ -301,7 +298,6 @@ def stats():
     console.print(f"  [bold cyan]{username}[/bold cyan]  ·  [bold yellow]₽ {currency:,}[/bold yellow]")
     xp_pct = (xp_in_level / xp_needed_for_level * 100) if xp_needed_for_level > 0 else 0
     console.print(f"  [white]Level {level}[/white]  [bold cyan]{xp_pct:.0f}%[/bold cyan]  [grey74]({xp:,} / {next_level_xp:,} XP)[/grey74]")
-    console.print(f"  [grey74]Store Discount: {store_discount:.1f}%[/grey74]")
     console.print()
 
     # COLLECTION

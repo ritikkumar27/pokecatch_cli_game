@@ -38,10 +38,9 @@ def sell_pokemon(pokemon_name):
         print(f"You don't have a Pokémon named {pokemon_name.capitalize()} to sell.")
 
 def buy_item(item_name, amount):
-    from pokecatch.config import BALL_ALIASES
+    from pokecatch.config import BALL_ALIASES, STORE_ITEMS
     if item_name.lower() in BALL_ALIASES:
         item_name = BALL_ALIASES[item_name.lower()]
-
     if item_name not in STORE_ITEMS:
         print(f"Sorry, '{item_name}' is not for sale.")
         return
@@ -54,93 +53,87 @@ def buy_item(item_name, amount):
         print(f"You must be Level {item_data['unlock_level']} to buy this item.")
         return
         
-    discount = min(level * 0.005, 0.15)
-    price = int(item_data["price"] * (1 - discount))
+    price = item_data["price"]
     total_cost = price * amount
     
     if player_data['currency'] < total_cost:
-        print(f"You need ${total_cost}, but you only have ${player_data['currency']}.")
+        print(f"You need ₽ {total_cost:,}, but you only have ₽ {player_data['currency']:,}.")
         return
         
     player_data['currency'] -= total_cost
     
     # Give the ball to the player
+    if 'balls' not in player_data:
+        player_data['balls'] = {}
     if item_name not in player_data['balls']:
         player_data['balls'][item_name] = 0
         
     player_data['balls'][item_name] += amount
     save_player_data(player_data)
     
-
     print(f"✅ You bought {amount} {item_name.replace('_', ' ').title()}(s) for ₽ {total_cost:,}.")
     print(f"Your new balance is ₽ {player_data['currency']:,}.")
 
 def display_store():
     try:
         from rich.console import Console
-        from rich.table import Table
-        from rich.panel import Panel
-        from rich.columns import Columns
-        from rich.align import Align
-        from rich.text import Text
     except ImportError:
         print("Please run: pip install rich")
         return
-
     console = Console()
     player_data = load_player_data()
     level = get_player_level(player_data.get("xp", 0))
-    discount = min(level * 0.005, 0.15)
+    currency = player_data.get("currency", 0)
+    balls = player_data.get("balls", {})
     
-    # Store Header
-    header = Text()
-    header.append("🏪 POKÉ MART 🏪\n", style="bold cyan")
-    header.append(f"Level {level}  ·  Discount: {discount*100:.1f}%  ·  Balance: ", style="white")
-    header.append(f"₽ {player_data['currency']:,}", style="bold yellow")
-    
+    # --- HEADER ---
     console.print()
-    console.print(Align.center(header))
+    console.print("╭──────────────────────────────────────────────────────────────╮", style="cyan")
+    console.print("│                         POKÉ MART                            │", style="bold cyan")
+    console.print("╰──────────────────────────────────────────────────────────────╯", style="cyan")
+    console.print(f"  [bold yellow]₽ {currency:,}[/bold yellow]")
     console.print()
-    
-    # Items for Sale Table
-    buy_table = Table(title="[bold green]ITEMS FOR SALE", border_style="green", expand=True)
-    buy_table.add_column("Item", style="cyan", no_wrap=True)
-    buy_table.add_column("Price", justify="right", style="yellow")
-    buy_table.add_column("Stock", justify="right")
-    buy_table.add_column("Status", justify="center")
-    
-    for item, data in STORE_ITEMS.items():
-        name = item.replace('_', ' ').title()
-        if level >= data["unlock_level"]:
-            base_price = data["price"]
-            discounted_price = int(base_price * (1 - discount))
-            buy_table.add_row(f"● {name}", f"₽ {discounted_price:,}", "[green]UNLOCKED[/green]")
-        else:
-            buy_table.add_row(f"● {name}", f"[grey74]₽ {data['price']:,}[/grey74]", "-", f"[red]UNLOCKS LV {data['unlock_level']}[/red]")
-            
-    # Sell Prices Table
-    sell_table = Table(title="[bold magenta]SELL PRICES", border_style="magenta", expand=True)
-    sell_table.add_column("Rarity", style="magenta")
-    sell_table.add_column("Value", justify="right", style="yellow")
-    
-    rarity_colors = {
-        "Common": "white", "Uncommon": "green", "Rare": "blue", 
-        "UltraRare": "cyan", "Epic": "purple", "Legendary": "yellow", "Mythical": "red"
+    # Define Layout
+    sections = [
+        {"title": "BALLS", "keys": ["poke_ball", "great_ball", "ultra_ball"]},
+        {"title": "SPECIAL BALLS", "keys": ["net_ball", "dive_ball", "fast_ball", "dusk_ball", "nest_ball", "repeat_ball", "quick_ball"]},
+        {"title": "MASTER", "keys": ["master_ball"]}
+    ]
+    ball_descriptions = {
+        "net_ball": "Bug / Water    3×",
+        "dive_ball": "Water          3.5×",
+        "fast_ball": "Speed ≥ 120    3×",
+        "dusk_ball": "Night          3.5×",
+        "nest_ball": "BST ≤ 300      3×",
+        "repeat_ball": "Already Caught 3×",
+        "quick_ball": "Flat Boost     2.5×"
     }
+    from pokecatch.config import STORE_ITEMS
     
-    for rarity, price in RARITY_SELL_PRICES.items():
-        c = rarity_colors.get(rarity, "white")
-        sell_table.add_row(f"[{c}]{rarity}[/{c}]", f"₽ {price:,}")
+    for section in sections:
+        console.print(f"[bold white]{section['title']}[/bold white]")
+        console.print("──────────────────────────────────────────────────────────────", style="grey50")
+        console.print()
         
-    console.print(Columns([buy_table, sell_table], expand=True))
+        for key in section["keys"]:
+            data = STORE_ITEMS[key]
+            name = key.replace('_', ' ').title()
+            price_str = f"₽{data['price']:,}"
+            owned = balls.get(key, 0)
+            
+            if level >= data["unlock_level"]:
+                console.print(f"  {name:<15} [yellow]{price_str:<9}[/yellow] [grey74]You own: {owned}[/grey74]")
+                if key in ball_descriptions:
+                    console.print(f"  [cyan]{ball_descriptions[key]}[/cyan]")
+            else:
+                console.print(f"  {name:<15} [red]Requires Level {data['unlock_level']}[/red]")
+        console.print()
+        
+    console.print("──────────────────────────────────────────────────────────────", style="grey50")
+    console.print("  [cyan]pokecatch store buy <item> <amount>[/cyan]")
+    console.print("  [cyan]pokecatch store sell <pokemon>[/cyan] | [cyan]sellall <rarity>[/cyan] | [cyan]sell-dupes[/cyan]")
     console.print()
-    console.print("[grey74]Commands:[/grey74]")
-    console.print("  [cyan]pokecatch store buy <item> <amount>[/cyan] (Tip: You can use aliases like 'pb', 'ub'!)")
-    console.print("  [cyan]pokecatch store sell <pokemon_name>[/cyan]")
-    console.print("  [cyan]pokecatch store sellall <rarity>[/cyan]")
-    console.print("  [cyan]pokecatch store sell-dupes[/cyan] (Sells all duplicates, keeping 1 of each!)")
-    console.print()
-
+    
 def sell_all_by_rarity(rarity_to_sell):
     player_dex = load_data(PLAYER_DEX)
     player_data = load_player_data()
