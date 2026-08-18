@@ -18,7 +18,8 @@
       "Spe": 45,
       "Total": 318
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4536
   },
   "2": {
     "name": "Ivysaur",
@@ -39,7 +40,8 @@
       "Spe": 60,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "3": {
     "name": "Venusaur",
@@ -60,7 +62,8 @@
       "Spe": 80,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "4": {
     "name": "Charmander",
@@ -80,7 +83,8 @@
       "Spe": 65,
       "Total": 309
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4378
   },
   "5": {
     "name": "Charmeleon",
@@ -100,7 +104,8 @@
       "Spe": 80,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "6": {
     "name": "Charizard",
@@ -121,7 +126,8 @@
       "Spe": 100,
       "Total": 534
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8316
   },
   "7": {
     "name": "Squirtle",
@@ -141,7 +147,8 @@
       "Spe": 43,
       "Total": 314
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4466
   },
   "8": {
     "name": "Wartortle",
@@ -161,7 +168,8 @@
       "Spe": 58,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "9": {
     "name": "Blastoise",
@@ -181,7 +189,8 @@
       "Spe": 78,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "10": {
     "name": "Caterpie",
@@ -201,7 +210,8 @@
       "Spe": 45,
       "Total": 195
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "11": {
     "name": "Metapod",
@@ -220,7 +230,8 @@
       "Spe": 30,
       "Total": 205
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1676
   },
   "12": {
     "name": "Butterfree",
@@ -241,7 +252,8 @@
       "Spe": 70,
       "Total": 395
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5883
   },
   "13": {
     "name": "Weedle",
@@ -262,7 +274,8 @@
       "Spe": 50,
       "Total": 195
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "14": {
     "name": "Kakuna",
@@ -282,7 +295,8 @@
       "Spe": 35,
       "Total": 205
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1676
   },
   "15": {
     "name": "Beedrill",
@@ -303,7 +317,8 @@
       "Spe": 75,
       "Total": 395
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5883
   },
   "16": {
     "name": "Pidgey",
@@ -325,7 +340,8 @@
       "Spe": 56,
       "Total": 251
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0892
   },
   "17": {
     "name": "Pidgeotto",
@@ -347,7 +363,8 @@
       "Spe": 71,
       "Total": 349
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4196
   },
   "18": {
     "name": "Pidgeot",
@@ -369,7 +386,8 @@
       "Spe": 101,
       "Total": 479
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7353
   },
   "19": {
     "name": "Rattata",
@@ -390,7 +408,8 @@
       "Spe": 72,
       "Total": 253
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0927
   },
   "20": {
     "name": "Raticate",
@@ -411,7 +430,8 @@
       "Spe": 97,
       "Total": 413
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5233
   },
   "21": {
     "name": "Spearow",
@@ -432,7 +452,8 @@
       "Spe": 70,
       "Total": 262
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1085
   },
   "22": {
     "name": "Fearow",
@@ -453,7 +474,8 @@
       "Spe": 100,
       "Total": 442
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6176
   },
   "23": {
     "name": "Ekans",
@@ -474,7 +496,8 @@
       "Spe": 55,
       "Total": 288
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.154
   },
   "24": {
     "name": "Arbok",
@@ -495,7 +518,8 @@
       "Spe": 80,
       "Total": 448
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6281
   },
   "25": {
     "name": "Pikachu",
@@ -515,7 +539,8 @@
       "Spe": 90,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2865
   },
   "26": {
     "name": "Raichu",
@@ -535,7 +560,8 @@
       "Spe": 110,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7105
   },
   "27": {
     "name": "Sandshrew",
@@ -555,7 +581,8 @@
       "Spe": 40,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "28": {
     "name": "Sandslash",
@@ -575,7 +602,8 @@
       "Spe": 65,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6316
   },
   "29": {
     "name": "Nidoran F",
@@ -596,7 +624,8 @@
       "Spe": 41,
       "Total": 275
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1548
   },
   "30": {
     "name": "Nidorina",
@@ -617,7 +646,8 @@
       "Spe": 56,
       "Total": 365
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4476
   },
   "31": {
     "name": "Nidoqueen",
@@ -639,7 +669,8 @@
       "Spe": 76,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "32": {
     "name": "Nidoran M",
@@ -660,7 +691,8 @@
       "Spe": 50,
       "Total": 273
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1513
   },
   "33": {
     "name": "Nidorino",
@@ -681,7 +713,8 @@
       "Spe": 65,
       "Total": 365
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4476
   },
   "34": {
     "name": "Nidoking",
@@ -703,7 +736,8 @@
       "Spe": 85,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "35": {
     "name": "Clefairy",
@@ -724,7 +758,8 @@
       "Spe": 35,
       "Total": 323
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3388
   },
   "36": {
     "name": "Clefable",
@@ -745,7 +780,8 @@
       "Spe": 60,
       "Total": 483
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7658
   },
   "37": {
     "name": "Vulpix",
@@ -765,7 +801,8 @@
       "Spe": 65,
       "Total": 299
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2497
   },
   "38": {
     "name": "Ninetales",
@@ -785,7 +822,8 @@
       "Spe": 100,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7455
   },
   "39": {
     "name": "Jigglypuff",
@@ -807,7 +845,8 @@
       "Spe": 20,
       "Total": 270
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2225
   },
   "40": {
     "name": "Wigglytuff",
@@ -829,7 +868,8 @@
       "Spe": 45,
       "Total": 435
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6524
   },
   "41": {
     "name": "Zubat",
@@ -850,7 +890,8 @@
       "Spe": 55,
       "Total": 245
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0788
   },
   "42": {
     "name": "Golbat",
@@ -871,7 +912,8 @@
       "Spe": 90,
       "Total": 455
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6404
   },
   "43": {
     "name": "Oddish",
@@ -892,7 +934,8 @@
       "Spe": 30,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.21
   },
   "44": {
     "name": "Gloom",
@@ -913,7 +956,8 @@
       "Spe": 40,
       "Total": 395
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5001
   },
   "45": {
     "name": "Vileplume",
@@ -934,7 +978,8 @@
       "Spe": 50,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "46": {
     "name": "Paras",
@@ -956,7 +1001,8 @@
       "Spe": 25,
       "Total": 285
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2252
   },
   "47": {
     "name": "Parasect",
@@ -978,7 +1024,8 @@
       "Spe": 30,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5705
   },
   "48": {
     "name": "Venonat",
@@ -1000,7 +1047,8 @@
       "Spe": 45,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "49": {
     "name": "Venomoth",
@@ -1022,7 +1070,8 @@
       "Spe": 90,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6493
   },
   "50": {
     "name": "Diglett",
@@ -1043,7 +1092,8 @@
       "Spe": 95,
       "Total": 265
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1137
   },
   "51": {
     "name": "Dugtrio",
@@ -1064,7 +1114,8 @@
       "Spe": 120,
       "Total": 425
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6349
   },
   "52": {
     "name": "Meowth",
@@ -1085,7 +1136,8 @@
       "Spe": 90,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1575
   },
   "53": {
     "name": "Persian",
@@ -1106,7 +1158,8 @@
       "Spe": 115,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6141
   },
   "54": {
     "name": "Psyduck",
@@ -1127,7 +1180,8 @@
       "Spe": 55,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2865
   },
   "55": {
     "name": "Golduck",
@@ -1148,7 +1202,8 @@
       "Spe": 85,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7368
   },
   "56": {
     "name": "Mankey",
@@ -1169,7 +1224,8 @@
       "Spe": 70,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "57": {
     "name": "Primeape",
@@ -1190,7 +1246,8 @@
       "Spe": 95,
       "Total": 455
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.658
   },
   "58": {
     "name": "Growlithe",
@@ -1211,7 +1268,8 @@
       "Spe": 60,
       "Total": 350
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.339
   },
   "59": {
     "name": "Arcanine",
@@ -1232,7 +1290,8 @@
       "Spe": 95,
       "Total": 555
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.833
   },
   "60": {
     "name": "Poliwag",
@@ -1253,7 +1312,8 @@
       "Spe": 90,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "61": {
     "name": "Poliwhirl",
@@ -1274,7 +1334,8 @@
       "Spe": 90,
       "Total": 385
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4826
   },
   "62": {
     "name": "Poliwrath",
@@ -1296,7 +1357,8 @@
       "Spe": 70,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "63": {
     "name": "Abra",
@@ -1317,7 +1379,8 @@
       "Spe": 90,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2572
   },
   "64": {
     "name": "Kadabra",
@@ -1338,7 +1401,8 @@
       "Spe": 105,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5324
   },
   "65": {
     "name": "Alakazam",
@@ -1359,7 +1423,8 @@
       "Spe": 120,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7662
   },
   "66": {
     "name": "Machop",
@@ -1380,7 +1445,8 @@
       "Spe": 35,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.272
   },
   "67": {
     "name": "Machoke",
@@ -1401,7 +1467,8 @@
       "Spe": 45,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5529
   },
   "68": {
     "name": "Machamp",
@@ -1422,7 +1489,8 @@
       "Spe": 55,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "69": {
     "name": "Bellsprout",
@@ -1443,7 +1511,8 @@
       "Spe": 40,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "70": {
     "name": "Weepinbell",
@@ -1464,7 +1533,8 @@
       "Spe": 55,
       "Total": 390
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4913
   },
   "71": {
     "name": "Victreebel",
@@ -1485,7 +1555,8 @@
       "Spe": 70,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "72": {
     "name": "Tentacool",
@@ -1507,7 +1578,8 @@
       "Spe": 70,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3127
   },
   "73": {
     "name": "Tentacruel",
@@ -1529,7 +1601,8 @@
       "Spe": 100,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7807
   },
   "74": {
     "name": "Geodude",
@@ -1551,7 +1624,8 @@
       "Spe": 20,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "75": {
     "name": "Graveler",
@@ -1573,7 +1647,8 @@
       "Spe": 35,
       "Total": 390
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4913
   },
   "76": {
     "name": "Golem",
@@ -1595,7 +1670,8 @@
       "Spe": 45,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "77": {
     "name": "Ponyta",
@@ -1616,7 +1692,8 @@
       "Spe": 90,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.444
   },
   "78": {
     "name": "Rapidash",
@@ -1637,7 +1714,8 @@
       "Spe": 105,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "79": {
     "name": "Slowpoke",
@@ -1659,7 +1737,8 @@
       "Spe": 15,
       "Total": 315
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2777
   },
   "80": {
     "name": "Slowbro",
@@ -1681,7 +1760,8 @@
       "Spe": 30,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7193
   },
   "81": {
     "name": "Magnemite",
@@ -1703,7 +1783,8 @@
       "Spe": 45,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2952
   },
   "82": {
     "name": "Magneton",
@@ -1725,7 +1806,8 @@
       "Spe": 70,
       "Total": 465
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6932
   },
   "83": {
     "name": "Farfetchd",
@@ -1747,7 +1829,8 @@
       "Spe": 60,
       "Total": 377
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5568
   },
   "84": {
     "name": "Doduo",
@@ -1769,7 +1852,8 @@
       "Spe": 75,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.269
   },
   "85": {
     "name": "Dodrio",
@@ -1791,7 +1875,8 @@
       "Spe": 110,
       "Total": 470
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7196
   },
   "86": {
     "name": "Seel",
@@ -1812,7 +1897,8 @@
       "Spe": 45,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2952
   },
   "87": {
     "name": "Dewgong",
@@ -1834,7 +1920,8 @@
       "Spe": 70,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.693
   },
   "88": {
     "name": "Grimer",
@@ -1855,7 +1942,8 @@
       "Spe": 25,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2952
   },
   "89": {
     "name": "Muk",
@@ -1876,7 +1964,8 @@
       "Spe": 50,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7368
   },
   "90": {
     "name": "Shellder",
@@ -1897,7 +1986,8 @@
       "Spe": 40,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "91": {
     "name": "Cloyster",
@@ -1919,7 +2009,8 @@
       "Spe": 70,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7982
   },
   "92": {
     "name": "Gastly",
@@ -1939,7 +2030,8 @@
       "Spe": 80,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.269
   },
   "93": {
     "name": "Haunter",
@@ -1959,7 +2051,8 @@
       "Spe": 95,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5529
   },
   "94": {
     "name": "Gengar",
@@ -1979,7 +2072,8 @@
       "Spe": 110,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "95": {
     "name": "Onix",
@@ -2001,7 +2095,8 @@
       "Spe": 70,
       "Total": 385
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5708
   },
   "96": {
     "name": "Drowzee",
@@ -2022,7 +2117,8 @@
       "Spe": 42,
       "Total": 328
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3005
   },
   "97": {
     "name": "Hypno",
@@ -2043,7 +2139,8 @@
       "Spe": 67,
       "Total": 483
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.707
   },
   "98": {
     "name": "Krabby",
@@ -2064,7 +2161,8 @@
       "Spe": 50,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.254
   },
   "99": {
     "name": "Kingler",
@@ -2085,7 +2183,8 @@
       "Spe": 75,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7107
   },
   "100": {
     "name": "Voltorb",
@@ -2106,7 +2205,8 @@
       "Spe": 100,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.304
   },
   "101": {
     "name": "Electrode",
@@ -2127,7 +2227,8 @@
       "Spe": 150,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7369
   },
   "102": {
     "name": "Exeggcute",
@@ -2148,7 +2249,8 @@
       "Spe": 40,
       "Total": 325
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4129
   },
   "103": {
     "name": "Exeggutor",
@@ -2169,7 +2271,8 @@
       "Spe": 55,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "104": {
     "name": "Cubone",
@@ -2190,7 +2293,8 @@
       "Spe": 35,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2865
   },
   "105": {
     "name": "Marowak",
@@ -2211,7 +2315,8 @@
       "Spe": 45,
       "Total": 425
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6055
   },
   "106": {
     "name": "Hitmonlee",
@@ -2232,7 +2337,8 @@
       "Spe": 87,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "107": {
     "name": "Hitmonchan",
@@ -2253,7 +2359,8 @@
       "Spe": 76,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "108": {
     "name": "Lickitung",
@@ -2274,7 +2381,8 @@
       "Spe": 30,
       "Total": 385
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5708
   },
   "109": {
     "name": "Koffing",
@@ -2295,7 +2403,8 @@
       "Spe": 35,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3215
   },
   "110": {
     "name": "Weezing",
@@ -2316,7 +2425,8 @@
       "Spe": 60,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7369
   },
   "111": {
     "name": "Rhyhorn",
@@ -2338,7 +2448,8 @@
       "Spe": 25,
       "Total": 345
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4126
   },
   "112": {
     "name": "Rhydon",
@@ -2360,7 +2471,8 @@
       "Spe": 40,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7282
   },
   "113": {
     "name": "Chansey",
@@ -2381,7 +2493,8 @@
       "Spe": 50,
       "Total": 450
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7022
   },
   "114": {
     "name": "Tangela",
@@ -2402,7 +2515,8 @@
       "Spe": 60,
       "Total": 435
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6583
   },
   "115": {
     "name": "Kangaskhan",
@@ -2423,7 +2537,8 @@
       "Spe": 90,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "116": {
     "name": "Horsea",
@@ -2444,7 +2559,8 @@
       "Spe": 60,
       "Total": 295
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.2015
   },
   "117": {
     "name": "Seadra",
@@ -2465,7 +2581,8 @@
       "Spe": 85,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6318
   },
   "118": {
     "name": "Goldeen",
@@ -2486,7 +2603,8 @@
       "Spe": 63,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2453
   },
   "119": {
     "name": "Seaking",
@@ -2507,7 +2625,8 @@
       "Spe": 68,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6669
   },
   "120": {
     "name": "Staryu",
@@ -2528,7 +2647,8 @@
       "Spe": 85,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2803
   },
   "121": {
     "name": "Starmie",
@@ -2550,7 +2670,8 @@
       "Spe": 115,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7894
   },
   "122": {
     "name": "Mr Mime",
@@ -2572,7 +2693,8 @@
       "Spe": 90,
       "Total": 460
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7021
   },
   "123": {
     "name": "Scyther",
@@ -2594,7 +2716,8 @@
       "Spe": 105,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "124": {
     "name": "Jynx",
@@ -2616,7 +2739,8 @@
       "Spe": 95,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "125": {
     "name": "Electabuzz",
@@ -2636,7 +2760,8 @@
       "Spe": 105,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "126": {
     "name": "Magmar",
@@ -2656,7 +2781,8 @@
       "Spe": 93,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "127": {
     "name": "Pinsir",
@@ -2677,7 +2803,8 @@
       "Spe": 85,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "128": {
     "name": "Tauros",
@@ -2698,7 +2825,8 @@
       "Spe": 110,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "129": {
     "name": "Magikarp",
@@ -2718,7 +2846,8 @@
       "Spe": 80,
       "Total": 200
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "130": {
     "name": "Gyarados",
@@ -2739,7 +2868,8 @@
       "Spe": 81,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8421
   },
   "131": {
     "name": "Lapras",
@@ -2761,7 +2891,8 @@
       "Spe": 60,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "132": {
     "name": "Ditto",
@@ -2781,7 +2912,8 @@
       "Spe": 48,
       "Total": 288
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4128
   },
   "133": {
     "name": "Eevee",
@@ -2802,7 +2934,8 @@
       "Spe": 55,
       "Total": 325
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4658
   },
   "134": {
     "name": "Vaporeon",
@@ -2822,7 +2955,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "135": {
     "name": "Jolteon",
@@ -2842,7 +2976,8 @@
       "Spe": 130,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "136": {
     "name": "Flareon",
@@ -2862,7 +2997,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "137": {
     "name": "Porygon",
@@ -2883,7 +3019,8 @@
       "Spe": 40,
       "Total": 395
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5883
   },
   "138": {
     "name": "Omanyte",
@@ -2905,7 +3042,8 @@
       "Spe": 35,
       "Total": 355
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5183
   },
   "139": {
     "name": "Omastar",
@@ -2927,7 +3065,8 @@
       "Spe": 55,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "140": {
     "name": "Kabuto",
@@ -2949,7 +3088,8 @@
       "Spe": 55,
       "Total": 355
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5183
   },
   "141": {
     "name": "Kabutops",
@@ -2971,7 +3111,8 @@
       "Spe": 80,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "142": {
     "name": "Aerodactyl",
@@ -2993,7 +3134,8 @@
       "Spe": 130,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7983
   },
   "143": {
     "name": "Snorlax",
@@ -3014,7 +3156,8 @@
       "Spe": 30,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8656
   },
   "144": {
     "name": "Articuno",
@@ -3035,7 +3178,8 @@
       "Spe": 85,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "145": {
     "name": "Zapdos",
@@ -3056,7 +3200,8 @@
       "Spe": 100,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "146": {
     "name": "Moltres",
@@ -3077,7 +3222,8 @@
       "Spe": 90,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "147": {
     "name": "Dratini",
@@ -3097,7 +3243,8 @@
       "Spe": 50,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "148": {
     "name": "Dragonair",
@@ -3117,7 +3264,8 @@
       "Spe": 70,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "149": {
     "name": "Dragonite",
@@ -3138,7 +3286,8 @@
       "Spe": 80,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "150": {
     "name": "Mewtwo",
@@ -3158,7 +3307,8 @@
       "Spe": 130,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "151": {
     "name": "Mew",
@@ -3177,7 +3327,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "152": {
     "name": "Chikorita",
@@ -3197,7 +3348,8 @@
       "Spe": 45,
       "Total": 318
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4536
   },
   "153": {
     "name": "Bayleef",
@@ -3217,7 +3369,8 @@
       "Spe": 60,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "154": {
     "name": "Meganium",
@@ -3237,7 +3390,8 @@
       "Spe": 80,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "155": {
     "name": "Cyndaquil",
@@ -3257,7 +3411,8 @@
       "Spe": 65,
       "Total": 309
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4378
   },
   "156": {
     "name": "Quilava",
@@ -3277,7 +3432,8 @@
       "Spe": 80,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "157": {
     "name": "Typhlosion",
@@ -3297,7 +3453,8 @@
       "Spe": 100,
       "Total": 534
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8316
   },
   "158": {
     "name": "Totodile",
@@ -3317,7 +3474,8 @@
       "Spe": 43,
       "Total": 314
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4466
   },
   "159": {
     "name": "Croconaw",
@@ -3337,7 +3495,8 @@
       "Spe": 58,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "160": {
     "name": "Feraligatr",
@@ -3357,7 +3516,8 @@
       "Spe": 78,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "161": {
     "name": "Sentret",
@@ -3378,7 +3538,8 @@
       "Spe": 20,
       "Total": 215
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0262
   },
   "162": {
     "name": "Furret",
@@ -3399,7 +3560,8 @@
       "Spe": 90,
       "Total": 415
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5704
   },
   "163": {
     "name": "Hoothoot",
@@ -3421,7 +3583,8 @@
       "Spe": 50,
       "Total": 262
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1085
   },
   "164": {
     "name": "Noctowl",
@@ -3443,7 +3606,8 @@
       "Spe": 70,
       "Total": 452
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6351
   },
   "165": {
     "name": "Ledyba",
@@ -3465,7 +3629,8 @@
       "Spe": 55,
       "Total": 265
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1137
   },
   "166": {
     "name": "Ledian",
@@ -3487,7 +3652,8 @@
       "Spe": 85,
       "Total": 390
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5266
   },
   "167": {
     "name": "Spinarak",
@@ -3509,7 +3675,8 @@
       "Spe": 30,
       "Total": 250
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0875
   },
   "168": {
     "name": "Ariados",
@@ -3531,7 +3698,8 @@
       "Spe": 40,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5441
   },
   "169": {
     "name": "Crobat",
@@ -3552,7 +3720,8 @@
       "Spe": 130,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7804
   },
   "170": {
     "name": "Chinchou",
@@ -3574,7 +3743,8 @@
       "Spe": 67,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.304
   },
   "171": {
     "name": "Lanturn",
@@ -3596,7 +3766,8 @@
       "Spe": 67,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6668
   },
   "172": {
     "name": "Pichu",
@@ -3616,7 +3787,8 @@
       "Spe": 60,
       "Total": 205
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.0852
   },
   "173": {
     "name": "Cleffa",
@@ -3637,7 +3809,8 @@
       "Spe": 15,
       "Total": 218
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.155
   },
   "174": {
     "name": "Igglybuff",
@@ -3659,7 +3832,8 @@
       "Spe": 15,
       "Total": 210
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1175
   },
   "175": {
     "name": "Togepi",
@@ -3680,7 +3854,8 @@
       "Spe": 20,
       "Total": 245
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1552
   },
   "176": {
     "name": "Togetic",
@@ -3702,7 +3877,8 @@
       "Spe": 40,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5705
   },
   "177": {
     "name": "Natu",
@@ -3724,7 +3900,8 @@
       "Spe": 70,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2865
   },
   "178": {
     "name": "Xatu",
@@ -3746,7 +3923,8 @@
       "Spe": 95,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6843
   },
   "179": {
     "name": "Mareep",
@@ -3766,7 +3944,8 @@
       "Spe": 35,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1635
   },
   "180": {
     "name": "Flaaffy",
@@ -3786,7 +3965,8 @@
       "Spe": 45,
       "Total": 365
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4476
   },
   "181": {
     "name": "Ampharos",
@@ -3806,7 +3986,8 @@
       "Spe": 55,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "182": {
     "name": "Bellossom",
@@ -3826,7 +4007,8 @@
       "Spe": 50,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "183": {
     "name": "Marill",
@@ -3848,7 +4030,8 @@
       "Spe": 40,
       "Total": 250
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.164
   },
   "184": {
     "name": "Azumarill",
@@ -3870,7 +4053,8 @@
       "Spe": 50,
       "Total": 420
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5968
   },
   "185": {
     "name": "Sudowoodo",
@@ -3891,7 +4075,8 @@
       "Spe": 30,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.591
   },
   "186": {
     "name": "Politoed",
@@ -3912,7 +4097,8 @@
       "Spe": 70,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "187": {
     "name": "Hoppip",
@@ -3934,7 +4120,8 @@
       "Spe": 50,
       "Total": 250
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0875
   },
   "188": {
     "name": "Skiploom",
@@ -3956,7 +4143,8 @@
       "Spe": 80,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "189": {
     "name": "Jumpluff",
@@ -3978,7 +4166,8 @@
       "Spe": 110,
       "Total": 460
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7021
   },
   "190": {
     "name": "Aipom",
@@ -3999,7 +4188,8 @@
       "Spe": 85,
       "Total": 360
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5271
   },
   "191": {
     "name": "Sunkern",
@@ -4020,7 +4210,8 @@
       "Spe": 30,
       "Total": 180
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0235
   },
   "192": {
     "name": "Sunflora",
@@ -4041,7 +4232,8 @@
       "Spe": 30,
       "Total": 425
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5526
   },
   "193": {
     "name": "Yanma",
@@ -4063,7 +4255,8 @@
       "Spe": 95,
       "Total": 390
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5443
   },
   "194": {
     "name": "Wooper",
@@ -4085,7 +4278,8 @@
       "Spe": 15,
       "Total": 210
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0175
   },
   "195": {
     "name": "Quagsire",
@@ -4107,7 +4301,8 @@
       "Spe": 35,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5966
   },
   "196": {
     "name": "Espeon",
@@ -4127,7 +4322,8 @@
       "Spe": 110,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "197": {
     "name": "Umbreon",
@@ -4147,7 +4343,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "198": {
     "name": "Murkrow",
@@ -4169,7 +4366,8 @@
       "Spe": 91,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6235
   },
   "199": {
     "name": "Slowking",
@@ -4191,7 +4389,8 @@
       "Spe": 30,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7251
   },
   "200": {
     "name": "Misdreavus",
@@ -4210,7 +4409,8 @@
       "Spe": 85,
       "Total": 435
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6583
   },
   "201": {
     "name": "Unown",
@@ -4229,7 +4429,8 @@
       "Spe": 48,
       "Total": 336
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2733
   },
   "202": {
     "name": "Wobbuffet",
@@ -4249,7 +4450,8 @@
       "Spe": 33,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "203": {
     "name": "Girafarig",
@@ -4271,7 +4473,8 @@
       "Spe": 85,
       "Total": 455
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6757
   },
   "204": {
     "name": "Pineco",
@@ -4291,7 +4494,8 @@
       "Spe": 15,
       "Total": 290
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.234
   },
   "205": {
     "name": "Forretress",
@@ -4312,7 +4516,8 @@
       "Spe": 40,
       "Total": 465
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6755
   },
   "206": {
     "name": "Dunsparce",
@@ -4333,7 +4538,8 @@
       "Spe": 45,
       "Total": 415
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4527
   },
   "207": {
     "name": "Gligar",
@@ -4355,7 +4561,8 @@
       "Spe": 85,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6319
   },
   "208": {
     "name": "Steelix",
@@ -4377,7 +4584,8 @@
       "Spe": 30,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8131
   },
   "209": {
     "name": "Snubbull",
@@ -4398,7 +4606,8 @@
       "Spe": 30,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2515
   },
   "210": {
     "name": "Granbull",
@@ -4419,7 +4628,8 @@
       "Spe": 45,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6493
   },
   "211": {
     "name": "Qwilfish",
@@ -4441,7 +4651,8 @@
       "Spe": 85,
       "Total": 440
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6671
   },
   "212": {
     "name": "Scizor",
@@ -4463,7 +4674,8 @@
       "Spe": 65,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7956
   },
   "213": {
     "name": "Shuckle",
@@ -4485,7 +4697,8 @@
       "Spe": 5,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6102
   },
   "214": {
     "name": "Heracross",
@@ -4507,7 +4720,8 @@
       "Spe": 85,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "215": {
     "name": "Sneasel",
@@ -4529,7 +4743,8 @@
       "Spe": 115,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6319
   },
   "216": {
     "name": "Teddiursa",
@@ -4550,7 +4765,8 @@
       "Spe": 40,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3863
   },
   "217": {
     "name": "Ursaring",
@@ -4571,7 +4787,8 @@
       "Spe": 55,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "218": {
     "name": "Slugma",
@@ -4592,7 +4809,8 @@
       "Spe": 20,
       "Total": 250
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.164
   },
   "219": {
     "name": "Magcargo",
@@ -4614,7 +4832,8 @@
       "Spe": 30,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6143
   },
   "220": {
     "name": "Swinub",
@@ -4636,7 +4855,8 @@
       "Spe": 50,
       "Total": 250
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1228
   },
   "221": {
     "name": "Piloswine",
@@ -4658,7 +4878,8 @@
       "Spe": 50,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6493
   },
   "222": {
     "name": "Corsola",
@@ -4680,7 +4901,8 @@
       "Spe": 35,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5969
   },
   "223": {
     "name": "Remoraid",
@@ -4701,7 +4923,8 @@
       "Spe": 65,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2515
   },
   "224": {
     "name": "Octillery",
@@ -4722,7 +4945,8 @@
       "Spe": 45,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "225": {
     "name": "Delibird",
@@ -4744,7 +4968,8 @@
       "Spe": 75,
       "Total": 330
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4746
   },
   "226": {
     "name": "Mantine",
@@ -4766,7 +4991,8 @@
       "Spe": 70,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7693
   },
   "227": {
     "name": "Skarmory",
@@ -4788,7 +5014,8 @@
       "Spe": 70,
       "Total": 465
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7343
   },
   "228": {
     "name": "Houndour",
@@ -4810,7 +5037,8 @@
       "Spe": 65,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3863
   },
   "229": {
     "name": "Houndoom",
@@ -4832,7 +5060,8 @@
       "Spe": 95,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "230": {
     "name": "Kingdra",
@@ -4854,7 +5083,8 @@
       "Spe": 85,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8421
   },
   "231": {
     "name": "Phanpy",
@@ -4874,7 +5104,8 @@
       "Spe": 40,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3863
   },
   "232": {
     "name": "Donphan",
@@ -4894,7 +5125,8 @@
       "Spe": 50,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "233": {
     "name": "Porygon2",
@@ -4915,7 +5147,8 @@
       "Spe": 60,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.7983
   },
   "234": {
     "name": "Stantler",
@@ -4936,7 +5169,8 @@
       "Spe": 85,
       "Total": 465
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7108
   },
   "235": {
     "name": "Smeargle",
@@ -4957,7 +5191,8 @@
       "Spe": 75,
       "Total": 250
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.3346
   },
   "236": {
     "name": "Tyrogue",
@@ -4978,7 +5213,8 @@
       "Spe": 35,
       "Total": 210
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.2293
   },
   "237": {
     "name": "Hitmontop",
@@ -4999,7 +5235,8 @@
       "Spe": 70,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "238": {
     "name": "Smoochum",
@@ -5021,7 +5258,8 @@
       "Spe": 65,
       "Total": 305
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4308
   },
   "239": {
     "name": "Elekid",
@@ -5041,7 +5279,8 @@
       "Spe": 95,
       "Total": 360
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5271
   },
   "240": {
     "name": "Magby",
@@ -5061,7 +5300,8 @@
       "Spe": 83,
       "Total": 365
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5358
   },
   "241": {
     "name": "Miltank",
@@ -5082,7 +5322,8 @@
       "Spe": 100,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "242": {
     "name": "Blissey",
@@ -5103,7 +5344,8 @@
       "Spe": 55,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8597
   },
   "243": {
     "name": "Raikou",
@@ -5123,7 +5365,8 @@
       "Spe": 115,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "244": {
     "name": "Entei",
@@ -5143,7 +5386,8 @@
       "Spe": 100,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "245": {
     "name": "Suicune",
@@ -5163,7 +5407,8 @@
       "Spe": 85,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "246": {
     "name": "Larvitar",
@@ -5184,7 +5429,8 @@
       "Spe": 41,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "247": {
     "name": "Pupitar",
@@ -5204,7 +5450,8 @@
       "Spe": 51,
       "Total": 410
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6146
   },
   "248": {
     "name": "Tyranitar",
@@ -5225,7 +5472,8 @@
       "Spe": 61,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "249": {
     "name": "Lugia",
@@ -5246,7 +5494,8 @@
       "Spe": 110,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "250": {
     "name": "Ho Oh",
@@ -5267,7 +5516,8 @@
       "Spe": 90,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "251": {
     "name": "Celebi",
@@ -5287,7 +5537,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "252": {
     "name": "Treecko",
@@ -5307,7 +5558,8 @@
       "Spe": 70,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "253": {
     "name": "Grovyle",
@@ -5327,7 +5579,8 @@
       "Spe": 95,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "254": {
     "name": "Sceptile",
@@ -5347,7 +5600,8 @@
       "Spe": 120,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "255": {
     "name": "Torchic",
@@ -5367,7 +5621,8 @@
       "Spe": 45,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "256": {
     "name": "Combusken",
@@ -5388,7 +5643,8 @@
       "Spe": 55,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "257": {
     "name": "Blaziken",
@@ -5409,7 +5665,8 @@
       "Spe": 80,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "258": {
     "name": "Mudkip",
@@ -5429,7 +5686,8 @@
       "Spe": 40,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "259": {
     "name": "Marshtomp",
@@ -5450,7 +5708,8 @@
       "Spe": 50,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "260": {
     "name": "Swampert",
@@ -5471,7 +5730,8 @@
       "Spe": 60,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "261": {
     "name": "Poochyena",
@@ -5492,7 +5752,8 @@
       "Spe": 35,
       "Total": 220
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.035
   },
   "262": {
     "name": "Mightyena",
@@ -5513,7 +5774,8 @@
       "Spe": 70,
       "Total": 420
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5356
   },
   "263": {
     "name": "Zigzagoon",
@@ -5534,7 +5796,8 @@
       "Spe": 60,
       "Total": 240
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.07
   },
   "264": {
     "name": "Linoone",
@@ -5555,7 +5818,8 @@
       "Spe": 100,
       "Total": 420
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5791
   },
   "265": {
     "name": "Wurmple",
@@ -5575,7 +5839,8 @@
       "Spe": 20,
       "Total": 195
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "266": {
     "name": "Silcoon",
@@ -5594,7 +5859,8 @@
       "Spe": 15,
       "Total": 205
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1676
   },
   "267": {
     "name": "Beautifly",
@@ -5615,7 +5881,8 @@
       "Spe": 65,
       "Total": 395
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5883
   },
   "268": {
     "name": "Cascoon",
@@ -5634,7 +5901,8 @@
       "Spe": 15,
       "Total": 205
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1676
   },
   "269": {
     "name": "Dustox",
@@ -5655,7 +5923,8 @@
       "Spe": 65,
       "Total": 385
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5708
   },
   "270": {
     "name": "Lotad",
@@ -5677,7 +5946,8 @@
       "Spe": 30,
       "Total": 220
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.035
   },
   "271": {
     "name": "Lombre",
@@ -5699,7 +5969,8 @@
       "Spe": 50,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "272": {
     "name": "Ludicolo",
@@ -5721,7 +5992,8 @@
       "Spe": 70,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "273": {
     "name": "Seedot",
@@ -5742,7 +6014,8 @@
       "Spe": 30,
       "Total": 220
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.035
   },
   "274": {
     "name": "Nuzleaf",
@@ -5764,7 +6037,8 @@
       "Spe": 60,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "275": {
     "name": "Shiftry",
@@ -5786,7 +6060,8 @@
       "Spe": 80,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "276": {
     "name": "Taillow",
@@ -5807,7 +6082,8 @@
       "Spe": 85,
       "Total": 270
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1872
   },
   "277": {
     "name": "Swellow",
@@ -5828,7 +6104,8 @@
       "Spe": 125,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "278": {
     "name": "Wingull",
@@ -5850,7 +6127,8 @@
       "Spe": 85,
       "Total": 270
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.199
   },
   "279": {
     "name": "Pelipper",
@@ -5872,7 +6150,8 @@
       "Spe": 65,
       "Total": 440
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6671
   },
   "280": {
     "name": "Ralts",
@@ -5894,7 +6173,8 @@
       "Spe": 40,
       "Total": 198
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0235
   },
   "281": {
     "name": "Kirlia",
@@ -5916,7 +6196,8 @@
       "Spe": 50,
       "Total": 278
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2953
   },
   "282": {
     "name": "Gardevoir",
@@ -5938,7 +6219,8 @@
       "Spe": 80,
       "Total": 518
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8036
   },
   "283": {
     "name": "Surskit",
@@ -5959,7 +6241,8 @@
       "Spe": 65,
       "Total": 269
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1855
   },
   "284": {
     "name": "Masquerain",
@@ -5980,7 +6263,8 @@
       "Spe": 80,
       "Total": 454
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6563
   },
   "285": {
     "name": "Shroomish",
@@ -6001,7 +6285,8 @@
       "Spe": 35,
       "Total": 295
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1662
   },
   "286": {
     "name": "Breloom",
@@ -6023,7 +6308,8 @@
       "Spe": 70,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6491
   },
   "287": {
     "name": "Slakoth",
@@ -6042,7 +6328,8 @@
       "Spe": 30,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.14
   },
   "288": {
     "name": "Vigoroth",
@@ -6061,7 +6348,8 @@
       "Spe": 90,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5788
   },
   "289": {
     "name": "Slaking",
@@ -6080,7 +6368,8 @@
       "Spe": 100,
       "Total": 670
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "290": {
     "name": "Nincada",
@@ -6101,7 +6390,8 @@
       "Spe": 40,
       "Total": 266
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1155
   },
   "291": {
     "name": "Ninjask",
@@ -6122,7 +6412,8 @@
       "Spe": 160,
       "Total": 456
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6068
   },
   "292": {
     "name": "Shedinja",
@@ -6142,7 +6433,8 @@
       "Spe": 40,
       "Total": 236
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.3101
   },
   "293": {
     "name": "Whismur",
@@ -6162,7 +6454,8 @@
       "Spe": 28,
       "Total": 240
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1465
   },
   "294": {
     "name": "Loudred",
@@ -6182,7 +6475,8 @@
       "Spe": 48,
       "Total": 360
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4388
   },
   "295": {
     "name": "Exploud",
@@ -6202,7 +6496,8 @@
       "Spe": 68,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "296": {
     "name": "Makuhita",
@@ -6223,7 +6518,8 @@
       "Spe": 25,
       "Total": 237
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.153
   },
   "297": {
     "name": "Hariyama",
@@ -6244,7 +6540,8 @@
       "Spe": 50,
       "Total": 474
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5442
   },
   "298": {
     "name": "Azurill",
@@ -6266,7 +6563,8 @@
       "Spe": 20,
       "Total": 190
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1235
   },
   "299": {
     "name": "Nosepass",
@@ -6287,7 +6585,8 @@
       "Spe": 30,
       "Total": 375
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3062
   },
   "300": {
     "name": "Skitty",
@@ -6308,7 +6607,8 @@
       "Spe": 50,
       "Total": 260
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.105
   },
   "301": {
     "name": "Delcatty",
@@ -6329,7 +6629,8 @@
       "Spe": 90,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5794
   },
   "302": {
     "name": "Sableye",
@@ -6351,7 +6652,8 @@
       "Spe": 50,
       "Total": 380
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5621
   },
   "303": {
     "name": "Mawile",
@@ -6373,7 +6675,8 @@
       "Spe": 50,
       "Total": 380
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5621
   },
   "304": {
     "name": "Aron",
@@ -6395,7 +6698,8 @@
       "Spe": 30,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3157
   },
   "305": {
     "name": "Lairon",
@@ -6417,7 +6721,8 @@
       "Spe": 40,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5966
   },
   "306": {
     "name": "Aggron",
@@ -6439,7 +6744,8 @@
       "Spe": 50,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "307": {
     "name": "Meditite",
@@ -6460,7 +6766,8 @@
       "Spe": 60,
       "Total": 280
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2282
   },
   "308": {
     "name": "Medicham",
@@ -6481,7 +6788,8 @@
       "Spe": 80,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5616
   },
   "309": {
     "name": "Electrike",
@@ -6502,7 +6810,8 @@
       "Spe": 65,
       "Total": 295
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3251
   },
   "310": {
     "name": "Manectric",
@@ -6523,7 +6832,8 @@
       "Spe": 105,
       "Total": 475
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7283
   },
   "311": {
     "name": "Plusle",
@@ -6543,7 +6853,8 @@
       "Spe": 95,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4235
   },
   "312": {
     "name": "Minun",
@@ -6563,7 +6874,8 @@
       "Spe": 95,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4235
   },
   "313": {
     "name": "Volbeat",
@@ -6584,7 +6896,8 @@
       "Spe": 85,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.526
   },
   "314": {
     "name": "Illumise",
@@ -6605,7 +6918,8 @@
       "Spe": 85,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.526
   },
   "315": {
     "name": "Roselia",
@@ -6627,7 +6941,8 @@
       "Spe": 65,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4735
   },
   "316": {
     "name": "Gulpin",
@@ -6648,7 +6963,8 @@
       "Spe": 40,
       "Total": 302
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2138
   },
   "317": {
     "name": "Swalot",
@@ -6669,7 +6985,8 @@
       "Spe": 55,
       "Total": 467
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.679
   },
   "318": {
     "name": "Carvanha",
@@ -6690,7 +7007,8 @@
       "Spe": 65,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.219
   },
   "319": {
     "name": "Sharpedo",
@@ -6711,7 +7029,8 @@
       "Spe": 95,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6844
   },
   "320": {
     "name": "Wailmer",
@@ -6732,7 +7051,8 @@
       "Spe": 60,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5029
   },
   "321": {
     "name": "Wailord",
@@ -6753,7 +7073,8 @@
       "Spe": 60,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "322": {
     "name": "Numel",
@@ -6775,7 +7096,8 @@
       "Spe": 35,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1837
   },
   "323": {
     "name": "Camerupt",
@@ -6797,7 +7119,8 @@
       "Spe": 40,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5785
   },
   "324": {
     "name": "Torkoal",
@@ -6818,7 +7141,8 @@
       "Spe": 20,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6666
   },
   "325": {
     "name": "Spoink",
@@ -6839,7 +7163,8 @@
       "Spe": 60,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2275
   },
   "326": {
     "name": "Grumpig",
@@ -6860,7 +7185,8 @@
       "Spe": 80,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7019
   },
   "327": {
     "name": "Spinda",
@@ -6881,7 +7207,8 @@
       "Spe": 60,
       "Total": 360
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.28
   },
   "328": {
     "name": "Trapinch",
@@ -6902,7 +7229,8 @@
       "Spe": 10,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1575
   },
   "329": {
     "name": "Vibrava",
@@ -6922,7 +7250,8 @@
       "Spe": 70,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "330": {
     "name": "Flygon",
@@ -6942,7 +7271,8 @@
       "Spe": 100,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "331": {
     "name": "Cacnea",
@@ -6962,7 +7292,8 @@
       "Spe": 35,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3127
   },
   "332": {
     "name": "Cacturne",
@@ -6983,7 +7314,8 @@
       "Spe": 55,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7107
   },
   "333": {
     "name": "Swablu",
@@ -7004,7 +7336,8 @@
       "Spe": 50,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1925
   },
   "334": {
     "name": "Altaria",
@@ -7025,7 +7358,8 @@
       "Spe": 80,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "335": {
     "name": "Zangoose",
@@ -7045,7 +7379,8 @@
       "Spe": 90,
       "Total": 458
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6456
   },
   "336": {
     "name": "Seviper",
@@ -7065,7 +7400,8 @@
       "Spe": 65,
       "Total": 458
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6456
   },
   "337": {
     "name": "Lunatone",
@@ -7085,7 +7421,8 @@
       "Spe": 70,
       "Total": 460
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7021
   },
   "338": {
     "name": "Solrock",
@@ -7105,7 +7442,8 @@
       "Spe": 70,
       "Total": 460
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7021
   },
   "339": {
     "name": "Barboach",
@@ -7127,7 +7465,8 @@
       "Spe": 60,
       "Total": 288
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2305
   },
   "340": {
     "name": "Whiscash",
@@ -7149,7 +7488,8 @@
       "Spe": 60,
       "Total": 468
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6808
   },
   "341": {
     "name": "Corphish",
@@ -7170,7 +7510,8 @@
       "Spe": 35,
       "Total": 308
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2478
   },
   "342": {
     "name": "Crawdaunt",
@@ -7192,7 +7533,8 @@
       "Spe": 55,
       "Total": 468
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5866
   },
   "343": {
     "name": "Baltoy",
@@ -7212,7 +7554,8 @@
       "Spe": 55,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "344": {
     "name": "Claydol",
@@ -7232,7 +7575,8 @@
       "Spe": 75,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7191
   },
   "345": {
     "name": "Lileep",
@@ -7253,7 +7597,8 @@
       "Spe": 23,
       "Total": 355
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5183
   },
   "346": {
     "name": "Cradily",
@@ -7274,7 +7619,8 @@
       "Spe": 43,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "347": {
     "name": "Anorith",
@@ -7295,7 +7641,8 @@
       "Spe": 75,
       "Total": 355
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5183
   },
   "348": {
     "name": "Armaldo",
@@ -7316,7 +7663,8 @@
       "Spe": 45,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "349": {
     "name": "Feebas",
@@ -7337,7 +7685,8 @@
       "Spe": 80,
       "Total": 200
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "350": {
     "name": "Milotic",
@@ -7358,7 +7707,8 @@
       "Spe": 81,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8244
   },
   "351": {
     "name": "Castform",
@@ -7377,7 +7727,8 @@
       "Spe": 70,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "352": {
     "name": "Kecleon",
@@ -7397,7 +7748,8 @@
       "Spe": 40,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4847
   },
   "353": {
     "name": "Shuppet",
@@ -7418,7 +7770,8 @@
       "Spe": 45,
       "Total": 295
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.2015
   },
   "354": {
     "name": "Banette",
@@ -7439,7 +7792,8 @@
       "Spe": 65,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "355": {
     "name": "Duskull",
@@ -7459,7 +7813,8 @@
       "Spe": 25,
       "Total": 295
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2427
   },
   "356": {
     "name": "Dusclops",
@@ -7479,7 +7834,8 @@
       "Spe": 25,
       "Total": 455
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6404
   },
   "357": {
     "name": "Tropius",
@@ -7501,7 +7857,8 @@
       "Spe": 51,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5197
   },
   "358": {
     "name": "Chimecho",
@@ -7520,7 +7877,8 @@
       "Spe": 65,
       "Total": 455
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6933
   },
   "359": {
     "name": "Absol",
@@ -7541,7 +7899,8 @@
       "Spe": 75,
       "Total": 465
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7285
   },
   "360": {
     "name": "Wynaut",
@@ -7561,7 +7920,8 @@
       "Spe": 23,
       "Total": 260
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2579
   },
   "361": {
     "name": "Snorunt",
@@ -7582,7 +7942,8 @@
       "Spe": 50,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2515
   },
   "362": {
     "name": "Glalie",
@@ -7603,7 +7964,8 @@
       "Spe": 80,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "363": {
     "name": "Spheal",
@@ -7625,7 +7987,8 @@
       "Spe": 25,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1575
   },
   "364": {
     "name": "Sealeo",
@@ -7647,7 +8010,8 @@
       "Spe": 45,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5263
   },
   "365": {
     "name": "Walrein",
@@ -7669,7 +8033,8 @@
       "Spe": 65,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "366": {
     "name": "Clamperl",
@@ -7689,7 +8054,8 @@
       "Spe": 32,
       "Total": 345
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2537
   },
   "367": {
     "name": "Huntail",
@@ -7709,7 +8075,8 @@
       "Spe": 52,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7282
   },
   "368": {
     "name": "Gorebyss",
@@ -7729,7 +8096,8 @@
       "Spe": 52,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7282
   },
   "369": {
     "name": "Relicanth",
@@ -7751,7 +8119,8 @@
       "Spe": 55,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7693
   },
   "370": {
     "name": "Luvdisc",
@@ -7771,7 +8140,8 @@
       "Spe": 97,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2628
   },
   "371": {
     "name": "Bagon",
@@ -7791,7 +8161,8 @@
       "Spe": 50,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "372": {
     "name": "Shelgon",
@@ -7811,7 +8182,8 @@
       "Spe": 50,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "373": {
     "name": "Salamence",
@@ -7832,7 +8204,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "374": {
     "name": "Beldum",
@@ -7853,7 +8226,8 @@
       "Spe": 30,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4715
   },
   "375": {
     "name": "Metang",
@@ -7874,7 +8248,8 @@
       "Spe": 50,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6815
   },
   "376": {
     "name": "Metagross",
@@ -7895,7 +8270,8 @@
       "Spe": 70,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9965
   },
   "377": {
     "name": "Regirock",
@@ -7915,7 +8291,8 @@
       "Spe": 50,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "378": {
     "name": "Regice",
@@ -7935,7 +8312,8 @@
       "Spe": 50,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "379": {
     "name": "Registeel",
@@ -7955,7 +8333,8 @@
       "Spe": 50,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "380": {
     "name": "Latias",
@@ -7975,7 +8354,8 @@
       "Spe": 110,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "381": {
     "name": "Latios",
@@ -7995,7 +8375,8 @@
       "Spe": 110,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "382": {
     "name": "Kyogre",
@@ -8014,7 +8395,8 @@
       "Spe": 90,
       "Total": 670
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "383": {
     "name": "Groudon",
@@ -8033,7 +8415,8 @@
       "Spe": 90,
       "Total": 670
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "384": {
     "name": "Rayquaza",
@@ -8053,7 +8436,8 @@
       "Spe": 95,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "385": {
     "name": "Jirachi",
@@ -8073,7 +8457,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "386": {
     "name": "Deoxys Normal",
@@ -8092,7 +8477,8 @@
       "Spe": 150,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "387": {
     "name": "Turtwig",
@@ -8112,7 +8498,8 @@
       "Spe": 31,
       "Total": 318
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4536
   },
   "388": {
     "name": "Grotle",
@@ -8132,7 +8519,8 @@
       "Spe": 36,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "389": {
     "name": "Torterra",
@@ -8153,7 +8541,8 @@
       "Spe": 56,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "390": {
     "name": "Chimchar",
@@ -8173,7 +8562,8 @@
       "Spe": 61,
       "Total": 309
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4378
   },
   "391": {
     "name": "Monferno",
@@ -8194,7 +8584,8 @@
       "Spe": 81,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "392": {
     "name": "Infernape",
@@ -8215,7 +8606,8 @@
       "Spe": 108,
       "Total": 534
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8316
   },
   "393": {
     "name": "Piplup",
@@ -8235,7 +8627,8 @@
       "Spe": 40,
       "Total": 314
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4466
   },
   "394": {
     "name": "Prinplup",
@@ -8255,7 +8648,8 @@
       "Spe": 50,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "395": {
     "name": "Empoleon",
@@ -8276,7 +8670,8 @@
       "Spe": 60,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "396": {
     "name": "Starly",
@@ -8297,7 +8692,8 @@
       "Spe": 60,
       "Total": 245
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0788
   },
   "397": {
     "name": "Staravia",
@@ -8318,7 +8714,8 @@
       "Spe": 80,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "398": {
     "name": "Staraptor",
@@ -8339,7 +8736,8 @@
       "Spe": 100,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "399": {
     "name": "Bidoof",
@@ -8360,7 +8758,8 @@
       "Spe": 31,
       "Total": 250
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0875
   },
   "400": {
     "name": "Bibarel",
@@ -8382,7 +8781,8 @@
       "Spe": 71,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5181
   },
   "401": {
     "name": "Kricketot",
@@ -8402,7 +8802,8 @@
       "Spe": 25,
       "Total": 194
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "402": {
     "name": "Kricketune",
@@ -8422,7 +8823,8 @@
       "Spe": 65,
       "Total": 384
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5691
   },
   "403": {
     "name": "Shinx",
@@ -8443,7 +8845,8 @@
       "Spe": 45,
       "Total": 263
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1338
   },
   "404": {
     "name": "Luxio",
@@ -8464,7 +8867,8 @@
       "Spe": 60,
       "Total": 363
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4441
   },
   "405": {
     "name": "Luxray",
@@ -8485,7 +8889,8 @@
       "Spe": 70,
       "Total": 523
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8123
   },
   "406": {
     "name": "Budew",
@@ -8507,7 +8912,8 @@
       "Spe": 55,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.14
   },
   "407": {
     "name": "Roserade",
@@ -8529,7 +8935,8 @@
       "Spe": 90,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.763
   },
   "408": {
     "name": "Cranidos",
@@ -8549,7 +8956,8 @@
       "Spe": 58,
       "Total": 350
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5096
   },
   "409": {
     "name": "Rampardos",
@@ -8569,7 +8977,8 @@
       "Spe": 58,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "410": {
     "name": "Shieldon",
@@ -8590,7 +8999,8 @@
       "Spe": 30,
       "Total": 350
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5096
   },
   "411": {
     "name": "Bastiodon",
@@ -8611,7 +9021,8 @@
       "Spe": 30,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "412": {
     "name": "Burmy",
@@ -8631,7 +9042,8 @@
       "Spe": 36,
       "Total": 224
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2008
   },
   "413": {
     "name": "Wormadam Plant",
@@ -8652,7 +9064,8 @@
       "Spe": 36,
       "Total": 424
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6391
   },
   "414": {
     "name": "Mothim",
@@ -8673,7 +9086,8 @@
       "Spe": 66,
       "Total": 424
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6391
   },
   "415": {
     "name": "Combee",
@@ -8694,7 +9108,8 @@
       "Spe": 70,
       "Total": 244
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2358
   },
   "416": {
     "name": "Vespiquen",
@@ -8715,7 +9130,8 @@
       "Spe": 40,
       "Total": 474
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7266
   },
   "417": {
     "name": "Pachirisu",
@@ -8736,7 +9152,8 @@
       "Spe": 95,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4235
   },
   "418": {
     "name": "Buizel",
@@ -8756,7 +9173,8 @@
       "Spe": 85,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.304
   },
   "419": {
     "name": "Floatzel",
@@ -8776,7 +9194,8 @@
       "Spe": 115,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.728
   },
   "420": {
     "name": "Cherubi",
@@ -8795,7 +9214,8 @@
       "Spe": 35,
       "Total": 275
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2077
   },
   "421": {
     "name": "Cherrim",
@@ -8814,7 +9234,8 @@
       "Spe": 85,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6493
   },
   "422": {
     "name": "Shellos",
@@ -8835,7 +9256,8 @@
       "Spe": 34,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2952
   },
   "423": {
     "name": "Gastrodon",
@@ -8857,7 +9279,8 @@
       "Spe": 39,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.693
   },
   "424": {
     "name": "Ambipom",
@@ -8878,7 +9301,8 @@
       "Spe": 115,
       "Total": 482
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7406
   },
   "425": {
     "name": "Drifloon",
@@ -8900,7 +9324,8 @@
       "Spe": 70,
       "Total": 348
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4119
   },
   "426": {
     "name": "Drifblim",
@@ -8922,7 +9347,8 @@
       "Spe": 80,
       "Total": 498
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7509
   },
   "427": {
     "name": "Buneary",
@@ -8943,7 +9369,8 @@
       "Spe": 85,
       "Total": 350
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.339
   },
   "428": {
     "name": "Lopunny",
@@ -8964,7 +9391,8 @@
       "Spe": 105,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7194
   },
   "429": {
     "name": "Mismagius",
@@ -8983,7 +9411,8 @@
       "Spe": 105,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "430": {
     "name": "Honchkrow",
@@ -9005,7 +9434,8 @@
       "Spe": 71,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.7985
   },
   "431": {
     "name": "Glameow",
@@ -9026,7 +9456,8 @@
       "Spe": 85,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.269
   },
   "432": {
     "name": "Purugly",
@@ -9047,7 +9478,8 @@
       "Spe": 112,
       "Total": 452
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6528
   },
   "433": {
     "name": "Chingling",
@@ -9066,7 +9498,8 @@
       "Spe": 45,
       "Total": 285
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3076
   },
   "434": {
     "name": "Stunky",
@@ -9088,7 +9521,8 @@
       "Spe": 74,
       "Total": 329
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.261
   },
   "435": {
     "name": "Skuntank",
@@ -9110,7 +9544,8 @@
       "Spe": 84,
       "Total": 479
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7177
   },
   "436": {
     "name": "Bronzor",
@@ -9132,7 +9567,8 @@
       "Spe": 23,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "437": {
     "name": "Bronzong",
@@ -9154,7 +9590,8 @@
       "Spe": 33,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7191
   },
   "438": {
     "name": "Bonsly",
@@ -9175,7 +9612,8 @@
       "Spe": 10,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1575
   },
   "439": {
     "name": "Mime Jr",
@@ -9197,7 +9635,8 @@
       "Spe": 60,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3219
   },
   "440": {
     "name": "Happiny",
@@ -9218,7 +9657,8 @@
       "Spe": 30,
       "Total": 220
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1821
   },
   "441": {
     "name": "Chatot",
@@ -9240,7 +9680,8 @@
       "Spe": 91,
       "Total": 411
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.634
   },
   "442": {
     "name": "Spiritomb",
@@ -9261,7 +9702,8 @@
       "Spe": 35,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6811
   },
   "443": {
     "name": "Gible",
@@ -9282,7 +9724,8 @@
       "Spe": 42,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "444": {
     "name": "Gabite",
@@ -9303,7 +9746,8 @@
       "Spe": 82,
       "Total": 410
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6146
   },
   "445": {
     "name": "Garchomp",
@@ -9324,7 +9768,8 @@
       "Spe": 102,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "446": {
     "name": "Munchlax",
@@ -9345,7 +9790,8 @@
       "Spe": 5,
       "Total": 390
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5737
   },
   "447": {
     "name": "Riolu",
@@ -9366,7 +9812,8 @@
       "Spe": 60,
       "Total": 285
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.3605
   },
   "448": {
     "name": "Lucario",
@@ -9388,7 +9835,8 @@
       "Spe": 90,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "449": {
     "name": "Hippopotas",
@@ -9408,7 +9856,8 @@
       "Spe": 32,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3628
   },
   "450": {
     "name": "Hippowdon",
@@ -9428,7 +9877,8 @@
       "Spe": 47,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7982
   },
   "451": {
     "name": "Skorupi",
@@ -9450,7 +9900,8 @@
       "Spe": 65,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3863
   },
   "452": {
     "name": "Drapion",
@@ -9472,7 +9923,8 @@
       "Spe": 95,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "453": {
     "name": "Croagunk",
@@ -9494,7 +9946,8 @@
       "Spe": 50,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3103
   },
   "454": {
     "name": "Toxicroak",
@@ -9516,7 +9969,8 @@
       "Spe": 85,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7193
   },
   "455": {
     "name": "Carnivine",
@@ -9535,7 +9989,8 @@
       "Spe": 46,
       "Total": 454
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5092
   },
   "456": {
     "name": "Finneon",
@@ -9556,7 +10011,8 @@
       "Spe": 66,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.304
   },
   "457": {
     "name": "Lumineon",
@@ -9577,7 +10033,8 @@
       "Spe": 91,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6668
   },
   "458": {
     "name": "Mantyke",
@@ -9599,7 +10056,8 @@
       "Spe": 50,
       "Total": 345
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5243
   },
   "459": {
     "name": "Snover",
@@ -9620,7 +10078,8 @@
       "Spe": 40,
       "Total": 334
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3933
   },
   "460": {
     "name": "Abomasnow",
@@ -9641,7 +10100,8 @@
       "Spe": 60,
       "Total": 494
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7439
   },
   "461": {
     "name": "Weavile",
@@ -9662,7 +10122,8 @@
       "Spe": 125,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "462": {
     "name": "Magnezone",
@@ -9684,7 +10145,8 @@
       "Spe": 60,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.851
   },
   "463": {
     "name": "Lickilicky",
@@ -9705,7 +10167,8 @@
       "Spe": 50,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.816
   },
   "464": {
     "name": "Rhyperior",
@@ -9727,7 +10190,8 @@
       "Spe": 40,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.851
   },
   "465": {
     "name": "Tangrowth",
@@ -9748,7 +10212,8 @@
       "Spe": 50,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.851
   },
   "466": {
     "name": "Electivire",
@@ -9768,7 +10233,8 @@
       "Spe": 95,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8597
   },
   "467": {
     "name": "Magmortar",
@@ -9788,7 +10254,8 @@
       "Spe": 83,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8597
   },
   "468": {
     "name": "Togekiss",
@@ -9810,7 +10277,8 @@
       "Spe": 80,
       "Total": 545
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8685
   },
   "469": {
     "name": "Yanmega",
@@ -9832,7 +10300,8 @@
       "Spe": 95,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.816
   },
   "470": {
     "name": "Leafeon",
@@ -9852,7 +10321,8 @@
       "Spe": 95,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "471": {
     "name": "Glaceon",
@@ -9872,7 +10342,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "472": {
     "name": "Gliscor",
@@ -9894,7 +10365,8 @@
       "Spe": 95,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8072
   },
   "473": {
     "name": "Mamoswine",
@@ -9916,7 +10388,8 @@
       "Spe": 80,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8187
   },
   "474": {
     "name": "Porygon Z",
@@ -9937,7 +10410,8 @@
       "Spe": 90,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.851
   },
   "475": {
     "name": "Gallade",
@@ -9959,7 +10433,8 @@
       "Spe": 80,
       "Total": 518
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8036
   },
   "476": {
     "name": "Probopass",
@@ -9981,7 +10456,8 @@
       "Spe": 40,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7982
   },
   "477": {
     "name": "Dusknoir",
@@ -10001,7 +10477,8 @@
       "Spe": 45,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "478": {
     "name": "Froslass",
@@ -10022,7 +10499,8 @@
       "Spe": 110,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "479": {
     "name": "Rotom",
@@ -10042,7 +10520,8 @@
       "Spe": 91,
       "Total": 440
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6671
   },
   "480": {
     "name": "Uxie",
@@ -10061,7 +10540,8 @@
       "Spe": 95,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "481": {
     "name": "Mesprit",
@@ -10080,7 +10560,8 @@
       "Spe": 80,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "482": {
     "name": "Azelf",
@@ -10099,7 +10580,8 @@
       "Spe": 115,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "483": {
     "name": "Dialga",
@@ -10120,7 +10602,8 @@
       "Spe": 90,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "484": {
     "name": "Palkia",
@@ -10141,7 +10624,8 @@
       "Spe": 100,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "485": {
     "name": "Heatran",
@@ -10162,7 +10646,8 @@
       "Spe": 77,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "486": {
     "name": "Regigigas",
@@ -10181,7 +10666,8 @@
       "Spe": 100,
       "Total": 670
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "487": {
     "name": "Giratina Altered",
@@ -10202,7 +10688,8 @@
       "Spe": 90,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "488": {
     "name": "Cresselia",
@@ -10221,7 +10708,8 @@
       "Spe": 85,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "489": {
     "name": "Phione",
@@ -10240,7 +10728,8 @@
       "Spe": 80,
       "Total": 480
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "490": {
     "name": "Manaphy",
@@ -10259,7 +10748,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "491": {
     "name": "Darkrai",
@@ -10278,7 +10768,8 @@
       "Spe": 125,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "492": {
     "name": "Shaymin Land",
@@ -10297,7 +10788,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "493": {
     "name": "Arceus",
@@ -10316,7 +10808,8 @@
       "Spe": 120,
       "Total": 720
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "494": {
     "name": "Victini",
@@ -10336,7 +10829,8 @@
       "Spe": 100,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "495": {
     "name": "Snivy",
@@ -10356,7 +10850,8 @@
       "Spe": 63,
       "Total": 308
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4361
   },
   "496": {
     "name": "Servine",
@@ -10376,7 +10871,8 @@
       "Spe": 83,
       "Total": 413
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6198
   },
   "497": {
     "name": "Serperior",
@@ -10396,7 +10892,8 @@
       "Spe": 113,
       "Total": 528
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8211
   },
   "498": {
     "name": "Tepig",
@@ -10416,7 +10913,8 @@
       "Spe": 45,
       "Total": 308
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4361
   },
   "499": {
     "name": "Pignite",
@@ -10437,7 +10935,8 @@
       "Spe": 55,
       "Total": 418
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6286
   },
   "500": {
     "name": "Emboar",
@@ -10458,7 +10957,8 @@
       "Spe": 65,
       "Total": 528
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8211
   },
   "501": {
     "name": "Oshawott",
@@ -10478,7 +10978,8 @@
       "Spe": 45,
       "Total": 308
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4361
   },
   "502": {
     "name": "Dewott",
@@ -10498,7 +10999,8 @@
       "Spe": 60,
       "Total": 413
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6198
   },
   "503": {
     "name": "Samurott",
@@ -10518,7 +11020,8 @@
       "Spe": 70,
       "Total": 528
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8211
   },
   "504": {
     "name": "Patrat",
@@ -10539,7 +11042,8 @@
       "Spe": 42,
       "Total": 255
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0963
   },
   "505": {
     "name": "Watchog",
@@ -10560,7 +11064,8 @@
       "Spe": 77,
       "Total": 420
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.385
   },
   "506": {
     "name": "Lillipup",
@@ -10581,7 +11086,8 @@
       "Spe": 55,
       "Total": 275
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1312
   },
   "507": {
     "name": "Herdier",
@@ -10602,7 +11108,8 @@
       "Spe": 60,
       "Total": 370
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4563
   },
   "508": {
     "name": "Stoutland",
@@ -10623,7 +11130,8 @@
       "Spe": 80,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "509": {
     "name": "Purrloin",
@@ -10644,7 +11152,8 @@
       "Spe": 66,
       "Total": 281
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1417
   },
   "510": {
     "name": "Liepard",
@@ -10665,7 +11174,8 @@
       "Spe": 106,
       "Total": 446
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6246
   },
   "511": {
     "name": "Pansage",
@@ -10685,7 +11195,8 @@
       "Spe": 64,
       "Total": 316
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2795
   },
   "512": {
     "name": "Simisage",
@@ -10705,7 +11216,8 @@
       "Spe": 101,
       "Total": 498
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7333
   },
   "513": {
     "name": "Pansear",
@@ -10725,7 +11237,8 @@
       "Spe": 64,
       "Total": 316
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2795
   },
   "514": {
     "name": "Simisear",
@@ -10745,7 +11258,8 @@
       "Spe": 101,
       "Total": 498
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7333
   },
   "515": {
     "name": "Panpour",
@@ -10765,7 +11279,8 @@
       "Spe": 64,
       "Total": 316
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2795
   },
   "516": {
     "name": "Simipour",
@@ -10785,7 +11300,8 @@
       "Spe": 101,
       "Total": 498
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7333
   },
   "517": {
     "name": "Munna",
@@ -10806,7 +11322,8 @@
       "Spe": 24,
       "Total": 292
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2375
   },
   "518": {
     "name": "Musharna",
@@ -10827,7 +11344,8 @@
       "Spe": 29,
       "Total": 487
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.714
   },
   "519": {
     "name": "Pidove",
@@ -10849,7 +11367,8 @@
       "Spe": 43,
       "Total": 264
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.112
   },
   "520": {
     "name": "Tranquill",
@@ -10871,7 +11390,8 @@
       "Spe": 65,
       "Total": 358
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4353
   },
   "521": {
     "name": "Unfezant",
@@ -10893,7 +11413,8 @@
       "Spe": 93,
       "Total": 488
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7511
   },
   "522": {
     "name": "Blitzle",
@@ -10914,7 +11435,8 @@
       "Spe": 76,
       "Total": 295
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2427
   },
   "523": {
     "name": "Zebstrika",
@@ -10935,7 +11457,8 @@
       "Spe": 116,
       "Total": 497
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7315
   },
   "524": {
     "name": "Roggenrola",
@@ -10956,7 +11479,8 @@
       "Spe": 15,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.14
   },
   "525": {
     "name": "Boldore",
@@ -10977,7 +11501,8 @@
       "Spe": 20,
       "Total": 390
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4913
   },
   "526": {
     "name": "Gigalith",
@@ -10998,7 +11523,8 @@
       "Spe": 25,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.7983
   },
   "527": {
     "name": "Woobat",
@@ -11020,7 +11546,8 @@
       "Spe": 72,
       "Total": 323
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2917
   },
   "528": {
     "name": "Swoobat",
@@ -11042,7 +11569,8 @@
       "Spe": 114,
       "Total": 425
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6408
   },
   "529": {
     "name": "Drilbur",
@@ -11063,7 +11591,8 @@
       "Spe": 68,
       "Total": 328
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3828
   },
   "530": {
     "name": "Excadrill",
@@ -11085,7 +11614,8 @@
       "Spe": 88,
       "Total": 508
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7684
   },
   "531": {
     "name": "Audino",
@@ -11106,7 +11636,8 @@
       "Spe": 50,
       "Total": 445
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4288
   },
   "532": {
     "name": "Timburr",
@@ -11127,7 +11658,8 @@
       "Spe": 35,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.272
   },
   "533": {
     "name": "Gurdurr",
@@ -11148,7 +11680,8 @@
       "Spe": 40,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5529
   },
   "534": {
     "name": "Conkeldurr",
@@ -11169,7 +11702,8 @@
       "Spe": 45,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "535": {
     "name": "Tympole",
@@ -11190,7 +11724,8 @@
       "Spe": 64,
       "Total": 294
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1645
   },
   "536": {
     "name": "Palpitoad",
@@ -11212,7 +11747,8 @@
       "Spe": 69,
       "Total": 384
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4808
   },
   "537": {
     "name": "Seismitoad",
@@ -11234,7 +11770,8 @@
       "Spe": 74,
       "Total": 509
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7878
   },
   "538": {
     "name": "Throh",
@@ -11255,7 +11792,8 @@
       "Spe": 45,
       "Total": 465
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7108
   },
   "539": {
     "name": "Sawk",
@@ -11276,7 +11814,8 @@
       "Spe": 85,
       "Total": 465
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7108
   },
   "540": {
     "name": "Sewaddle",
@@ -11298,7 +11837,8 @@
       "Spe": 42,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1925
   },
   "541": {
     "name": "Swadloon",
@@ -11320,7 +11860,8 @@
       "Spe": 42,
       "Total": 380
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4738
   },
   "542": {
     "name": "Leavanny",
@@ -11342,7 +11883,8 @@
       "Spe": 92,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "543": {
     "name": "Venipede",
@@ -11364,7 +11906,8 @@
       "Spe": 57,
       "Total": 260
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.105
   },
   "544": {
     "name": "Whirlipede",
@@ -11386,7 +11929,8 @@
       "Spe": 47,
       "Total": 360
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4388
   },
   "545": {
     "name": "Scolipede",
@@ -11408,7 +11952,8 @@
       "Spe": 112,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "546": {
     "name": "Cottonee",
@@ -11430,7 +11975,8 @@
       "Spe": 66,
       "Total": 280
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2165
   },
   "547": {
     "name": "Whimsicott",
@@ -11452,7 +11998,8 @@
       "Spe": 116,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "548": {
     "name": "Petilil",
@@ -11473,7 +12020,8 @@
       "Spe": 30,
       "Total": 280
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2165
   },
   "549": {
     "name": "Lilligant",
@@ -11494,7 +12042,8 @@
       "Spe": 90,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "550": {
     "name": "Basculin Red Striped",
@@ -11515,7 +12064,8 @@
       "Spe": 98,
       "Total": 460
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7256
   },
   "551": {
     "name": "Sandile",
@@ -11537,7 +12087,8 @@
       "Spe": 65,
       "Total": 292
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2492
   },
   "552": {
     "name": "Krokorok",
@@ -11559,7 +12110,8 @@
       "Spe": 74,
       "Total": 351
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4584
   },
   "553": {
     "name": "Krookodile",
@@ -11581,7 +12133,8 @@
       "Spe": 92,
       "Total": 519
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8053
   },
   "554": {
     "name": "Darumaka",
@@ -11601,7 +12154,8 @@
       "Spe": 50,
       "Total": 315
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3601
   },
   "555": {
     "name": "Darmanitan Standard",
@@ -11621,7 +12175,8 @@
       "Spe": 95,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7194
   },
   "556": {
     "name": "Maractus",
@@ -11642,7 +12197,8 @@
       "Spe": 60,
       "Total": 461
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4567
   },
   "557": {
     "name": "Dwebble",
@@ -11664,7 +12220,8 @@
       "Spe": 55,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2952
   },
   "558": {
     "name": "Crustle",
@@ -11686,7 +12243,8 @@
       "Spe": 45,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7105
   },
   "559": {
     "name": "Scraggy",
@@ -11708,7 +12266,8 @@
       "Spe": 48,
       "Total": 348
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3472
   },
   "560": {
     "name": "Scrafty",
@@ -11730,7 +12289,8 @@
       "Spe": 58,
       "Total": 488
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6981
   },
   "561": {
     "name": "Sigilyph",
@@ -11752,7 +12312,8 @@
       "Spe": 97,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "562": {
     "name": "Yamask",
@@ -11771,7 +12332,8 @@
       "Spe": 30,
       "Total": 303
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2567
   },
   "563": {
     "name": "Cofagrigus",
@@ -11790,7 +12352,8 @@
       "Spe": 30,
       "Total": 483
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6894
   },
   "564": {
     "name": "Tirtouga",
@@ -11812,7 +12375,8 @@
       "Spe": 22,
       "Total": 355
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5183
   },
   "565": {
     "name": "Carracosta",
@@ -11834,7 +12398,8 @@
       "Spe": 32,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "566": {
     "name": "Archen",
@@ -11854,7 +12419,8 @@
       "Spe": 70,
       "Total": 401
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5988
   },
   "567": {
     "name": "Archeops",
@@ -11874,7 +12440,8 @@
       "Spe": 110,
       "Total": 567
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8893
   },
   "568": {
     "name": "Trubbish",
@@ -11895,7 +12462,8 @@
       "Spe": 65,
       "Total": 329
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3022
   },
   "569": {
     "name": "Garbodor",
@@ -11916,7 +12484,8 @@
       "Spe": 75,
       "Total": 474
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7089
   },
   "570": {
     "name": "Zorua",
@@ -11935,7 +12504,8 @@
       "Spe": 65,
       "Total": 330
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4393
   },
   "571": {
     "name": "Zoroark",
@@ -11954,7 +12524,8 @@
       "Spe": 105,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "572": {
     "name": "Minccino",
@@ -11975,7 +12546,8 @@
       "Spe": 75,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "573": {
     "name": "Cinccino",
@@ -11996,7 +12568,8 @@
       "Spe": 115,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7019
   },
   "574": {
     "name": "Gothita",
@@ -12017,7 +12590,8 @@
       "Spe": 45,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.2222
   },
   "575": {
     "name": "Gothorita",
@@ -12038,7 +12612,8 @@
       "Spe": 55,
       "Total": 390
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5149
   },
   "576": {
     "name": "Gothitelle",
@@ -12059,7 +12634,8 @@
       "Spe": 65,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7487
   },
   "577": {
     "name": "Solosis",
@@ -12080,7 +12656,8 @@
       "Spe": 20,
       "Total": 290
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.2222
   },
   "578": {
     "name": "Duosion",
@@ -12101,7 +12678,8 @@
       "Spe": 30,
       "Total": 370
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4799
   },
   "579": {
     "name": "Reuniclus",
@@ -12122,7 +12700,8 @@
       "Spe": 30,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7487
   },
   "580": {
     "name": "Ducklett",
@@ -12144,7 +12723,8 @@
       "Spe": 55,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "581": {
     "name": "Swanna",
@@ -12166,7 +12746,8 @@
       "Spe": 98,
       "Total": 473
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7248
   },
   "582": {
     "name": "Vanillite",
@@ -12187,7 +12768,8 @@
       "Spe": 44,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1837
   },
   "583": {
     "name": "Vanillish",
@@ -12208,7 +12790,8 @@
       "Spe": 59,
       "Total": 395
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5001
   },
   "584": {
     "name": "Vanilluxe",
@@ -12229,7 +12812,8 @@
       "Spe": 79,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "585": {
     "name": "Deerling",
@@ -12251,7 +12835,8 @@
       "Spe": 75,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3127
   },
   "586": {
     "name": "Sawsbuck",
@@ -12273,7 +12858,8 @@
       "Spe": 95,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.693
   },
   "587": {
     "name": "Emolga",
@@ -12294,7 +12880,8 @@
       "Spe": 103,
       "Total": 428
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4637
   },
   "588": {
     "name": "Karrablast",
@@ -12315,7 +12902,8 @@
       "Spe": 60,
       "Total": 315
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.266
   },
   "589": {
     "name": "Escavalier",
@@ -12337,7 +12925,8 @@
       "Spe": 20,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.728
   },
   "590": {
     "name": "Foongus",
@@ -12358,7 +12947,8 @@
       "Spe": 15,
       "Total": 294
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.241
   },
   "591": {
     "name": "Amoonguss",
@@ -12379,7 +12969,8 @@
       "Spe": 30,
       "Total": 464
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6738
   },
   "592": {
     "name": "Frillish Male",
@@ -12401,7 +12992,8 @@
       "Spe": 40,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3127
   },
   "593": {
     "name": "Jellicent Male",
@@ -12423,7 +13015,8 @@
       "Spe": 60,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7194
   },
   "594": {
     "name": "Alomomola",
@@ -12444,7 +13037,8 @@
       "Spe": 65,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6843
   },
   "595": {
     "name": "Joltik",
@@ -12466,7 +13060,8 @@
       "Spe": 65,
       "Total": 319
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2847
   },
   "596": {
     "name": "Galvantula",
@@ -12488,7 +13083,8 @@
       "Spe": 108,
       "Total": 472
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6878
   },
   "597": {
     "name": "Ferroseed",
@@ -12508,7 +13104,8 @@
       "Spe": 10,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1837
   },
   "598": {
     "name": "Ferrothorn",
@@ -12529,7 +13126,8 @@
       "Spe": 20,
       "Total": 489
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6999
   },
   "599": {
     "name": "Klink",
@@ -12550,7 +13148,8 @@
       "Spe": 30,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3221
   },
   "600": {
     "name": "Klang",
@@ -12571,7 +13170,8 @@
       "Spe": 50,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6494
   },
   "601": {
     "name": "Klinklang",
@@ -12592,7 +13192,8 @@
       "Spe": 90,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8247
   },
   "602": {
     "name": "Tynamo",
@@ -12611,7 +13212,8 @@
       "Spe": 60,
       "Total": 275
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2077
   },
   "603": {
     "name": "Eelektrik",
@@ -12630,7 +13232,8 @@
       "Spe": 40,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5882
   },
   "604": {
     "name": "Eelektross",
@@ -12649,7 +13252,8 @@
       "Spe": 50,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.816
   },
   "605": {
     "name": "Elgyem",
@@ -12670,7 +13274,8 @@
       "Spe": 30,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2362
   },
   "606": {
     "name": "Beheeyem",
@@ -12691,7 +13296,8 @@
       "Spe": 40,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6929
   },
   "607": {
     "name": "Litwick",
@@ -12713,7 +13319,8 @@
       "Spe": 20,
       "Total": 275
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2077
   },
   "608": {
     "name": "Lampent",
@@ -12735,7 +13342,8 @@
       "Spe": 55,
       "Total": 370
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4916
   },
   "609": {
     "name": "Chandelure",
@@ -12757,7 +13365,8 @@
       "Spe": 80,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "610": {
     "name": "Axew",
@@ -12778,7 +13387,8 @@
       "Spe": 57,
       "Total": 320
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.4218
   },
   "611": {
     "name": "Fraxure",
@@ -12799,7 +13409,8 @@
       "Spe": 67,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5969
   },
   "612": {
     "name": "Haxorus",
@@ -12820,7 +13431,8 @@
       "Spe": 97,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8421
   },
   "613": {
     "name": "Cubchoo",
@@ -12841,7 +13453,8 @@
       "Spe": 40,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3426
   },
   "614": {
     "name": "Beartic",
@@ -12862,7 +13475,8 @@
       "Spe": 50,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7632
   },
   "615": {
     "name": "Cryogonal",
@@ -12881,7 +13495,8 @@
       "Spe": 105,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8218
   },
   "616": {
     "name": "Shelmet",
@@ -12902,7 +13517,8 @@
       "Spe": 25,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2485
   },
   "617": {
     "name": "Accelgor",
@@ -12923,7 +13539,8 @@
       "Spe": 145,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.728
   },
   "618": {
     "name": "Stunfisk",
@@ -12945,7 +13562,8 @@
       "Spe": 32,
       "Total": 471
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.686
   },
   "619": {
     "name": "Mienfoo",
@@ -12966,7 +13584,8 @@
       "Spe": 65,
       "Total": 350
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3507
   },
   "620": {
     "name": "Mienshao",
@@ -12987,7 +13606,8 @@
       "Spe": 105,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "621": {
     "name": "Druddigon",
@@ -13008,7 +13628,8 @@
       "Spe": 48,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "622": {
     "name": "Golett",
@@ -13030,7 +13651,8 @@
       "Spe": 35,
       "Total": 303
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2567
   },
   "623": {
     "name": "Golurk",
@@ -13052,7 +13674,8 @@
       "Spe": 55,
       "Total": 483
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6894
   },
   "624": {
     "name": "Pawniard",
@@ -13074,7 +13697,8 @@
       "Spe": 60,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4038
   },
   "625": {
     "name": "Bisharp",
@@ -13096,7 +13720,8 @@
       "Spe": 70,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "626": {
     "name": "Bouffalant",
@@ -13117,7 +13742,8 @@
       "Spe": 55,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "627": {
     "name": "Rufflet",
@@ -13139,7 +13765,8 @@
       "Spe": 60,
       "Total": 350
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.339
   },
   "628": {
     "name": "Braviary",
@@ -13161,7 +13788,8 @@
       "Spe": 80,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7719
   },
   "629": {
     "name": "Vullaby",
@@ -13183,7 +13811,8 @@
       "Spe": 60,
       "Total": 370
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.374
   },
   "630": {
     "name": "Mandibuzz",
@@ -13205,7 +13834,8 @@
       "Spe": 80,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7719
   },
   "631": {
     "name": "Heatmor",
@@ -13226,7 +13856,8 @@
       "Spe": 65,
       "Total": 484
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6911
   },
   "632": {
     "name": "Durant",
@@ -13248,7 +13879,8 @@
       "Spe": 109,
       "Total": 484
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6911
   },
   "633": {
     "name": "Deino",
@@ -13268,7 +13900,8 @@
       "Spe": 38,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "634": {
     "name": "Zweilous",
@@ -13288,7 +13921,8 @@
       "Spe": 58,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "635": {
     "name": "Hydreigon",
@@ -13308,7 +13942,8 @@
       "Spe": 98,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "636": {
     "name": "Larvesta",
@@ -13329,7 +13964,8 @@
       "Spe": 60,
       "Total": 360
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5271
   },
   "637": {
     "name": "Volcarona",
@@ -13350,7 +13986,8 @@
       "Spe": 100,
       "Total": 550
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8949
   },
   "638": {
     "name": "Cobalion",
@@ -13370,7 +14007,8 @@
       "Spe": 108,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "639": {
     "name": "Terrakion",
@@ -13390,7 +14028,8 @@
       "Spe": 108,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "640": {
     "name": "Virizion",
@@ -13410,7 +14049,8 @@
       "Spe": 108,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "641": {
     "name": "Tornadus Incarnate",
@@ -13430,7 +14070,8 @@
       "Spe": 111,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "642": {
     "name": "Thundurus Incarnate",
@@ -13451,7 +14092,8 @@
       "Spe": 111,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "643": {
     "name": "Reshiram",
@@ -13471,7 +14113,8 @@
       "Spe": 90,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "644": {
     "name": "Zekrom",
@@ -13491,7 +14134,8 @@
       "Spe": 90,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "645": {
     "name": "Landorus Incarnate",
@@ -13512,7 +14156,8 @@
       "Spe": 101,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "646": {
     "name": "Kyurem",
@@ -13532,7 +14177,8 @@
       "Spe": 95,
       "Total": 660
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "647": {
     "name": "Keldeo Ordinary",
@@ -13552,7 +14198,8 @@
       "Spe": 108,
       "Total": 580
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "648": {
     "name": "Meloetta Aria",
@@ -13572,7 +14219,8 @@
       "Spe": 90,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "649": {
     "name": "Genesect",
@@ -13592,7 +14240,8 @@
       "Spe": 99,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "650": {
     "name": "Chespin",
@@ -13612,7 +14261,8 @@
       "Spe": 38,
       "Total": 313
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4448
   },
   "651": {
     "name": "Quilladin",
@@ -13632,7 +14282,8 @@
       "Spe": 57,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "652": {
     "name": "Chesnaught",
@@ -13653,7 +14304,8 @@
       "Spe": 64,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "653": {
     "name": "Fennekin",
@@ -13673,7 +14325,8 @@
       "Spe": 60,
       "Total": 307
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4343
   },
   "654": {
     "name": "Braixen",
@@ -13693,7 +14346,8 @@
       "Spe": 73,
       "Total": 409
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6128
   },
   "655": {
     "name": "Delphox",
@@ -13714,7 +14368,8 @@
       "Spe": 104,
       "Total": 534
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8316
   },
   "656": {
     "name": "Froakie",
@@ -13734,7 +14389,8 @@
       "Spe": 71,
       "Total": 314
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4466
   },
   "657": {
     "name": "Frogadier",
@@ -13754,7 +14410,8 @@
       "Spe": 97,
       "Total": 405
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6058
   },
   "658": {
     "name": "Greninja",
@@ -13775,7 +14432,8 @@
       "Spe": 122,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "659": {
     "name": "Bunnelby",
@@ -13796,7 +14454,8 @@
       "Spe": 57,
       "Total": 237
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0648
   },
   "660": {
     "name": "Diggersby",
@@ -13818,7 +14477,8 @@
       "Spe": 78,
       "Total": 423
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5408
   },
   "661": {
     "name": "Fletchling",
@@ -13839,7 +14499,8 @@
       "Spe": 62,
       "Total": 278
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1365
   },
   "662": {
     "name": "Fletchinder",
@@ -13860,7 +14521,8 @@
       "Spe": 84,
       "Total": 382
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4773
   },
   "663": {
     "name": "Talonflame",
@@ -13881,7 +14543,8 @@
       "Spe": 126,
       "Total": 499
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7703
   },
   "664": {
     "name": "Scatterbug",
@@ -13902,7 +14565,8 @@
       "Spe": 35,
       "Total": 200
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "665": {
     "name": "Spewpa",
@@ -13922,7 +14586,8 @@
       "Spe": 29,
       "Total": 213
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1816
   },
   "666": {
     "name": "Vivillon",
@@ -13944,7 +14609,8 @@
       "Spe": 89,
       "Total": 411
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6163
   },
   "667": {
     "name": "Litleo",
@@ -13966,7 +14632,8 @@
       "Spe": 72,
       "Total": 369
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3369
   },
   "668": {
     "name": "Pyroar Male",
@@ -13988,7 +14655,8 @@
       "Spe": 106,
       "Total": 507
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7608
   },
   "669": {
     "name": "Flabebe",
@@ -14008,7 +14676,8 @@
       "Spe": 42,
       "Total": 303
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2155
   },
   "670": {
     "name": "Floette",
@@ -14028,7 +14697,8 @@
       "Spe": 52,
       "Total": 371
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4581
   },
   "671": {
     "name": "Florges",
@@ -14048,7 +14718,8 @@
       "Spe": 75,
       "Total": 552
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8631
   },
   "672": {
     "name": "Skiddo",
@@ -14068,7 +14739,8 @@
       "Spe": 52,
       "Total": 350
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3272
   },
   "673": {
     "name": "Gogoat",
@@ -14088,7 +14760,8 @@
       "Spe": 68,
       "Total": 531
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8263
   },
   "674": {
     "name": "Pancham",
@@ -14109,7 +14782,8 @@
       "Spe": 43,
       "Total": 348
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3002
   },
   "675": {
     "name": "Pangoro",
@@ -14131,7 +14805,8 @@
       "Spe": 58,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7398
   },
   "676": {
     "name": "Furfrou",
@@ -14150,7 +14825,8 @@
       "Spe": 102,
       "Total": 472
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5878
   },
   "677": {
     "name": "Espurr",
@@ -14171,7 +14847,8 @@
       "Spe": 68,
       "Total": 355
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3477
   },
   "678": {
     "name": "Meowstic Male",
@@ -14192,7 +14869,8 @@
       "Spe": 104,
       "Total": 466
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6773
   },
   "679": {
     "name": "Honedge",
@@ -14212,7 +14890,8 @@
       "Spe": 28,
       "Total": 325
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.307
   },
   "680": {
     "name": "Doublade",
@@ -14232,7 +14911,8 @@
       "Spe": 35,
       "Total": 448
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6281
   },
   "681": {
     "name": "Aegislash Shield",
@@ -14252,7 +14932,8 @@
       "Spe": 60,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "682": {
     "name": "Spritzee",
@@ -14272,7 +14953,8 @@
       "Spe": 23,
       "Total": 341
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3115
   },
   "683": {
     "name": "Aromatisse",
@@ -14292,7 +14974,8 @@
       "Spe": 29,
       "Total": 462
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5938
   },
   "684": {
     "name": "Swirlix",
@@ -14312,7 +14995,8 @@
       "Spe": 49,
       "Total": 341
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3115
   },
   "685": {
     "name": "Slurpuff",
@@ -14332,7 +15016,8 @@
       "Spe": 72,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6253
   },
   "686": {
     "name": "Inkay",
@@ -14354,7 +15039,8 @@
       "Spe": 45,
       "Total": 288
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2305
   },
   "687": {
     "name": "Malamar",
@@ -14376,7 +15062,8 @@
       "Spe": 73,
       "Total": 482
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6994
   },
   "688": {
     "name": "Binacle",
@@ -14398,7 +15085,8 @@
       "Spe": 50,
       "Total": 306
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3443
   },
   "689": {
     "name": "Barbaracle",
@@ -14420,7 +15108,8 @@
       "Spe": 68,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "690": {
     "name": "Skrelp",
@@ -14442,7 +15131,8 @@
       "Spe": 30,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2453
   },
   "691": {
     "name": "Dragalge",
@@ -14464,7 +15154,8 @@
       "Spe": 44,
       "Total": 494
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7498
   },
   "692": {
     "name": "Clauncher",
@@ -14483,7 +15174,8 @@
       "Spe": 44,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2628
   },
   "693": {
     "name": "Clawitzer",
@@ -14502,7 +15194,8 @@
       "Spe": 59,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7603
   },
   "694": {
     "name": "Helioptile",
@@ -14524,7 +15217,8 @@
       "Spe": 70,
       "Total": 289
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2322
   },
   "695": {
     "name": "Heliolisk",
@@ -14546,7 +15240,8 @@
       "Spe": 109,
       "Total": 481
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7035
   },
   "696": {
     "name": "Tyrunt",
@@ -14567,7 +15262,8 @@
       "Spe": 48,
       "Total": 362
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5306
   },
   "697": {
     "name": "Tyrantrum",
@@ -14588,7 +15284,8 @@
       "Spe": 71,
       "Total": 521
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8088
   },
   "698": {
     "name": "Amaura",
@@ -14609,7 +15306,8 @@
       "Spe": 46,
       "Total": 362
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5306
   },
   "699": {
     "name": "Aurorus",
@@ -14630,7 +15328,8 @@
       "Spe": 58,
       "Total": 521
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8088
   },
   "700": {
     "name": "Sylveon",
@@ -14650,7 +15349,8 @@
       "Spe": 60,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8158
   },
   "701": {
     "name": "Hawlucha",
@@ -14672,7 +15372,8 @@
       "Spe": 118,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7074
   },
   "702": {
     "name": "Dedenne",
@@ -14694,7 +15395,8 @@
       "Spe": 101,
       "Total": 431
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4925
   },
   "703": {
     "name": "Carbink",
@@ -14715,7 +15417,8 @@
       "Spe": 50,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "704": {
     "name": "Goomy",
@@ -14736,7 +15439,8 @@
       "Spe": 40,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "705": {
     "name": "Sliggoo",
@@ -14757,7 +15461,8 @@
       "Spe": 60,
       "Total": 452
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6881
   },
   "706": {
     "name": "Goodra",
@@ -14778,7 +15483,8 @@
       "Spe": 80,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "707": {
     "name": "Klefki",
@@ -14799,7 +15505,8 @@
       "Spe": 75,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6843
   },
   "708": {
     "name": "Phantump",
@@ -14821,7 +15528,8 @@
       "Spe": 38,
       "Total": 309
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3496
   },
   "709": {
     "name": "Trevenant",
@@ -14843,7 +15551,8 @@
       "Spe": 56,
       "Total": 474
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7089
   },
   "710": {
     "name": "Pumpkaboo Average",
@@ -14865,7 +15574,8 @@
       "Spe": 51,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3951
   },
   "711": {
     "name": "Gourgeist Average",
@@ -14887,7 +15597,8 @@
       "Spe": 84,
       "Total": 494
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7439
   },
   "712": {
     "name": "Bergmite",
@@ -14908,7 +15619,8 @@
       "Spe": 28,
       "Total": 304
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2585
   },
   "713": {
     "name": "Avalugg",
@@ -14929,7 +15641,8 @@
       "Spe": 28,
       "Total": 514
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7848
   },
   "714": {
     "name": "Noibat",
@@ -14951,7 +15664,8 @@
       "Spe": 55,
       "Total": 245
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1552
   },
   "715": {
     "name": "Noivern",
@@ -14973,7 +15687,8 @@
       "Spe": 123,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "716": {
     "name": "Xerneas",
@@ -14992,7 +15707,8 @@
       "Spe": 99,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "717": {
     "name": "Yveltal",
@@ -15012,7 +15728,8 @@
       "Spe": 99,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "718": {
     "name": "Zygarde 50",
@@ -15032,7 +15749,8 @@
       "Spe": 95,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "719": {
     "name": "Diancie",
@@ -15052,7 +15770,8 @@
       "Spe": 50,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "720": {
     "name": "Hoopa",
@@ -15072,7 +15791,8 @@
       "Spe": 70,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "721": {
     "name": "Volcanion",
@@ -15092,7 +15812,8 @@
       "Spe": 70,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "722": {
     "name": "Rowlet",
@@ -15113,7 +15834,8 @@
       "Spe": 42,
       "Total": 320
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4571
   },
   "723": {
     "name": "Dartrix",
@@ -15134,7 +15856,8 @@
       "Spe": 52,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "724": {
     "name": "Decidueye",
@@ -15155,7 +15878,8 @@
       "Spe": 70,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "725": {
     "name": "Litten",
@@ -15175,7 +15899,8 @@
       "Spe": 70,
       "Total": 320
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4571
   },
   "726": {
     "name": "Torracat",
@@ -15195,7 +15920,8 @@
       "Spe": 90,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "727": {
     "name": "Incineroar",
@@ -15216,7 +15942,8 @@
       "Spe": 60,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "728": {
     "name": "Popplio",
@@ -15236,7 +15963,8 @@
       "Spe": 40,
       "Total": 320
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4571
   },
   "729": {
     "name": "Brionne",
@@ -15256,7 +15984,8 @@
       "Spe": 50,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "730": {
     "name": "Primarina",
@@ -15277,7 +16006,8 @@
       "Spe": 60,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "731": {
     "name": "Pikipek",
@@ -15299,7 +16029,8 @@
       "Spe": 65,
       "Total": 265
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1137
   },
   "732": {
     "name": "Trumbeak",
@@ -15321,7 +16052,8 @@
       "Spe": 75,
       "Total": 355
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4301
   },
   "733": {
     "name": "Toucannon",
@@ -15343,7 +16075,8 @@
       "Spe": 60,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "734": {
     "name": "Yungoos",
@@ -15364,7 +16097,8 @@
       "Spe": 45,
       "Total": 253
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0927
   },
   "735": {
     "name": "Gumshoos",
@@ -15385,7 +16119,8 @@
       "Spe": 45,
       "Total": 418
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5321
   },
   "736": {
     "name": "Grubbin",
@@ -15404,7 +16139,8 @@
       "Spe": 46,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.175
   },
   "737": {
     "name": "Charjabug",
@@ -15424,7 +16160,8 @@
       "Spe": 36,
       "Total": 400
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5088
   },
   "738": {
     "name": "Vikavolt",
@@ -15444,7 +16181,8 @@
       "Spe": 43,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "739": {
     "name": "Crabrawler",
@@ -15465,7 +16203,8 @@
       "Spe": 63,
       "Total": 338
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2768
   },
   "740": {
     "name": "Crabominable",
@@ -15487,7 +16226,8 @@
       "Spe": 43,
       "Total": 478
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7159
   },
   "741": {
     "name": "Oricorio Baile",
@@ -15507,7 +16247,8 @@
       "Spe": 93,
       "Total": 476
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7301
   },
   "742": {
     "name": "Cutiefly",
@@ -15529,7 +16270,8 @@
       "Spe": 84,
       "Total": 304
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2585
   },
   "743": {
     "name": "Ribombee",
@@ -15551,7 +16293,8 @@
       "Spe": 124,
       "Total": 464
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6738
   },
   "744": {
     "name": "Rockruff",
@@ -15572,7 +16315,8 @@
       "Spe": 60,
       "Total": 280
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2165
   },
   "745": {
     "name": "Lycanroc Midday",
@@ -15593,7 +16337,8 @@
       "Spe": 112,
       "Total": 487
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6964
   },
   "746": {
     "name": "Wishiwashi Solo",
@@ -15612,7 +16357,8 @@
       "Spe": 40,
       "Total": 175
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.2294
   },
   "747": {
     "name": "Mareanie",
@@ -15634,7 +16380,8 @@
       "Spe": 45,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "748": {
     "name": "Toxapex",
@@ -15656,7 +16403,8 @@
       "Spe": 35,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.728
   },
   "749": {
     "name": "Mudbray",
@@ -15677,7 +16425,8 @@
       "Spe": 45,
       "Total": 385
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4002
   },
   "750": {
     "name": "Mudsdale",
@@ -15698,7 +16447,8 @@
       "Spe": 35,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7544
   },
   "751": {
     "name": "Dewpider",
@@ -15719,7 +16469,8 @@
       "Spe": 27,
       "Total": 269
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1855
   },
   "752": {
     "name": "Araquanid",
@@ -15740,7 +16491,8 @@
       "Spe": 42,
       "Total": 454
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6269
   },
   "753": {
     "name": "Fomantis",
@@ -15760,7 +16512,8 @@
       "Spe": 35,
       "Total": 250
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.164
   },
   "754": {
     "name": "Lurantis",
@@ -15780,7 +16533,8 @@
       "Spe": 45,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7018
   },
   "755": {
     "name": "Morelull",
@@ -15802,7 +16556,8 @@
       "Spe": 15,
       "Total": 285
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2252
   },
   "756": {
     "name": "Shiinotic",
@@ -15824,7 +16579,8 @@
       "Spe": 30,
       "Total": 405
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5705
   },
   "757": {
     "name": "Salandit",
@@ -15845,7 +16601,8 @@
       "Spe": 77,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3688
   },
   "758": {
     "name": "Salazzle",
@@ -15866,7 +16623,8 @@
       "Spe": 117,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "759": {
     "name": "Stufful",
@@ -15888,7 +16646,8 @@
       "Spe": 50,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3803
   },
   "760": {
     "name": "Bewear",
@@ -15910,7 +16669,8 @@
       "Spe": 60,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7426
   },
   "761": {
     "name": "Bounsweet",
@@ -15931,7 +16691,8 @@
       "Spe": 32,
       "Total": 210
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.041
   },
   "762": {
     "name": "Steenee",
@@ -15952,7 +16713,8 @@
       "Spe": 62,
       "Total": 290
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3163
   },
   "763": {
     "name": "Tsareena",
@@ -15973,7 +16735,8 @@
       "Spe": 72,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "764": {
     "name": "Comfey",
@@ -15994,7 +16757,8 @@
       "Spe": 100,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7282
   },
   "765": {
     "name": "Oranguru",
@@ -16016,7 +16780,8 @@
       "Spe": 60,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "766": {
     "name": "Passimian",
@@ -16036,7 +16801,8 @@
       "Spe": 80,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "767": {
     "name": "Wimpod",
@@ -16056,7 +16822,8 @@
       "Spe": 80,
       "Total": 230
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.2466
   },
   "768": {
     "name": "Golisopod",
@@ -16076,7 +16843,8 @@
       "Spe": 40,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "769": {
     "name": "Sandygast",
@@ -16097,7 +16865,8 @@
       "Spe": 15,
       "Total": 320
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3453
   },
   "770": {
     "name": "Palossand",
@@ -16118,7 +16887,8 @@
       "Spe": 35,
       "Total": 480
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7194
   },
   "771": {
     "name": "Pyukumuku",
@@ -16138,7 +16908,8 @@
       "Spe": 5,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5969
   },
   "772": {
     "name": "Type Null",
@@ -16157,7 +16928,8 @@
       "Spe": 59,
       "Total": 534
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "773": {
     "name": "Silvally",
@@ -16176,7 +16948,8 @@
       "Spe": 95,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "774": {
     "name": "Minior Red Meteor",
@@ -16196,7 +16969,8 @@
       "Spe": 60,
       "Total": 440
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6847
   },
   "775": {
     "name": "Komala",
@@ -16215,7 +16989,8 @@
       "Spe": 65,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "776": {
     "name": "Turtonator",
@@ -16235,7 +17010,8 @@
       "Spe": 36,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7164
   },
   "777": {
     "name": "Togedemaru",
@@ -16257,7 +17033,8 @@
       "Spe": 96,
       "Total": 435
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4995
   },
   "778": {
     "name": "Mimikyu Disguised",
@@ -16277,7 +17054,8 @@
       "Spe": 96,
       "Total": 476
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7301
   },
   "779": {
     "name": "Bruxish",
@@ -16299,7 +17077,8 @@
       "Spe": 92,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6871
   },
   "780": {
     "name": "Drampa",
@@ -16321,7 +17100,8 @@
       "Spe": 36,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7164
   },
   "781": {
     "name": "Dhelmise",
@@ -16341,7 +17121,8 @@
       "Spe": 40,
       "Total": 517
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8253
   },
   "782": {
     "name": "Jangmo O",
@@ -16362,7 +17143,8 @@
       "Spe": 45,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "783": {
     "name": "Hakamo O",
@@ -16384,7 +17166,8 @@
       "Spe": 65,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "784": {
     "name": "Kommo O",
@@ -16406,7 +17189,8 @@
       "Spe": 85,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "785": {
     "name": "Tapu Koko",
@@ -16427,7 +17211,8 @@
       "Spe": 130,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "786": {
     "name": "Tapu Lele",
@@ -16448,7 +17233,8 @@
       "Spe": 95,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "787": {
     "name": "Tapu Bulu",
@@ -16469,7 +17255,8 @@
       "Spe": 75,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "788": {
     "name": "Tapu Fini",
@@ -16490,7 +17277,8 @@
       "Spe": 85,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "789": {
     "name": "Cosmog",
@@ -16509,7 +17297,8 @@
       "Spe": 37,
       "Total": 200
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "790": {
     "name": "Cosmoem",
@@ -16528,7 +17317,8 @@
       "Spe": 37,
       "Total": 400
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "791": {
     "name": "Solgaleo",
@@ -16548,7 +17338,8 @@
       "Spe": 97,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "792": {
     "name": "Lunala",
@@ -16568,7 +17359,8 @@
       "Spe": 97,
       "Total": 680
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "793": {
     "name": "Nihilego",
@@ -16588,7 +17380,8 @@
       "Spe": 103,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "794": {
     "name": "Buzzwole",
@@ -16608,7 +17401,8 @@
       "Spe": 79,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "795": {
     "name": "Pheromosa",
@@ -16628,7 +17422,8 @@
       "Spe": 151,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "796": {
     "name": "Xurkitree",
@@ -16647,7 +17442,8 @@
       "Spe": 83,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "797": {
     "name": "Celesteela",
@@ -16667,7 +17463,8 @@
       "Spe": 61,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "798": {
     "name": "Kartana",
@@ -16687,7 +17484,8 @@
       "Spe": 109,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "799": {
     "name": "Guzzlord",
@@ -16707,7 +17505,8 @@
       "Spe": 43,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8946
   },
   "800": {
     "name": "Necrozma",
@@ -16726,7 +17525,8 @@
       "Spe": 79,
       "Total": 600
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "801": {
     "name": "Magearna",
@@ -16746,7 +17546,8 @@
       "Spe": 65,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "802": {
     "name": "Marshadow",
@@ -16766,7 +17567,8 @@
       "Spe": 125,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "803": {
     "name": "Poipole",
@@ -16785,7 +17587,8 @@
       "Spe": 73,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "804": {
     "name": "Naganadel",
@@ -16805,7 +17608,8 @@
       "Spe": 121,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8421
   },
   "805": {
     "name": "Stakataka",
@@ -16825,7 +17629,8 @@
       "Spe": 13,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "806": {
     "name": "Blacephalon",
@@ -16845,7 +17650,8 @@
       "Spe": 107,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "807": {
     "name": "Zeraora",
@@ -16864,7 +17670,8 @@
       "Spe": 143,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "808": {
     "name": "Meltan",
@@ -16883,7 +17690,8 @@
       "Spe": 34,
       "Total": 300
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "809": {
     "name": "Melmetal",
@@ -16902,7 +17710,8 @@
       "Spe": 34,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "810": {
     "name": "Grookey",
@@ -16922,7 +17731,8 @@
       "Spe": 65,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "811": {
     "name": "Thwackey",
@@ -16942,7 +17752,8 @@
       "Spe": 80,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "812": {
     "name": "Rillaboom",
@@ -16962,7 +17773,8 @@
       "Spe": 85,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "813": {
     "name": "Scorbunny",
@@ -16982,7 +17794,8 @@
       "Spe": 69,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "814": {
     "name": "Raboot",
@@ -17002,7 +17815,8 @@
       "Spe": 94,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "815": {
     "name": "Cinderace",
@@ -17022,7 +17836,8 @@
       "Spe": 119,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "816": {
     "name": "Sobble",
@@ -17042,7 +17857,8 @@
       "Spe": 70,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "817": {
     "name": "Drizzile",
@@ -17062,7 +17878,8 @@
       "Spe": 90,
       "Total": 420
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6321
   },
   "818": {
     "name": "Inteleon",
@@ -17082,7 +17899,8 @@
       "Spe": 120,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "819": {
     "name": "Skwovet",
@@ -17102,7 +17920,8 @@
       "Spe": 25,
       "Total": 275
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1312
   },
   "820": {
     "name": "Greedent",
@@ -17122,7 +17941,8 @@
       "Spe": 20,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6491
   },
   "821": {
     "name": "Rookidee",
@@ -17143,7 +17963,8 @@
       "Spe": 57,
       "Total": 245
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0788
   },
   "822": {
     "name": "Corvisquire",
@@ -17164,7 +17985,8 @@
       "Spe": 77,
       "Total": 365
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4476
   },
   "823": {
     "name": "Corviknight",
@@ -17186,7 +18008,8 @@
       "Spe": 67,
       "Total": 495
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7633
   },
   "824": {
     "name": "Blipbug",
@@ -17207,7 +18030,8 @@
       "Spe": 45,
       "Total": 180
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0
   },
   "825": {
     "name": "Dottler",
@@ -17229,7 +18053,8 @@
       "Spe": 30,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3951
   },
   "826": {
     "name": "Orbeetle",
@@ -17251,7 +18076,8 @@
       "Spe": 90,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "827": {
     "name": "Nickit",
@@ -17272,7 +18098,8 @@
       "Spe": 50,
       "Total": 245
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0788
   },
   "828": {
     "name": "Thievul",
@@ -17293,7 +18120,8 @@
       "Spe": 90,
       "Total": 455
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5968
   },
   "829": {
     "name": "Gossifleur",
@@ -17314,7 +18142,8 @@
       "Spe": 10,
       "Total": 250
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.164
   },
   "830": {
     "name": "Eldegoss",
@@ -17335,7 +18164,8 @@
       "Spe": 60,
       "Total": 460
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6668
   },
   "831": {
     "name": "Wooloo",
@@ -17356,7 +18186,8 @@
       "Spe": 48,
       "Total": 270
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1225
   },
   "832": {
     "name": "Dubwool",
@@ -17377,7 +18208,8 @@
       "Spe": 88,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6581
   },
   "833": {
     "name": "Chewtle",
@@ -17398,7 +18230,8 @@
       "Spe": 44,
       "Total": 284
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.147
   },
   "834": {
     "name": "Drednaw",
@@ -17420,7 +18253,8 @@
       "Spe": 74,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7105
   },
   "835": {
     "name": "Yamper",
@@ -17440,7 +18274,8 @@
       "Spe": 26,
       "Total": 270
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1225
   },
   "836": {
     "name": "Boltund",
@@ -17460,7 +18295,8 @@
       "Spe": 121,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "837": {
     "name": "Rolycoly",
@@ -17481,7 +18317,8 @@
       "Spe": 30,
       "Total": 240
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.07
   },
   "838": {
     "name": "Carkol",
@@ -17503,7 +18340,8 @@
       "Spe": 50,
       "Total": 410
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5263
   },
   "839": {
     "name": "Coalossal",
@@ -17525,7 +18363,8 @@
       "Spe": 30,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "840": {
     "name": "Applin",
@@ -17547,7 +18386,8 @@
       "Spe": 20,
       "Total": 260
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.105
   },
   "841": {
     "name": "Flapple",
@@ -17569,7 +18409,8 @@
       "Spe": 70,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "842": {
     "name": "Appletun",
@@ -17591,7 +18432,8 @@
       "Spe": 30,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "843": {
     "name": "Silicobra",
@@ -17612,7 +18454,8 @@
       "Spe": 46,
       "Total": 315
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2012
   },
   "844": {
     "name": "Sandaconda",
@@ -17633,7 +18476,8 @@
       "Spe": 71,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7013
   },
   "845": {
     "name": "Cramorant",
@@ -17653,7 +18497,8 @@
       "Spe": 85,
       "Total": 475
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7283
   },
   "846": {
     "name": "Arrokuda",
@@ -17673,7 +18518,8 @@
       "Spe": 66,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.14
   },
   "847": {
     "name": "Barraskewda",
@@ -17693,7 +18539,8 @@
       "Spe": 136,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7369
   },
   "848": {
     "name": "Toxel",
@@ -17715,7 +18562,8 @@
       "Spe": 40,
       "Total": 242
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.2853
   },
   "849": {
     "name": "Toxtricity Amped",
@@ -17737,7 +18585,8 @@
       "Spe": 75,
       "Total": 502
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7756
   },
   "850": {
     "name": "Sizzlipede",
@@ -17759,7 +18608,8 @@
       "Spe": 45,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2602
   },
   "851": {
     "name": "Centiskorch",
@@ -17781,7 +18631,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7805
   },
   "852": {
     "name": "Clobbopus",
@@ -17801,7 +18652,8 @@
       "Spe": 32,
       "Total": 310
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2807
   },
   "853": {
     "name": "Grapploct",
@@ -17821,7 +18673,8 @@
       "Spe": 42,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "854": {
     "name": "Sinistea",
@@ -17841,7 +18694,8 @@
       "Spe": 50,
       "Total": 308
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3478
   },
   "855": {
     "name": "Polteageist",
@@ -17861,7 +18715,8 @@
       "Spe": 70,
       "Total": 508
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7684
   },
   "856": {
     "name": "Hatenna",
@@ -17882,7 +18737,8 @@
       "Spe": 39,
       "Total": 265
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1373
   },
   "857": {
     "name": "Hattrem",
@@ -17903,7 +18759,8 @@
       "Spe": 49,
       "Total": 370
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4563
   },
   "858": {
     "name": "Hatterene",
@@ -17925,7 +18782,8 @@
       "Spe": 29,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "859": {
     "name": "Impidimp",
@@ -17947,7 +18805,8 @@
       "Spe": 50,
       "Total": 265
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1137
   },
   "860": {
     "name": "Morgrem",
@@ -17969,7 +18828,8 @@
       "Spe": 70,
       "Total": 370
     },
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4563
   },
   "861": {
     "name": "Grimmsnarl",
@@ -17991,7 +18851,8 @@
       "Spe": 60,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "862": {
     "name": "Obstagoon",
@@ -18013,7 +18874,8 @@
       "Spe": 95,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "863": {
     "name": "Perrserker",
@@ -18034,7 +18896,8 @@
       "Spe": 50,
       "Total": 440
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6141
   },
   "864": {
     "name": "Cursola",
@@ -18054,7 +18917,8 @@
       "Spe": 30,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8072
   },
   "865": {
     "name": "Sirfetchd",
@@ -18074,7 +18938,8 @@
       "Spe": 65,
       "Total": 507
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7843
   },
   "866": {
     "name": "Mr Rime",
@@ -18096,7 +18961,8 @@
       "Spe": 70,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "867": {
     "name": "Runerigus",
@@ -18116,7 +18982,8 @@
       "Spe": 30,
       "Total": 483
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6894
   },
   "868": {
     "name": "Milcery",
@@ -18136,7 +19003,8 @@
       "Spe": 34,
       "Total": 270
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.1872
   },
   "869": {
     "name": "Alcremie",
@@ -18156,7 +19024,8 @@
       "Spe": 64,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6986
   },
   "870": {
     "name": "Falinks",
@@ -18176,7 +19045,8 @@
       "Spe": 75,
       "Total": 470
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7196
   },
   "871": {
     "name": "Pincurchin",
@@ -18196,7 +19066,8 @@
       "Spe": 15,
       "Total": 435
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.623
   },
   "872": {
     "name": "Snom",
@@ -18217,7 +19088,8 @@
       "Spe": 20,
       "Total": 185
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.0765
   },
   "873": {
     "name": "Frosmoth",
@@ -18238,7 +19110,8 @@
       "Spe": 65,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.693
   },
   "874": {
     "name": "Stonjourner",
@@ -18257,7 +19130,8 @@
       "Spe": 70,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7019
   },
   "875": {
     "name": "Eiscue Ice",
@@ -18276,7 +19150,8 @@
       "Spe": 50,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7019
   },
   "876": {
     "name": "Indeedee Male",
@@ -18298,7 +19173,8 @@
       "Spe": 95,
       "Total": 475
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.746
   },
   "877": {
     "name": "Morpeko Full Belly",
@@ -18318,7 +19194,8 @@
       "Spe": 97,
       "Total": 436
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5012
   },
   "878": {
     "name": "Cufant",
@@ -18338,7 +19215,8 @@
       "Spe": 40,
       "Total": 330
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.304
   },
   "879": {
     "name": "Copperajah",
@@ -18358,7 +19236,8 @@
       "Spe": 30,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7191
   },
   "880": {
     "name": "Dracozolt",
@@ -18380,7 +19259,8 @@
       "Spe": 75,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "881": {
     "name": "Arctozolt",
@@ -18402,7 +19282,8 @@
       "Spe": 55,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "882": {
     "name": "Dracovish",
@@ -18424,7 +19305,8 @@
       "Spe": 75,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "883": {
     "name": "Arctovish",
@@ -18446,7 +19328,8 @@
       "Spe": 55,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7808
   },
   "884": {
     "name": "Duraludon",
@@ -18468,7 +19351,8 @@
       "Spe": 85,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "885": {
     "name": "Dreepy",
@@ -18490,7 +19374,8 @@
       "Spe": 82,
       "Total": 270
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.3696
   },
   "886": {
     "name": "Drakloak",
@@ -18512,7 +19397,8 @@
       "Spe": 102,
       "Total": 410
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6146
   },
   "887": {
     "name": "Dragapult",
@@ -18534,7 +19420,8 @@
       "Spe": 142,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9471
   },
   "888": {
     "name": "Zacian",
@@ -18553,7 +19440,8 @@
       "Spe": 138,
       "Total": 660
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "889": {
     "name": "Zamazenta",
@@ -18572,7 +19460,8 @@
       "Spe": 138,
       "Total": 660
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "890": {
     "name": "Eternatus",
@@ -18592,7 +19481,8 @@
       "Spe": 130,
       "Total": 690
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "891": {
     "name": "Kubfu",
@@ -18611,7 +19501,8 @@
       "Spe": 72,
       "Total": 385
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "892": {
     "name": "Urshifu Single Strike",
@@ -18631,7 +19522,8 @@
       "Spe": 97,
       "Total": 550
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "893": {
     "name": "Zarude",
@@ -18651,7 +19543,8 @@
       "Spe": 105,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   },
   "894": {
     "name": "Regieleki",
@@ -18670,7 +19563,8 @@
       "Spe": 200,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "895": {
     "name": "Regidrago",
@@ -18689,7 +19583,8 @@
       "Spe": 80,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "896": {
     "name": "Glastrier",
@@ -18708,7 +19603,8 @@
       "Spe": 30,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "897": {
     "name": "Spectrier",
@@ -18727,7 +19623,8 @@
       "Spe": 130,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "898": {
     "name": "Calyrex",
@@ -18747,7 +19644,8 @@
       "Spe": 80,
       "Total": 500
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "899": {
     "name": "Wyrdeer",
@@ -18769,7 +19667,8 @@
       "Spe": 65,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7099
   },
   "900": {
     "name": "Kleavor",
@@ -18791,7 +19690,8 @@
       "Spe": 85,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6897
   },
   "901": {
     "name": "Ursaluna",
@@ -18813,7 +19713,8 @@
       "Spe": 50,
       "Total": 550
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8243
   },
   "902": {
     "name": "Basculegion Male",
@@ -18835,7 +19736,8 @@
       "Spe": 78,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7187
   },
   "903": {
     "name": "Sneasler",
@@ -18857,7 +19759,8 @@
       "Spe": 120,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6837
   },
   "904": {
     "name": "Overqwil",
@@ -18879,7 +19782,8 @@
       "Spe": 85,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6837
   },
   "905": {
     "name": "Enamorus Incarnate",
@@ -18900,7 +19804,8 @@
       "Spe": 106,
       "Total": 580
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "906": {
     "name": "Sprigatito",
@@ -18920,7 +19825,8 @@
       "Spe": 65,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "907": {
     "name": "Floragato",
@@ -18940,7 +19846,8 @@
       "Spe": 83,
       "Total": 410
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6146
   },
   "908": {
     "name": "Meowscarada",
@@ -18961,7 +19868,8 @@
       "Spe": 123,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "909": {
     "name": "Fuecoco",
@@ -18981,7 +19889,8 @@
       "Spe": 36,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "910": {
     "name": "Crocalor",
@@ -19001,7 +19910,8 @@
       "Spe": 49,
       "Total": 411
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6163
   },
   "911": {
     "name": "Skeledirge",
@@ -19022,7 +19932,8 @@
       "Spe": 66,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "912": {
     "name": "Quaxly",
@@ -19042,7 +19953,8 @@
       "Spe": 50,
       "Total": 310
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4396
   },
   "913": {
     "name": "Quaxwell",
@@ -19062,7 +19974,8 @@
       "Spe": 65,
       "Total": 410
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6146
   },
   "914": {
     "name": "Quaquaval",
@@ -19083,7 +19996,8 @@
       "Spe": 85,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8246
   },
   "915": {
     "name": "Lechonk",
@@ -19104,7 +20018,8 @@
       "Spe": 35,
       "Total": 254
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0945
   },
   "916": {
     "name": "Oinkologne Male",
@@ -19125,7 +20040,8 @@
       "Spe": 65,
       "Total": 489
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6881
   },
   "917": {
     "name": "Tarountula",
@@ -19145,7 +20061,8 @@
       "Spe": 20,
       "Total": 210
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0175
   },
   "918": {
     "name": "Spidops",
@@ -19165,7 +20082,8 @@
       "Spe": 35,
       "Total": 404
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5158
   },
   "919": {
     "name": "Nymble",
@@ -19185,7 +20103,8 @@
       "Spe": 45,
       "Total": 210
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.094
   },
   "920": {
     "name": "Lokix",
@@ -19206,7 +20125,8 @@
       "Spe": 92,
       "Total": 450
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7022
   },
   "921": {
     "name": "Pawmi",
@@ -19227,7 +20147,8 @@
       "Spe": 60,
       "Total": 240
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.1465
   },
   "922": {
     "name": "Pawmo",
@@ -19249,7 +20170,8 @@
       "Spe": 85,
       "Total": 350
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4684
   },
   "923": {
     "name": "Pawmot",
@@ -19271,7 +20193,8 @@
       "Spe": 105,
       "Total": 490
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7546
   },
   "924": {
     "name": "Tandemaus",
@@ -19292,7 +20215,8 @@
       "Spe": 75,
       "Total": 305
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3073
   },
   "925": {
     "name": "Maushold Family Of Four",
@@ -19313,7 +20237,8 @@
       "Spe": 111,
       "Total": 470
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6843
   },
   "926": {
     "name": "Fidough",
@@ -19333,7 +20258,8 @@
       "Spe": 65,
       "Total": 312
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2725
   },
   "927": {
     "name": "Dachsbun",
@@ -19353,7 +20279,8 @@
       "Spe": 95,
       "Total": 477
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6789
   },
   "928": {
     "name": "Smoliv",
@@ -19374,7 +20301,8 @@
       "Spe": 30,
       "Total": 260
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.105
   },
   "929": {
     "name": "Dolliv",
@@ -19395,7 +20323,8 @@
       "Spe": 33,
       "Total": 354
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4283
   },
   "930": {
     "name": "Arboliva",
@@ -19416,7 +20345,8 @@
       "Spe": 39,
       "Total": 510
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7896
   },
   "931": {
     "name": "Squawkabilly Green Plumage",
@@ -19438,7 +20368,8 @@
       "Spe": 92,
       "Total": 417
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4562
   },
   "932": {
     "name": "Nacli",
@@ -19459,7 +20390,8 @@
       "Spe": 25,
       "Total": 280
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.14
   },
   "933": {
     "name": "Naclstack",
@@ -19480,7 +20412,8 @@
       "Spe": 35,
       "Total": 355
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.4301
   },
   "934": {
     "name": "Garganacl",
@@ -19501,7 +20434,8 @@
       "Spe": 35,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7721
   },
   "935": {
     "name": "Charcadet",
@@ -19521,7 +20455,8 @@
       "Spe": 35,
       "Total": 255
     },
-    "rarity": "Rare"
+    "rarity": "Common",
+    "rarity_score": 0.2904
   },
   "936": {
     "name": "Armarouge",
@@ -19542,7 +20477,8 @@
       "Spe": 75,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8393
   },
   "937": {
     "name": "Ceruledge",
@@ -19563,7 +20499,8 @@
       "Spe": 85,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8393
   },
   "938": {
     "name": "Tadbulb",
@@ -19584,7 +20521,8 @@
       "Spe": 45,
       "Total": 272
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2025
   },
   "939": {
     "name": "Bellibolt",
@@ -19605,7 +20543,8 @@
       "Spe": 45,
       "Total": 495
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7574
   },
   "940": {
     "name": "Wattrel",
@@ -19627,7 +20566,8 @@
       "Spe": 70,
       "Total": 280
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2282
   },
   "941": {
     "name": "Kilowattrel",
@@ -19649,7 +20589,8 @@
       "Spe": 125,
       "Total": 490
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.7016
   },
   "942": {
     "name": "Maschiff",
@@ -19670,7 +20611,8 @@
       "Spe": 51,
       "Total": 340
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3685
   },
   "943": {
     "name": "Mabosstiff",
@@ -19691,7 +20633,8 @@
       "Spe": 85,
       "Total": 505
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7455
   },
   "944": {
     "name": "Shroodle",
@@ -19713,7 +20656,8 @@
       "Spe": 75,
       "Total": 290
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.234
   },
   "945": {
     "name": "Grafaiai",
@@ -19735,7 +20679,8 @@
       "Spe": 110,
       "Total": 485
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6929
   },
   "946": {
     "name": "Bramblin",
@@ -19756,7 +20701,8 @@
       "Spe": 60,
       "Total": 275
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2077
   },
   "947": {
     "name": "Brambleghast",
@@ -19777,7 +20723,8 @@
       "Spe": 90,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7371
   },
   "948": {
     "name": "Toedscool",
@@ -19797,7 +20744,8 @@
       "Spe": 70,
       "Total": 335
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3127
   },
   "949": {
     "name": "Toedscruel",
@@ -19817,7 +20765,8 @@
       "Spe": 100,
       "Total": 515
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7454
   },
   "950": {
     "name": "Klawf",
@@ -19838,7 +20787,8 @@
       "Spe": 75,
       "Total": 450
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5963
   },
   "951": {
     "name": "Capsakid",
@@ -19859,7 +20809,8 @@
       "Spe": 50,
       "Total": 304
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2585
   },
   "952": {
     "name": "Scovillain",
@@ -19881,7 +20832,8 @@
       "Spe": 75,
       "Total": 486
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7123
   },
   "953": {
     "name": "Rellor",
@@ -19901,7 +20853,8 @@
       "Spe": 30,
       "Total": 270
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.199
   },
   "954": {
     "name": "Rabsca",
@@ -19922,7 +20875,8 @@
       "Spe": 45,
       "Total": 470
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7196
   },
   "955": {
     "name": "Flittle",
@@ -19943,7 +20897,8 @@
       "Spe": 75,
       "Total": 255
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2551
   },
   "956": {
     "name": "Espathra",
@@ -19964,7 +20919,8 @@
       "Spe": 105,
       "Total": 481
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7212
   },
   "957": {
     "name": "Tinkatink",
@@ -19986,7 +20942,8 @@
       "Spe": 58,
       "Total": 297
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2462
   },
   "958": {
     "name": "Tinkatuff",
@@ -20008,7 +20965,8 @@
       "Spe": 78,
       "Total": 380
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5091
   },
   "959": {
     "name": "Tinkaton",
@@ -20030,7 +20988,8 @@
       "Spe": 94,
       "Total": 506
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7826
   },
   "960": {
     "name": "Wiglett",
@@ -20051,7 +21010,8 @@
       "Spe": 95,
       "Total": 245
     },
-    "rarity": "Common"
+    "rarity": "Common",
+    "rarity_score": 0.0788
   },
   "961": {
     "name": "Wugtrio",
@@ -20072,7 +21032,8 @@
       "Spe": 120,
       "Total": 425
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6349
   },
   "962": {
     "name": "Bombirdier",
@@ -20094,7 +21055,8 @@
       "Spe": 82,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7693
   },
   "963": {
     "name": "Finizen",
@@ -20113,7 +21075,8 @@
       "Spe": 75,
       "Total": 315
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.266
   },
   "964": {
     "name": "Palafin Zero",
@@ -20132,7 +21095,8 @@
       "Spe": 100,
       "Total": 457
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6968
   },
   "965": {
     "name": "Varoom",
@@ -20153,7 +21117,8 @@
       "Spe": 47,
       "Total": 300
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.2515
   },
   "966": {
     "name": "Revavroom",
@@ -20174,7 +21139,8 @@
       "Spe": 90,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7368
   },
   "967": {
     "name": "Cyclizar",
@@ -20195,7 +21161,8 @@
       "Spe": 121,
       "Total": 501
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6032
   },
   "968": {
     "name": "Orthworm",
@@ -20215,7 +21182,8 @@
       "Spe": 65,
       "Total": 480
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7606
   },
   "969": {
     "name": "Glimmet",
@@ -20236,7 +21204,8 @@
       "Spe": 60,
       "Total": 350
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4801
   },
   "970": {
     "name": "Glimmora",
@@ -20257,7 +21226,8 @@
       "Spe": 86,
       "Total": 525
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8393
   },
   "971": {
     "name": "Greavard",
@@ -20277,7 +21247,8 @@
       "Spe": 34,
       "Total": 290
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3163
   },
   "972": {
     "name": "Houndstone",
@@ -20297,7 +21268,8 @@
       "Spe": 68,
       "Total": 488
     },
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "rarity_score": 0.7334
   },
   "973": {
     "name": "Flamigo",
@@ -20319,7 +21291,8 @@
       "Spe": 90,
       "Total": 500
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7074
   },
   "974": {
     "name": "Cetoddle",
@@ -20340,7 +21313,8 @@
       "Spe": 43,
       "Total": 334
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.358
   },
   "975": {
     "name": "Cetitan",
@@ -20361,7 +21335,8 @@
       "Spe": 73,
       "Total": 521
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8029
   },
   "976": {
     "name": "Veluza",
@@ -20382,7 +21357,8 @@
       "Spe": 70,
       "Total": 478
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6689
   },
   "977": {
     "name": "Dondozo",
@@ -20403,7 +21379,8 @@
       "Spe": 35,
       "Total": 530
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8481
   },
   "978": {
     "name": "Tatsugiri Curly",
@@ -20424,7 +21401,8 @@
       "Spe": 82,
       "Total": 475
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6636
   },
   "979": {
     "name": "Annihilape",
@@ -20446,7 +21424,8 @@
       "Spe": 90,
       "Total": 535
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8333
   },
   "980": {
     "name": "Clodsire",
@@ -20468,7 +21447,8 @@
       "Spe": 20,
       "Total": 430
     },
-    "rarity": "Rare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.5966
   },
   "981": {
     "name": "Farigiraf",
@@ -20490,7 +21470,8 @@
       "Spe": 60,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "982": {
     "name": "Dudunsparce Two Segment",
@@ -20511,7 +21492,8 @@
       "Spe": 55,
       "Total": 520
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8071
   },
   "983": {
     "name": "Kingambit",
@@ -20533,7 +21515,8 @@
       "Spe": 50,
       "Total": 550
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8831
   },
   "984": {
     "name": "Great Tusk",
@@ -20553,7 +21536,8 @@
       "Spe": 87,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "985": {
     "name": "Scream Tail",
@@ -20573,7 +21557,8 @@
       "Spe": 111,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8887
   },
   "986": {
     "name": "Brute Bonnet",
@@ -20593,7 +21578,8 @@
       "Spe": 55,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8887
   },
   "987": {
     "name": "Flutter Mane",
@@ -20613,7 +21599,8 @@
       "Spe": 135,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "988": {
     "name": "Slither Wing",
@@ -20633,7 +21620,8 @@
       "Spe": 81,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "989": {
     "name": "Sandy Shocks",
@@ -20653,7 +21641,8 @@
       "Spe": 101,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "990": {
     "name": "Iron Treads",
@@ -20673,7 +21662,8 @@
       "Spe": 106,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "991": {
     "name": "Iron Bundle",
@@ -20693,7 +21683,8 @@
       "Spe": 136,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8887
   },
   "992": {
     "name": "Iron Hands",
@@ -20713,7 +21704,8 @@
       "Spe": 50,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8887
   },
   "993": {
     "name": "Iron Jugulis",
@@ -20733,7 +21725,8 @@
       "Spe": 108,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "994": {
     "name": "Iron Moth",
@@ -20753,7 +21746,8 @@
       "Spe": 110,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "995": {
     "name": "Iron Thorns",
@@ -20773,7 +21767,8 @@
       "Spe": 72,
       "Total": 570
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9122
   },
   "996": {
     "name": "Frigibax",
@@ -20794,7 +21789,8 @@
       "Spe": 55,
       "Total": 320
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.4571
   },
   "997": {
     "name": "Arctibax",
@@ -20815,7 +21811,8 @@
       "Spe": 62,
       "Total": 423
     },
-    "rarity": "UltraRare"
+    "rarity": "Uncommon",
+    "rarity_score": 0.6608
   },
   "998": {
     "name": "Baxcalibur",
@@ -20836,7 +21833,8 @@
       "Spe": 87,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9882
   },
   "999": {
     "name": "Gimmighoul",
@@ -20855,7 +21853,8 @@
       "Spe": 10,
       "Total": 300
     },
-    "rarity": "UltraRare"
+    "rarity": "Common",
+    "rarity_score": 0.4221
   },
   "1000": {
     "name": "Gholdengo",
@@ -20875,7 +21874,8 @@
       "Spe": 84,
       "Total": 550
     },
-    "rarity": "UltraRare"
+    "rarity": "UltraRare",
+    "rarity_score": 0.8596
   },
   "1001": {
     "name": "Wo Chien",
@@ -20895,7 +21895,8 @@
       "Spe": 70,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1002": {
     "name": "Chien Pao",
@@ -20915,7 +21916,8 @@
       "Spe": 135,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1003": {
     "name": "Ting Lu",
@@ -20935,7 +21937,8 @@
       "Spe": 45,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1004": {
     "name": "Chi Yu",
@@ -20955,7 +21958,8 @@
       "Spe": 100,
       "Total": 570
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1005": {
     "name": "Roaring Moon",
@@ -20975,7 +21979,8 @@
       "Spe": 119,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1006": {
     "name": "Iron Valiant",
@@ -20995,7 +22000,8 @@
       "Spe": 116,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1007": {
     "name": "Koraidon",
@@ -21015,7 +22021,8 @@
       "Spe": 135,
       "Total": 670
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1008": {
     "name": "Miraidon",
@@ -21035,7 +22042,8 @@
       "Spe": 135,
       "Total": 670
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1009": {
     "name": "Walking Wake",
@@ -21055,7 +22063,8 @@
       "Spe": 109,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9766
   },
   "1010": {
     "name": "Iron Leaves",
@@ -21075,7 +22084,8 @@
       "Spe": 104,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9766
   },
   "1011": {
     "name": "Dipplin",
@@ -21097,7 +22107,8 @@
       "Spe": 40,
       "Total": 485
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7458
   },
   "1012": {
     "name": "Poltchageist",
@@ -21118,7 +22129,8 @@
       "Spe": 50,
       "Total": 308
     },
-    "rarity": "Uncommon"
+    "rarity": "Common",
+    "rarity_score": 0.3478
   },
   "1013": {
     "name": "Sinistcha",
@@ -21139,7 +22151,8 @@
       "Spe": 70,
       "Total": 508
     },
-    "rarity": "UltraRare"
+    "rarity": "Rare",
+    "rarity_score": 0.7684
   },
   "1014": {
     "name": "Okidogi",
@@ -21160,7 +22173,8 @@
       "Spe": 80,
       "Total": 555
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1015": {
     "name": "Munkidori",
@@ -21181,7 +22195,8 @@
       "Spe": 106,
       "Total": 555
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1016": {
     "name": "Fezandipiti",
@@ -21202,7 +22217,8 @@
       "Spe": 99,
       "Total": 555
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1017": {
     "name": "Ogerpon",
@@ -21221,7 +22237,8 @@
       "Spe": 110,
       "Total": 550
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1018": {
     "name": "Archaludon",
@@ -21243,7 +22260,8 @@
       "Spe": 85,
       "Total": 600
     },
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "rarity_score": 0.9882
   },
   "1019": {
     "name": "Hydrapple",
@@ -21265,7 +22283,8 @@
       "Spe": 44,
       "Total": 540
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.8832
   },
   "1020": {
     "name": "Gouging Fire",
@@ -21285,7 +22304,8 @@
       "Spe": 91,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1021": {
     "name": "Raging Bolt",
@@ -21305,7 +22325,8 @@
       "Spe": 75,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1022": {
     "name": "Iron Boulder",
@@ -21325,7 +22346,8 @@
       "Spe": 124,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1023": {
     "name": "Iron Crown",
@@ -21345,7 +22367,8 @@
       "Spe": 98,
       "Total": 590
     },
-    "rarity": "UltraRare"
+    "rarity": "Epic",
+    "rarity_score": 0.9707
   },
   "1024": {
     "name": "Terapagos",
@@ -21364,7 +22387,8 @@
       "Spe": 60,
       "Total": 450
     },
-    "rarity": "Legendary"
+    "rarity": "Legendary",
+    "rarity_score": 1.0
   },
   "1025": {
     "name": "Pecharunt",
@@ -21384,6 +22408,7 @@
       "Spe": 88,
       "Total": 600
     },
-    "rarity": "Mythical"
+    "rarity": "Mythical",
+    "rarity_score": 1.0
   }
 }

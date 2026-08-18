@@ -98,15 +98,54 @@ def build_db():
         is_legendary = int(species['is_legendary']) if species['is_legendary'] else 0
         capture_rate = int(species['capture_rate']) if species['capture_rate'] else 255
         
-        if is_mythical: rarity = "Mythical"
-        elif is_legendary: rarity = "Legendary"
-        elif total >= 600: rarity = "Epic"
-        elif total >= 500 or capture_rate <= 45: rarity = "UltraRare"
-        elif total >= 400 or capture_rate <= 90: rarity = "Rare"
-        elif total >= 300 or capture_rate <= 190: rarity = "Uncommon"
-        else: rarity = "Common"
+        # Legendary / Mythical are fixed canonical categories
+        if is_mythical:
+            data['rarity'] = "Mythical"
+            data['rarity_score'] = 1.0
+            final_db[pid] = data
+            continue
+        if is_legendary:
+            data['rarity'] = "Legendary"
+            data['rarity_score'] = 1.0
+            final_db[pid] = data
+            continue
+        # Normalize BST (assuming range 200 - 600)
+        bst_score = (total - 200) / 400
+        bst_score = max(0.0, min(1.0, bst_score))
+        # Normalize capture difficulty (lower capture rate = harder to catch = higher score)
+        capture_score = 1 - (capture_rate / 255)
+        # Combined rarity score (70% BST, 30% Capture Rate)
+        rarity_score = (bst_score * 0.70) + (capture_score * 0.30)
+        data['rarity_score'] = round(rarity_score, 4)
         
-        data['rarity'] = rarity
+        final_db[pid] = data
+
+    # ---------------------------------------------------------
+    # Apply Rarity Percentiles
+    # ---------------------------------------------------------
+    # Filter out Legendary/Mythical to get only standard Pokémon
+    standard_pokemon = [item for item in final_db.items() if item[1]['rarity'] not in ["Mythical", "Legendary"]]
+    
+    # Sort them by their rarity score
+    ranked = sorted(standard_pokemon, key=lambda x: x[1]['rarity_score'])
+    total_standard = len(ranked)
+    
+    common_cutoff = int(total_standard * 0.35)
+    uncommon_cutoff = int(total_standard * 0.65)
+    rare_cutoff = int(total_standard * 0.85)
+    ultrarare_cutoff = int(total_standard * 0.95)
+    for index, (pid, data) in enumerate(ranked):
+        if index < common_cutoff:
+            data['rarity'] = "Common"
+        elif index < uncommon_cutoff:
+            data['rarity'] = "Uncommon"
+        elif index < rare_cutoff:
+            data['rarity'] = "Rare"
+        elif index < ultrarare_cutoff:
+            data['rarity'] = "UltraRare"
+        else:
+            data['rarity'] = "Epic"
+            
         final_db[pid] = data
 
     # Create directory if not exists
