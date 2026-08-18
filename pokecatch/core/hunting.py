@@ -108,7 +108,7 @@ def catch(ball_type):
             sys.stdout.flush()
             time.sleep(interval)
         print()
-    endless_dots(5, 0.5)
+    # endless_dots(5, 0.5)
     
     # --- DYNAMIC CATCH LOGIC ---
     base_chance = BASE_CATCH_RATES.get(rarity, 0.1)

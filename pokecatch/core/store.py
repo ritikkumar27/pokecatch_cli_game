@@ -129,6 +129,30 @@ def display_store():
                 console.print(f"  {name:<15} [red]Requires Level {data['unlock_level']}[/red]")
         console.print()
         
+    console.print()
+    console.print("[bold magenta]SELL PRICES[/bold magenta]")
+    console.print("──────────────────────────────────────────────────────────────", style="grey50")
+    
+    from pokecatch.config import RARITY_SELL_PRICES
+    
+    rarity_colors = {
+        "Common": "white", "Uncommon": "green", "Rare": "blue", 
+        "UltraRare": "cyan", "Epic": "red", "Legendary": "yellow", "Mythical": "purple"
+    }
+    
+    sell_lines = []
+    for rarity, price in RARITY_SELL_PRICES.items():
+        c = rarity_colors.get(rarity, "white")
+        sell_lines.append(f"  [{c}]{rarity:<12}[/{c}] [yellow]₽{price:,}[/yellow]")
+    
+    # Print them 2 per line
+    for i in range(0, len(sell_lines), 2):
+        if i + 1 < len(sell_lines):
+            console.print(f"{sell_lines[i]:<35} {sell_lines[i+1]}")
+        else:
+            console.print(f"{sell_lines[i]}")
+            
+    console.print()
     console.print("──────────────────────────────────────────────────────────────", style="grey50")
     console.print("  [cyan]pokecatch store buy <item> <amount>[/cyan]")
     console.print("  [cyan]pokecatch store sell <pokemon>[/cyan] | [cyan]sellall <rarity>[/cyan] | [cyan]sell-dupes[/cyan]")

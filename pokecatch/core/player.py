@@ -253,8 +253,6 @@ def pokedex(args):
 def stats():
     try:
         from rich.console import Console
-        from rich.rule import Rule
-        from rich.table import Table
     except ImportError:
         print("Please run: pip install rich")
         return
@@ -262,7 +260,6 @@ def stats():
     console = Console()
     
     player_data = load_player_data()
-    player_dex = load_data(PLAYER_DEX)
     s = player_data.get("stats", {})
 
     import getpass
@@ -276,6 +273,7 @@ def stats():
     xp_in_level = xp - prev_level_xp
     xp_needed_for_level = next_level_xp - prev_level_xp
     currency = player_data.get("currency", 0)
+    
     unique_pokemon = len(s.get("lifetime_unique_pids", []))
     total_pokemon = s.get("total_lifetime_caught", 0)
     rarity_counts = s.get("lifetime_rarity", {"common": 0, "uncommon": 0, "rare": 0, "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0})
@@ -290,99 +288,67 @@ def stats():
     from pokecatch.config import BALL_PRICES
     all_balls = list(BALL_PRICES.keys())
 
-    # --- PRINT VERTICAL DASHBOARD ---
+    # --- PRINT MINIMAL DASHBOARD ---
     console.print()
-    console.print(Rule("[bold white]◈ TRAINER PROFILE ◈", style="cyan"))
-    console.print()
-
-    console.print(f"  [bold cyan]{username}[/bold cyan]  ·  [bold yellow]₽ {currency:,}[/bold yellow]")
+    console.print(f"  [bold cyan]{username}[/bold cyan]")
     xp_pct = (xp_in_level / xp_needed_for_level * 100) if xp_needed_for_level > 0 else 0
-    console.print(f"  [white]Level {level}[/white]  [bold cyan]{xp_pct:.0f}%[/bold cyan]  [grey74]({xp:,} / {next_level_xp:,} XP)[/grey74]")
+    console.print(f"  [white]Level {level}[/white]   •   [bold yellow]₽ {currency:,}[/bold yellow]   •   [cyan]{xp_pct:.0f}%[/cyan] [grey74]to Level {level + 1}[/grey74]")
     console.print()
 
     # COLLECTION
-    console.print(Rule("[bold green]◈ COLLECTION", style="green", align="left"))
-    console.print(f"  [white]Total Caught:[/white]   {total_pokemon:<10} [white]Unique Species:[/white] {unique_pokemon}")
     col_pct = (unique_pokemon / 1025) * 100
-    console.print(f"  [white]Pokédex:[/white]        [bold green]{col_pct:.1f}%[/bold green] [grey74]({unique_pokemon} / 1025)[/grey74]")
+    console.print("  [bold green]✧ COLLECTION ✧[/bold green]")
+    console.print(f"  [white]Caught:[/white] {total_pokemon:<8} [white]Unique:[/white] {unique_pokemon:<8} [white]Pokédex:[/white] [green]{col_pct:.1f}%[/green]")
     console.print()
 
-    # HUNTING
-    console.print(Rule("[bold cyan]◈ HUNTING RECORD", style="cyan", align="left"))
-    console.print(f"  [white]Total Hunts:[/white]  {total_hunts:<10} [white]Catch Rate:[/white] [bold cyan]{catch_rate:.1f}%[/bold cyan]")
-    console.print(f"  [white]Successful:[/white]   [green]{success:<10}[/green] [white]Failed:[/white]     [red]{failed}[/red]")
-    console.print(f"  [white]First Catch:[/white]  [cyan]{s.get('first_time_catches', 0):<10}[/cyan] [white]Duplicates:[/white] [grey74]{success - s.get('first_time_catches', 0)}[/grey74]")
-    console.print(f"  [grey74]Hunt XP: {s.get('xp_from_hunting', 0):,}  |  Catch XP: {s.get('xp_from_catching', 0):,}[/grey74]")
+    # RECORD
+    console.print("  [bold cyan]✧ RECORD ✧[/bold cyan]")
+    console.print(f"  [white]Hunts:[/white] {total_hunts:<9} [white]Catch Rate:[/white] [cyan]{catch_rate:.1f}%[/cyan]")
+    console.print(f"  [white]Success:[/white] [green]{success:<7}[/green] [white]Failed:[/white] [red]{failed}[/red]")
     console.print()
 
     # RARITY
-    console.print(Rule("[bold magenta]◈ RARITY", style="magenta", align="left"))
-    rarity_table = Table.grid(padding=(0, 4))
-    rarity_table.add_column()
-    rarity_table.add_column()
-    r_items = [
-        ("[white]● Common", rarity_counts['common']),
-        ("[green]◆ Uncommon", rarity_counts['uncommon']),
-        ("[blue]★ Rare", rarity_counts['rare']),
-        ("[cyan]✦ UltraRare", rarity_counts['ultrarare']),
-        ("[red]▲ Epic", rarity_counts['epic']),
-        ("[yellow]🌟 Legendary", rarity_counts['legendary']),
-        ("[purple]💠 Mythical", rarity_counts['mythical'])
-    ]
-    for i in range(0, len(r_items), 2):
-        col1 = f"  {r_items[i][0]}: {r_items[i][1]}"
-        col2 = f"  {r_items[i+1][0]}: {r_items[i+1][1]}" if i+1 < len(r_items) else ""
-        rarity_table.add_row(col1, col2)
-    console.print(rarity_table)
+    console.print("  [bold magenta]✧ RARITY ✧[/bold magenta]")
+    console.print(f"  [white]Common:[/white] {rarity_counts['common']:<7} [green]Uncommon:[/green] {rarity_counts['uncommon']:<7} [blue]Rare:[/blue] {rarity_counts['rare']}")
+    console.print(f"  [cyan]UltraRare:[/cyan] {rarity_counts['ultrarare']:<4} [red]Epic:[/red] {rarity_counts['epic']:<11} [yellow]Legendary:[/yellow] {rarity_counts['legendary']}")
+    console.print(f"  [purple]Mythical:[/purple] {rarity_counts['mythical']}")
     console.print()
 
     # BALLS
-    console.print(Rule("[bold yellow]◈ BALL BAG", style="yellow", align="left"))
-    balls_table = Table.grid(padding=(0, 4))
-    balls_table.add_column()
-    balls_table.add_column()
-    b_items = []
-    
-    # Iterate dynamically over all available ball types
-    for b in all_balls:
-        if balls.get(b, 0) > 0:
-            name = b.replace('_', ' ').title()
-            b_items.append((name, balls[b]))
-            
+    console.print("  [bold yellow]✧ BALLS ✧[/bold yellow]")
+    b_items = [f"[white]{b.replace('_', ' ').title()}:[/white] [yellow]{balls[b]}[/yellow]" for b in all_balls if balls.get(b, 0) > 0]
     if not b_items:
-        console.print("  [grey74]Empty")
+        console.print("  [grey74]Empty[/grey74]")
     else:
-        for i in range(0, len(b_items), 2):
-            col1 = f"  ● {b_items[i][0]}: [yellow]× {b_items[i][1]}[/yellow]"
-            col2 = f"  ● {b_items[i+1][0]}: [yellow]× {b_items[i+1][1]}[/yellow]" if i+1 < len(b_items) else ""
-            balls_table.add_row(col1, col2)
-        console.print(balls_table)
+        for i in range(0, len(b_items), 3):
+            line = "    ".join(b_items[i:i+3])
+            console.print(f"  {line}")
     console.print()
 
     # GENERATIONS
-    # GENERATIONS
-    console.print(Rule("[bold blue]◈ GENERATION DISCOVERY", style="blue", align="left"))
+    console.print("  [bold blue]✧ DISCOVERY ✧[/bold blue]")
     roman = {1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:'VIII', 9:'IX'}
-    caught_gens = [g for g in gen_counts if gen_counts[g] > 0]
+    caught_gens = [f"[white]Gen {roman[int(g)]}:[/white] [cyan]{gen_counts[g]}[/cyan]" for g in gen_counts if gen_counts[g] > 0]
     if not caught_gens:
-        console.print("  [grey74]No Pokémon caught yet.")
+        console.print("  [grey74]No Pokémon caught yet.[/grey74]")
     else:
-        for g in caught_gens:
-            console.print(f"  Gen {roman[int(g)]:<4} [cyan]{gen_counts[g]}[/cyan]")
+        for i in range(0, len(caught_gens), 4):
+            line = "    ".join(caught_gens[i:i+4])
+            console.print(f"  {line}")
     console.print()
 
     # ACHIEVEMENTS
-    console.print(Rule("[bold yellow]◈ ACHIEVEMENTS", style="yellow", align="left"))
+    console.print("  [bold yellow]✧ ACHIEVEMENTS ✧[/bold yellow]")
     achievements = []
-    if unique_pokemon >= 10: achievements.append("[yellow]⭐ 10 Pokémon Collected[/yellow]")
-    elif unique_pokemon > 0: achievements.append("[yellow]⭐ Caught your first Pokémon[/yellow]")
-    if rarity_counts.get("rare", 0) > 0: achievements.append("[blue]💎 Caught your first Rare[/blue]")
-    if rarity_counts.get("legendary", 0) > 0: achievements.append("[yellow]🌟 Caught a Legendary![/yellow]")
-    if gen_counts.get(9, 0) > 0: achievements.append("[red]🔴 Discovered Gen IX[/red]")
-    if level > 1: achievements.append(f"[green]🔰 Reached Level {level}[/green]")
+    if unique_pokemon >= 10: achievements.append("[yellow]★ 10 Pokémon Collected[/yellow]")
+    elif unique_pokemon > 0: achievements.append("[yellow]★ Caught your first Pokémon[/yellow]")
+    if rarity_counts.get("rare", 0) > 0: achievements.append("[blue]★ Caught your first Rare[/blue]")
+    if rarity_counts.get("legendary", 0) > 0: achievements.append("[yellow]★ Caught a Legendary![/yellow]")
+    if gen_counts.get(9, 0) > 0: achievements.append("[red]★ Discovered Gen IX[/red]")
+    if level > 1: achievements.append(f"[green]★ Reached Level {level}[/green]")
     
     if not achievements:
-        console.print("  [grey74]Start catching Pokémon to earn achievements!")
+        console.print("  [grey74]Start catching Pokémon to earn achievements![/grey74]")
     else:
         for a in achievements[:3]:
             console.print(f"  {a}")
