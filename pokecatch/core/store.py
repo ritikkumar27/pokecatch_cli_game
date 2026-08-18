@@ -8,27 +8,7 @@ from pokecatch.utils import load_data, save_data
 from pokecatch.core.player import load_player_data, save_player_data, get_player_level
 SHOP_FILE = USER_SAVE_DIR / 'shop.json'
 
-def get_store_state():
-    today = str(datetime.date.today())
-    if not SHOP_FILE.exists():
-        state = {"last_refresh": today, "items": {}}
-        for item, data in STORE_ITEMS.items():
-            state["items"][item] = data.get("daily_stock", 10)
-        save_data(SHOP_FILE, state)
-        return state
-        
-    state = load_data(SHOP_FILE)
-    if state.get("last_refresh") != today:
-        # It's a new day! Refresh stock
-        state["last_refresh"] = today
-        state["items"] = {}
-        for item, data in STORE_ITEMS.items():
-            state["items"][item] = data.get("daily_stock", 10)
-        save_data(SHOP_FILE, state)
-    return state
 
-def save_store_state(state):
-    save_data(SHOP_FILE, state)
 
 # --------------------------------------------------------------
 
@@ -74,13 +54,6 @@ def buy_item(item_name, amount):
         print(f"You must be Level {item_data['unlock_level']} to buy this item.")
         return
         
-    state = get_store_state()
-    stock = state["items"].get(item_name, 0)
-    
-    if amount > stock:
-        print(f"The store only has {stock} of those left today!")
-        return
-        
     discount = min(level * 0.005, 0.15)
     price = int(item_data["price"] * (1 - discount))
     total_cost = price * amount
@@ -98,9 +71,7 @@ def buy_item(item_name, amount):
     player_data['balls'][item_name] += amount
     save_player_data(player_data)
     
-    # Remove from store stock
-    state["items"][item_name] -= amount
-    save_store_state(state)
+
     print(f"✅ You bought {amount} {item_name.replace('_', ' ').title()}(s) for ₽ {total_cost:,}.")
     print(f"Your new balance is ₽ {player_data['currency']:,}.")
 
@@ -138,15 +109,12 @@ def display_store():
     buy_table.add_column("Stock", justify="right")
     buy_table.add_column("Status", justify="center")
     
-    state = get_store_state()
     for item, data in STORE_ITEMS.items():
         name = item.replace('_', ' ').title()
         if level >= data["unlock_level"]:
             base_price = data["price"]
             discounted_price = int(base_price * (1 - discount))
-            stock = state["items"].get(item, 0)
-            stock_str = f"[green]{stock}[/green]" if stock > 0 else "[red]SOLD OUT[/red]"
-            buy_table.add_row(f"● {name}", f"₽ {discounted_price:,}", stock_str, "[green]UNLOCKED[/green]")
+            buy_table.add_row(f"● {name}", f"₽ {discounted_price:,}", "[green]UNLOCKED[/green]")
         else:
             buy_table.add_row(f"● {name}", f"[grey74]₽ {data['price']:,}[/grey74]", "-", f"[red]UNLOCKS LV {data['unlock_level']}[/red]")
             
