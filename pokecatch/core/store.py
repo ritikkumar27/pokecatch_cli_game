@@ -38,6 +38,14 @@ def sell_pokemon(pokemon_name):
         print(f"You don't have a Pokémon named {pokemon_name.capitalize()} to sell.")
 
 def buy_item(item_name, amount):
+    if amount <= 0:
+        print("Error: You must buy at least 1 item.")
+        return
+    if amount > 999:
+        print("Error: You cannot buy that many items at once (max 999).")
+        return
+
+        
     from pokecatch.config import BALL_ALIASES, STORE_ITEMS
     if item_name.lower() in BALL_ALIASES:
         item_name = BALL_ALIASES[item_name.lower()]

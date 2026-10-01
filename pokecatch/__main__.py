@@ -9,6 +9,16 @@ from pokecatch.core.hunting import hunt, catch
 from pokecatch.core.player import inventory, pokedex, stats
 from pokecatch.core.store import buy_item, sell_pokemon, sell_all_by_rarity, display_store, sell_dupes
 
+
+def positive_int(value):
+    ivalue = int(value)
+    if ivalue <= 0:
+        raise argparse.ArgumentTypeError(f"Quantity must be greater than 0, got {value}.")
+    if ivalue > 999:
+        raise argparse.ArgumentTypeError(f"Quantity is too large (max 999), got {value}.")
+    return ivalue
+
+
 def main():
     parser = argparse.ArgumentParser(description="A Pokémon catching game for the terminal.")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
