@@ -85,6 +85,12 @@ def catch(ball_type):
     if not WILD_POKEMON_STATE.exists():
         print("You haven't found a Pokémon to catch! Use 'pokecatch hunt' first.")
         return
+
+    wild_pokemon = load_data(WILD_POKEMON_STATE)
+    if not wild_pokemon:
+        print("Error: The wild Pokemon ran away or the encounter is corrupted!")
+        return
+
     player_data = load_player_data()
     
     if player_data["balls"].get(ball_type, 0) <= 0:
@@ -93,7 +99,7 @@ def catch(ball_type):
     
     player_data["balls"][ball_type] -= 1
     save_player_data(player_data)
-    wild_pokemon = load_data(WILD_POKEMON_STATE)
+    
     pokemon_name = wild_pokemon['name']
     rarity = wild_pokemon['rarity']
     print(f"You threw a {ball_type.replace('_', ' ')} at {pokemon_name.capitalize()}...")
