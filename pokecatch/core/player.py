@@ -351,7 +351,7 @@ def stats():
     elif unique_pokemon > 0: achievements.append("[yellow]★ Caught your first Pokémon[/yellow]")
     if rarity_counts.get("rare", 0) > 0: achievements.append("[blue]★ Caught your first Rare[/blue]")
     if rarity_counts.get("legendary", 0) > 0: achievements.append("[yellow]★ Caught a Legendary![/yellow]")
-    if gen_counts.get(9, 0) > 0: achievements.append("[red]★ Discovered Gen IX[/red]")
+    if gen_counts.get("9", 0) > 0: achievements.append("[red]★ Discovered Gen IX[/red]")
     if level > 1: achievements.append(f"[green]★ Reached Level {level}[/green]")
     
     if not achievements:
