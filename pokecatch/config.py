@@ -12,7 +12,7 @@ DATA_FILE = DATA_DIR / 'pokemon_data.json'
 
 # User save data (Save to the user's home directory so progress isn't lost on updates!)
 USER_SAVE_DIR = Path.home() / ".pokecatch"
-USER_SAVE_DIR.mkdir(exist_ok=True)  # Automatically creates ~/.pokecatch if it doesn't exist
+USER_SAVE_DIR.mkdir(parents=True, exist_ok=True)  # Automatically creates ~/.pokecatch if it doesn't exist
 PLAYER_DEX = USER_SAVE_DIR / 'pokedex.json'
 PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
 

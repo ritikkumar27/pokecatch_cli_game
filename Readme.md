@@ -21,27 +21,55 @@ I built this mostly to see how far I could push a terminal UI before it stopped 
 
 ## Installation
 
-1. Clone it:
-   ```bash
-   git clone https://github.com/ritikkumar27/pokecatch_cli_game.git
-   cd pokecatch_cli_game
-   ```
+### Install with pipx
 
-2. Install dependencies (needs Python 3):
-   ```bash
-   pip install -r requirements.txt
-   ```
-   This pulls in `rich`, `Pillow`, and `term-image`.
+Install Python 3.12 or newer, then install pipx.
 
-3. Install the CLI globally:
-   ```bash
-   ./install.sh
-   ```
+On Ubuntu/Debian:
+```bash
+sudo apt install pipx
+pipx ensurepath
+```
 
-4. Play:
-   ```bash
-   pokecatch hunt
-   ```
+On macOS:
+```bash
+brew install pipx
+pipx ensurepath
+```
+
+Restart your terminal, then install PokéCatch:
+```bash
+pipx install git+https://github.com/ritikkumar27/pokecatch_cli_game.git
+```
+
+Start the game from any directory:
+```bash
+pokecatch hunt
+```
+
+No virtual-environment activation is required after installation.
+
+---
+
+## Development
+
+```bash
+git clone https://github.com/ritikkumar27/pokecatch_cli_game.git
+cd pokecatch_cli_game
+
+python3.12 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install --editable .
+```
+
+Run the game:
+```bash
+pokecatch hunt
+```
+
+*Note: The development installation is not the normal player installation.*
 
 ---
 

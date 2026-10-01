@@ -14,7 +14,8 @@ def load_data(filepath):
         return json.load(f)
 
 def save_data(filepath, data):
-    temp_path = str(filepath) + ".tmp"
+    filepath.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = filepath.with_suffix(filepath.suffix + ".tmp")
     with open(temp_path, 'w') as f:
         json.dump(data, f, indent=2)
         f.flush()
