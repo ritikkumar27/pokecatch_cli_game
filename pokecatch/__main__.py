@@ -55,7 +55,7 @@ def main():
     buy_parser = store_subparsers.add_parser("buy", help="Buy items from the store.")
     valid_store_items = list(STORE_ITEMS.keys()) + list(BALL_ALIASES.keys())
     buy_parser.add_argument("item", choices=valid_store_items, help="The item to buy.")
-    buy_parser.add_argument("amount", type=int, nargs='?', default=1, help="How many to buy (default: 1).")
+    buy_parser.add_argument("amount", type=positive_int, nargs='?', default=1, help="How many to buy (default: 1).")
     # store sell
     sell_parser = store_subparsers.add_parser("sell", help="Sell a caught Pokémon.")
     sell_parser.add_argument("pokemon_name", help="The name of the Pokémon to sell.")
