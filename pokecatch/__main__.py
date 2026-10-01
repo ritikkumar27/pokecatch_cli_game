@@ -69,7 +69,7 @@ def main():
     elif args.command == "catch":
         ball_to_use = BALL_ALIASES.get(args.ball, args.ball)
         catch(ball_to_use)
-    elif args.command in ("my_pokemon", "dex"):
+    elif args.command in ("pokedex", "dex"):
         pokedex(args)
     elif args.command in ("inventory", "inv"):
         inventory()
