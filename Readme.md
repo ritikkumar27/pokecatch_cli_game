@@ -23,7 +23,7 @@ I built this mostly to see how far I could push a terminal UI before it stopped 
 
 ### Install with pipx
 
-Install Python 3.12 or newer, then install pipx.
+Install Python 3.12 or 3.13, then install pipx.
 
 On Ubuntu/Debian:
 ```bash
@@ -48,6 +48,19 @@ pokecatch hunt
 ```
 
 No virtual-environment activation is required after installation.
+
+### Uninstalling
+
+If you want to completely remove the game and all its files from your system:
+
+1. Uninstall the game executable:
+   ```bash
+   pipx uninstall pokecatch-cli-game
+   ```
+2. Delete your save data (Warning: This will permanently delete your progress and caught Pokémon!):
+   ```bash
+   rm -rf ~/.pokecatch
+   ```
 
 ---
 
