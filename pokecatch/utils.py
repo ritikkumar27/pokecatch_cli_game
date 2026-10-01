@@ -14,8 +14,14 @@ def load_data(filepath):
         return json.load(f)
 
 def save_data(filepath, data):
-    with open(filepath, 'w') as f:
+    temp_path = str(filepath) + ".tmp"
+    with open(temp_path, 'w') as f:
         json.dump(data, f, indent=2)
+        f.flush()
+        os.fsync(f.fileno()) # Guarantee it is on the hard drive
+    os.replace(temp_path, filepath) # Atomic instant replacement
+
+
 
 def display_sprite(pokemon_name):
 
