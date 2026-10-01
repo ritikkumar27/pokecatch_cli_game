@@ -19,7 +19,7 @@ PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
 WILD_POKEMON_STATE = USER_SAVE_DIR / 'wild_pokemon.json'
 
 # --- Game Constants ---
-HUNT_COOLDOWN_SECONDS = 0
+HUNT_COOLDOWN_SECONDS = 15
 
 
 
