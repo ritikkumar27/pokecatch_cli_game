@@ -8,7 +8,6 @@ PKG_DIR = Path(__file__).parent
 DATA_DIR = PKG_DIR / "data"
 SPRITES_DIR = PKG_DIR / "sprites/pokemons"
 DATA_FILE = DATA_DIR / 'pokemon_data.json'
-WILD_POKEMON_STATE = DATA_DIR / 'wild_pokemon.json'
 
 
 # User save data (Save to the user's home directory so progress isn't lost on updates!)
@@ -16,6 +15,8 @@ USER_SAVE_DIR = Path.home() / ".pokecatch"
 USER_SAVE_DIR.mkdir(exist_ok=True)  # Automatically creates ~/.pokecatch if it doesn't exist
 PLAYER_DEX = USER_SAVE_DIR / 'pokedex.json'
 PLAYER_DATA_FILE = USER_SAVE_DIR / 'player.json'
+
+WILD_POKEMON_STATE = USER_SAVE_DIR / 'wild_pokemon.json'
 
 # --- Game Constants ---
 HUNT_COOLDOWN_SECONDS = 0
