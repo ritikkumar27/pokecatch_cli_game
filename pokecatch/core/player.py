@@ -33,7 +33,14 @@ def load_player_data():
                 "failed_catches": 0,
                 "first_time_catches": 0,
                 "xp_from_hunting": 0,
-                "xp_from_catching":0
+                "xp_from_catching":0,
+                "total_lifetime_caught": 0,
+                "lifetime_rarity": {
+                    "common": 0, "uncommon": 0, "rare": 0, 
+                    "ultrarare": 0, "epic": 0, "legendary": 0, "mythical": 0
+                },
+                "lifetime_gens": {str(i): 0 for i in range(1, 10)},
+                "lifetime_unique_pids": []
             }
         }
 
