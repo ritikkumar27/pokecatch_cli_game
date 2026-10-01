@@ -91,7 +91,7 @@ XP_REWARDS = {
 STORE_ITEMS = {
     "poke_ball":   {"price": 50,   "category": "balls", "unlock_level": 1},
     "great_ball":  {"price": 150,   "category": "balls", "unlock_level": 3},
-    "ultra_ball":  {"price": 250,  "category": "balls", "unlock_level": 8},
+    "ultra_ball":  {"price": 300,  "category": "balls", "unlock_level": 8},
     "net_ball":    {"price": 250,  "category": "balls", "unlock_level": 5},
     "dive_ball":   {"price": 250,  "category": "balls", "unlock_level": 5},
     "fast_ball":   {"price": 250,  "category": "balls", "unlock_level": 5},
